@@ -1,0 +1,3 @@
+npx quartz build --directory ../Obsidian/ 
+
+then use lazygit to commit and push
