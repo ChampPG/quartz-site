@@ -6,22 +6,22 @@
       <description>Last 10 notes on Paul&#039;s Docs</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>index</title>
-    <link>https://quartz.paulgleason.dev/everything/Cyber/</link>
-    <guid>https://quartz.paulgleason.dev/everything/Cyber/</guid>
+    <title>010 Cyber</title>
+    <link>https://quartz.paulgleason.dev/010-Cyber</link>
+    <guid>https://quartz.paulgleason.dev/010-Cyber</guid>
     <description>MOCs 011 - HTB .</description>
     <pubDate>Tue, 05 Mar 2024 03:47:01 GMT</pubDate>
   </item><item>
-    <title>index</title>
-    <link>https://quartz.paulgleason.dev/everything/Refernces/</link>
-    <guid>https://quartz.paulgleason.dev/everything/Refernces/</guid>
-    <description>MOCs Software Refernces Obsidian References vim Kitty .</description>
+    <title>020 Undergrad - Champlain</title>
+    <link>https://quartz.paulgleason.dev/020-Undergrad---Champlain</link>
+    <guid>https://quartz.paulgleason.dev/020-Undergrad---Champlain</guid>
+    <description>MOCs Senior SP24 FA23 Junior SP23 FA22 Sophomore SP22 FA21 Freshman SP21 FA20.</description>
     <pubDate>Tue, 05 Mar 2024 03:47:01 GMT</pubDate>
   </item><item>
-    <title>index</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/</guid>
-    <description>MOCs Senior SP24 FA23 Junior SP23 FA22 Sophomore SP22 FA21 Freshman SP21 FA20.</description>
+    <title>100 References</title>
+    <link>https://quartz.paulgleason.dev/100-References</link>
+    <guid>https://quartz.paulgleason.dev/100-References</guid>
+    <description>MOCs Software Refernces Obsidian Vim Kitty .</description>
     <pubDate>Tue, 05 Mar 2024 03:47:01 GMT</pubDate>
   </item><item>
     <title>index</title>
@@ -42,22 +42,22 @@
     <description>Kitty Config Commands Usage Kittens This all copies term info files for kitty and magically enables shell integration kitten ssh user@ip .</description>
     <pubDate>Tue, 05 Mar 2024 03:47:01 GMT</pubDate>
   </item><item>
-    <title>Obsidian References</title>
-    <link>https://quartz.paulgleason.dev/everything/Refernces/Obsidian-References</link>
-    <guid>https://quartz.paulgleason.dev/everything/Refernces/Obsidian-References</guid>
-    <description>Terms: MOC = Map of Content Obsidian Keybinds: ctrl + e switch view ctrl + shift + s live preview ctrl + p Command pallet ctrl + , Settings ctrl + shift...</description>
-    <pubDate>Tue, 05 Mar 2024 03:47:01 GMT</pubDate>
-  </item><item>
-    <title>neovim</title>
-    <link>https://quartz.paulgleason.dev/everything/Refernces/neovim</link>
-    <guid>https://quartz.paulgleason.dev/everything/Refernces/neovim</guid>
+    <title>Neovim</title>
+    <link>https://quartz.paulgleason.dev/everything/Refernces/Neovim</link>
+    <guid>https://quartz.paulgleason.dev/everything/Refernces/Neovim</guid>
     <description></description>
     <pubDate>Tue, 05 Mar 2024 03:47:01 GMT</pubDate>
   </item><item>
-    <title>vim</title>
-    <link>https://quartz.paulgleason.dev/everything/Refernces/vim</link>
-    <guid>https://quartz.paulgleason.dev/everything/Refernces/vim</guid>
-    <description>Sub Refernces neovim lazyvim .</description>
+    <title>Obsidian</title>
+    <link>https://quartz.paulgleason.dev/everything/Refernces/Obsidian</link>
+    <guid>https://quartz.paulgleason.dev/everything/Refernces/Obsidian</guid>
+    <description>Terms: MOC = Map of Content Obsidian Keybinds: ctrl + e switch view ctrl + shift + s live preview ctrl + p Command pallet ctrl + , Settings ctrl + shift...</description>
+    <pubDate>Tue, 05 Mar 2024 03:47:01 GMT</pubDate>
+  </item><item>
+    <title>Vim</title>
+    <link>https://quartz.paulgleason.dev/everything/Refernces/Vim</link>
+    <guid>https://quartz.paulgleason.dev/everything/Refernces/Vim</guid>
+    <description>Sub Refernces Neovim lazyvim .</description>
     <pubDate>Tue, 05 Mar 2024 03:47:01 GMT</pubDate>
   </item>
     </channel>
