@@ -39,7 +39,7 @@
     <title>011 - HTB</title>
     <link>https://quartz.paulgleason.dev/everything/Cyber/011---HTB</link>
     <guid>https://quartz.paulgleason.dev/everything/Cyber/011---HTB</guid>
-    <description>MOCs Incomplete Boxes Dataview Dataview only works in my obsidian due to plugins it automatically will query for pages fitting the requirements below...</description>
+    <description>MOCs Active Boxes Active HTB boxes will not be published but will be shown on this list as they’re retired they will become index able pages.Incomplete Boxes Dataview Dataview only works in my obsidian due to plugins it automatically will query for pages fitting the requirements below TABLE file.name as Filename, file.ctime as Created FROM #htb/incomplete and !#htb/shelved WHERE file.name != &quot;htb-js&quot; SORT file.ctime ASC Completed Boxes htb-codify -#active htb-perfection -#active htb-builder -#retired TABLE file.name as Filename, file.ctime as Created, Completed FROM #htb/complete and !#htb/shelved WHERE file.name != &quot;htb-js&quot; SORT file.ctime ASC Retired Completed Boxes TABLE file.name as Filename, file.ctime as Created, Completed FROM #htb/complete and !#htb/shelved WHERE file.name != &quot;htb-js&quot; AND public = true SORT file.ctime ASC.</description>
     <pubDate>Fri, 08 Mar 2024 01:05:05 GMT</pubDate>
   </item><item>
     <title>Neovim</title>
