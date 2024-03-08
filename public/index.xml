@@ -9,7 +9,7 @@
     <title>NMAP</title>
     <link>https://quartz.paulgleason.dev/everything/Refernces/NMAP</link>
     <guid>https://quartz.paulgleason.dev/everything/Refernces/NMAP</guid>
-    <description>MOC Useful Commands sudo nmap -p- --min-rate 10000 -oA scans/tcp_allports IP sudo nmap -p PORT1,PORT2,… -sC -sV -oA scans/tcp_scripts IP` Cheat Sheet All Arguements ...</description>
+    <description>MOC Useful Commands sudo nmap -p- --min-rate 10000 -oA scans/tcp_allports IP sudo nmap -p PORT1,PORT2,.. -sC -sV -oA scans/tcp_scripts IP Cheat Sheet All Arguements.</description>
     <pubDate>Fri, 08 Mar 2024 02:23:38 GMT</pubDate>
   </item><item>
     <title>htb-builder</title>
