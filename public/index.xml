@@ -6,65 +6,65 @@
       <description>Last 10 notes on Paul&#039;s Docs</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>index</title>
-    <link>https://quartz.paulgleason.dev/</link>
-    <guid>https://quartz.paulgleason.dev/</guid>
-    <description>Welcome! If you would like to access the rest of the site please go to Dashboard.Dashboard.</description>
-    <pubDate>Tue, 05 Mar 2024 06:24:50 GMT</pubDate>
+    <title>NMAP</title>
+    <link>https://quartz.paulgleason.dev/everything/Refernces/NMAP</link>
+    <guid>https://quartz.paulgleason.dev/everything/Refernces/NMAP</guid>
+    <description>MOC Useful Commands sudo nmap -p- --min-rate 10000 -oA scans/tcp_allports IP sudo nmap -p PORT1,PORT2,… -sC -sV -oA scans/tcp_scripts IP` Cheat Sheet...</description>
+    <pubDate>Fri, 08 Mar 2024 02:23:38 GMT</pubDate>
   </item><item>
-    <title>010 Cyber</title>
-    <link>https://quartz.paulgleason.dev/010-Cyber</link>
-    <guid>https://quartz.paulgleason.dev/010-Cyber</guid>
-    <description>MOCs 011 - HTB .</description>
-    <pubDate>Tue, 05 Mar 2024 03:47:01 GMT</pubDate>
-  </item><item>
-    <title>020 Undergrad - Champlain</title>
-    <link>https://quartz.paulgleason.dev/020-Undergrad---Champlain</link>
-    <guid>https://quartz.paulgleason.dev/020-Undergrad---Champlain</guid>
-    <description>MOCs Senior SP24 FA23 Junior SP23 FA22 Sophomore SP22 FA21 Freshman SP21 FA20.</description>
-    <pubDate>Tue, 05 Mar 2024 03:47:01 GMT</pubDate>
-  </item><item>
-    <title>100 References</title>
-    <link>https://quartz.paulgleason.dev/100-References</link>
-    <guid>https://quartz.paulgleason.dev/100-References</guid>
-    <description>MOCs Software Refernces Obsidian Vim Kitty .</description>
-    <pubDate>Tue, 05 Mar 2024 03:47:01 GMT</pubDate>
-  </item><item>
-    <title>Dashboard</title>
-    <link>https://quartz.paulgleason.dev/Dashboard</link>
-    <guid>https://quartz.paulgleason.dev/Dashboard</guid>
-    <description>HELLO! MOCs 010 Cyber 020 Undergrad - Champlain 100 References .</description>
-    <pubDate>Tue, 05 Mar 2024 03:47:01 GMT</pubDate>
-  </item><item>
-    <title>011 - HTB</title>
-    <link>https://quartz.paulgleason.dev/everything/Cyber/011---HTB</link>
-    <guid>https://quartz.paulgleason.dev/everything/Cyber/011---HTB</guid>
-    <description>MOCs Incomplete Boxes TABLE file.name as Filename, file.ctime as Created FROM #htb/incomplete and !#htb/shelved WHERE file.name != &quot;htb-js&quot;...</description>
-    <pubDate>Tue, 05 Mar 2024 03:47:01 GMT</pubDate>
+    <title>htb-builder</title>
+    <link>https://quartz.paulgleason.dev/everything/Cyber/htb-builder</link>
+    <guid>https://quartz.paulgleason.dev/everything/Cyber/htb-builder</guid>
+    <description>builder Difficulty: Medium OS: Linux Date: 2024-03-07 Completed:#htb/complete Enumeration The target is listening on only ports 22 and 8080.The service which is running on 8080 is Jenkins (10.0.18) $ sudo nmap -p- --min-rate 10000 -oA scans/tcp_allports builder.htb ..</description>
+    <pubDate>Fri, 08 Mar 2024 02:21:38 GMT</pubDate>
   </item><item>
     <title>Kitty</title>
     <link>https://quartz.paulgleason.dev/everything/Refernces/Kitty</link>
     <guid>https://quartz.paulgleason.dev/everything/Refernces/Kitty</guid>
     <description>Kitty Config Commands Usage Kittens This all copies term info files for kitty and magically enables shell integration kitten ssh user@ip .</description>
-    <pubDate>Tue, 05 Mar 2024 03:47:01 GMT</pubDate>
+    <pubDate>Fri, 08 Mar 2024 01:05:05 GMT</pubDate>
+  </item><item>
+    <title>index</title>
+    <link>https://quartz.paulgleason.dev/</link>
+    <guid>https://quartz.paulgleason.dev/</guid>
+    <description>Welcome! If you would like to access the rest of the site please go to Dashboard.Dashboard.</description>
+    <pubDate>Fri, 08 Mar 2024 01:05:05 GMT</pubDate>
+  </item><item>
+    <title>010 Cyber</title>
+    <link>https://quartz.paulgleason.dev/010-Cyber</link>
+    <guid>https://quartz.paulgleason.dev/010-Cyber</guid>
+    <description>MOCs 011 - HTB .</description>
+    <pubDate>Fri, 08 Mar 2024 01:05:05 GMT</pubDate>
+  </item><item>
+    <title>011 - HTB</title>
+    <link>https://quartz.paulgleason.dev/everything/Cyber/011---HTB</link>
+    <guid>https://quartz.paulgleason.dev/everything/Cyber/011---HTB</guid>
+    <description>MOCs Incomplete Boxes Dataview Dataview only works in my obsidian due to plugins it automatically will query for pages fitting the requirements below...</description>
+    <pubDate>Fri, 08 Mar 2024 01:05:05 GMT</pubDate>
   </item><item>
     <title>Neovim</title>
     <link>https://quartz.paulgleason.dev/everything/Refernces/Neovim</link>
     <guid>https://quartz.paulgleason.dev/everything/Refernces/Neovim</guid>
     <description></description>
-    <pubDate>Tue, 05 Mar 2024 03:47:01 GMT</pubDate>
+    <pubDate>Fri, 08 Mar 2024 01:05:05 GMT</pubDate>
+  </item><item>
+    <title>100 References</title>
+    <link>https://quartz.paulgleason.dev/100-References</link>
+    <guid>https://quartz.paulgleason.dev/100-References</guid>
+    <description>MOCs Software Refernces Obsidian Vim Kitty NMAP .</description>
+    <pubDate>Fri, 08 Mar 2024 01:05:05 GMT</pubDate>
   </item><item>
     <title>Obsidian</title>
     <link>https://quartz.paulgleason.dev/everything/Refernces/Obsidian</link>
     <guid>https://quartz.paulgleason.dev/everything/Refernces/Obsidian</guid>
     <description>Terms: MOC = Map of Content Obsidian Keybinds: ctrl + e switch view ctrl + shift + s live preview ctrl + p Command pallet ctrl + , Settings ctrl + shift...</description>
-    <pubDate>Tue, 05 Mar 2024 03:47:01 GMT</pubDate>
+    <pubDate>Fri, 08 Mar 2024 01:05:05 GMT</pubDate>
   </item><item>
-    <title>Vim</title>
-    <link>https://quartz.paulgleason.dev/everything/Refernces/Vim</link>
-    <guid>https://quartz.paulgleason.dev/everything/Refernces/Vim</guid>
-    <description>Sub Refernces Neovim lazyvim .</description>
-    <pubDate>Tue, 05 Mar 2024 03:47:01 GMT</pubDate>
+    <title>Dashboard</title>
+    <link>https://quartz.paulgleason.dev/Dashboard</link>
+    <guid>https://quartz.paulgleason.dev/Dashboard</guid>
+    <description>HELLO! MOCs 010 Cyber 020 Undergrad - Champlain 100 References .</description>
+    <pubDate>Fri, 08 Mar 2024 01:05:05 GMT</pubDate>
   </item>
     </channel>
   </rss>

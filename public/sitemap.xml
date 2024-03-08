@@ -1,31 +1,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
     <loc>https://quartz.paulgleason.dev/010-Cyber</loc>
-    <lastmod>2024-03-05T03:47:01.768Z</lastmod>
+    <lastmod>2024-03-08T01:05:05.343Z</lastmod>
   </url><url>
     <loc>https://quartz.paulgleason.dev/020-Undergrad---Champlain</loc>
-    <lastmod>2024-03-05T03:47:01.768Z</lastmod>
+    <lastmod>2024-03-08T01:05:04.990Z</lastmod>
   </url><url>
     <loc>https://quartz.paulgleason.dev/100-References</loc>
-    <lastmod>2024-03-05T03:47:01.768Z</lastmod>
+    <lastmod>2024-03-08T01:05:05.183Z</lastmod>
   </url><url>
     <loc>https://quartz.paulgleason.dev/Dashboard</loc>
-    <lastmod>2024-03-05T03:47:01.768Z</lastmod>
+    <lastmod>2024-03-08T01:05:05.047Z</lastmod>
   </url><url>
     <loc>https://quartz.paulgleason.dev/everything/Cyber/011---HTB</loc>
-    <lastmod>2024-03-05T03:47:01.764Z</lastmod>
+    <lastmod>2024-03-08T01:05:05.327Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/Cyber/htb-builder</loc>
+    <lastmod>2024-03-08T02:21:38.181Z</lastmod>
   </url><url>
     <loc>https://quartz.paulgleason.dev/everything/Refernces/Kitty</loc>
-    <lastmod>2024-03-05T03:47:01.764Z</lastmod>
+    <lastmod>2024-03-08T01:05:05.447Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/Refernces/NMAP</loc>
+    <lastmod>2024-03-08T02:23:38.364Z</lastmod>
   </url><url>
     <loc>https://quartz.paulgleason.dev/everything/Refernces/Neovim</loc>
-    <lastmod>2024-03-05T03:47:01.764Z</lastmod>
+    <lastmod>2024-03-08T01:05:05.230Z</lastmod>
   </url><url>
     <loc>https://quartz.paulgleason.dev/everything/Refernces/Obsidian</loc>
-    <lastmod>2024-03-05T03:47:01.764Z</lastmod>
+    <lastmod>2024-03-08T01:05:05.053Z</lastmod>
   </url><url>
     <loc>https://quartz.paulgleason.dev/everything/Refernces/Vim</loc>
-    <lastmod>2024-03-05T03:47:01.764Z</lastmod>
+    <lastmod>2024-03-08T01:05:05.040Z</lastmod>
   </url><url>
     <loc>https://quartz.paulgleason.dev/</loc>
-    <lastmod>2024-03-05T06:24:50.022Z</lastmod>
+    <lastmod>2024-03-08T01:05:05.400Z</lastmod>
   </url></urlset>
