@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Cisco IOS</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="Cisco IOS"/><meta property="og:description" content="MOCs Overview Tips and Tricks Console Into Cisco Device Config Interfaces VLANs DHCP NAT OSPF BGP IPSEC Site-to-Site VPN Access-Lists IPv6 SSH Overview Documentation Documentation EXEC Modes If terminal reads Router&amp;gt; type enable to enter Router# Under Router&amp;gt; you’re allowed to do ping, show, enable, etc.. ..."/><meta property="og:image" content="https://quartz.paulgleason.dev/static/og-image.png"/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="MOCs Overview Tips and Tricks Console Into Cisco Device Config Interfaces VLANs DHCP NAT OSPF BGP IPSEC Site-to-Site VPN Access-Lists IPv6 SSH Overview Documentation Documentation EXEC Modes If terminal reads Router&amp;gt; type enable to enter Router# Under Router&amp;gt; you’re allowed to do ping, show, enable, etc.. ..."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://fonts.googleapis.com/css2?family=JetBrains Mono&amp;family=Schibsted Grotesk:wght@400;700&amp;family=Inter:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet" type="text/css" spa-preserve/><script src="../../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="everything/Refernces/Cisco-IOS"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h1 class="page-title"><a href="../..">Paul's Docs</a></h1><div class="spacer mobile-only"></div><div class="search"><div id="search-icon"><p>Search</p><div></div><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search</title><desc id="desc">Search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></div><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="search-layout" data-preview="true"></div></div></div></div><div class="darkmode"><input class="toggle" id="darkmode-toggle" type="checkbox" tabindex="-1"/><label id="toggle-label-light" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg></label><label id="toggle-label-dark" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></label></div><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[{&quot;path&quot;:&quot;everything&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/Cyber&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/Cyber/HTB&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/Refernces&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Freshman&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals/Labs&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Junior&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Junior/SYS-300-Linux-From-Scratch&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Junior/SYS-320-Automation-and-Scripting&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Sophomore&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Assignments&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs&quot;,&quot;collapsed&quot;:true}]"><h1>Explorer</h1><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything"><button class="folder-button"><span class="folder-title">everything</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/Cyber"><button class="folder-button"><span class="folder-title">Cyber</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/Cyber"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/Cyber/HTB"><button class="folder-button"><span class="folder-title">HTB</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/Cyber/HTB"><li><a href="../../everything/Cyber/HTB/htb-challenge-ancient-encodings" data-for="everything/Cyber/HTB/htb-challenge-ancient-encodings">ancient-encodings</a></li><li><a href="../../everything/Cyber/HTB/htb-builder" data-for="everything/Cyber/HTB/htb-builder">Builder</a></li></ul></div></li><li><a href="../../everything/Cyber/011---HTB" data-for="everything/Cyber/011---HTB">011 - HTB</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/Refernces"><button class="folder-button"><span class="folder-title">Refernces</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/Refernces"><li><a href="../../everything/Refernces/Cisco-IOS" data-for="everything/Refernces/Cisco-IOS">Cisco IOS</a></li><li><a href="../../everything/Refernces/Kitty" data-for="everything/Refernces/Kitty">Kitty</a></li><li><a href="../../everything/Refernces/Neovim" data-for="everything/Refernces/Neovim">Neovim</a></li><li><a href="../../everything/Refernces/NMAP" data-for="everything/Refernces/NMAP">NMAP</a></li><li><a href="../../everything/Refernces/Obsidian" data-for="everything/Refernces/Obsidian">Obsidian</a></li><li><a href="../../everything/Refernces/Vim" data-for="everything/Refernces/Vim">Vim</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School"><button class="folder-button"><span class="folder-title">School</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain"><button class="folder-button"><span class="folder-title">Undergrad - Champlain</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes"><button class="folder-button"><span class="folder-title">Classes</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Freshman"><button class="folder-button"><span class="folder-title">Freshman</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Freshman"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals"><button class="folder-button"><span class="folder-title">NET-150 Network Funamentals</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs"><button class="folder-button"><span class="folder-title">Labs</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs"><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-1.1-Network-Connectivity-Testing" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-1.1-Network-Connectivity-Testing">Lab 1.1 Network Connectivity Testing</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-2.1-Packet-Tracer" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-2.1-Packet-Tracer">Lab 2.1 Packet Tracer</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-2.2-Observing-Lan-Activity" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-2.2-Observing-Lan-Activity">Lab 2.2 Observing Lan Activity</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-3.1-ARP-Observation" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-3.1-ARP-Observation">Lab 3.1 ARP Observation</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-3.2-Observing-ARP-in-Packet-Tracer" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-3.2-Observing-ARP-in-Packet-Tracer">Lab 3.2 Observing ARP in Packet Tracer</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-4.1-Simple-Routing" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-4.1-Simple-Routing">Lab 4.1 Simple Routing</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-5.1-IP-Subnet-Mask" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-5.1-IP-Subnet-Mask">Lab 5.1 IP Subnet Mask</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-5.2-Subnetting-Charts" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-5.2-Subnetting-Charts">Lab 5.2 Subnetting Charts</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-6.1-Simple-Subnet-Design" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-6.1-Simple-Subnet-Design">Lab 6.1 Simple Subnet Design</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-6.2-Subnetting-in-Packet-Tracer" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-6.2-Subnetting-in-Packet-Tracer">Lab 6.2 Subnetting in Packet Tracer</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-7.1-Tracing-Routes" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-7.1-Tracing-Routes">Lab 7.1 Tracing Routes</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-9.1-Packet-Tracer-Static-Routing" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-9.1-Packet-Tracer-Static-Routing">Lab 9.1 Packet Tracer Static Routing</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-9.2-Static-Routing-Part-2" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-9.2-Static-Routing-Part-2">Lab 9.2 Static Routing Part 2</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-10.1-Understanding-RIP" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-10.1-Understanding-RIP">Lab 10.1 Understanding RIP</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-10.2-More-RIP-Routing" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-10.2-More-RIP-Routing">Lab 10.2 More RIP Routing</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-11.1-VLANs-Part-1" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-11.1-VLANs-Part-1">Lab 11.1 VLANs Part 1</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-11.2-VLANs-in-Packet-Tracer" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-11.2-VLANs-in-Packet-Tracer">Lab 11.2 VLANs in Packet Tracer</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-12.1-Building-a-WLAN-in-Packet-Tracer" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-12.1-Building-a-WLAN-in-Packet-Tracer">Lab 12.1 Building a WLAN in Packet Tracer</a></li></ul></div></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/NET-150-Network-Fundamentals-Dashboard" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/NET-150-Network-Fundamentals-Dashboard">NET-150 Network Fundamentals</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals"><button class="folder-button"><span class="folder-title">SYS-140 Systems Fundamentals</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals/Labs"><button class="folder-button"><span class="folder-title">Labs</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals/Labs"><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals/Labs/Lab-0.0-Cyber.local-VPN" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals/Labs/Lab-0.0-Cyber.local-VPN">Lab 0.0 Cyber.local VPN</a></li></ul></div></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals/SYS-140-Systems-Fundamentals-Dashboard" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals/SYS-140-Systems-Fundamentals-Dashboard">SYS-140 Systems Fundamentals</a></li></ul></div></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Junior"><button class="folder-button"><span class="folder-title">Junior</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Junior"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design"><button class="folder-button"><span class="folder-title">NET-330 Network Design</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs"><button class="folder-button"><span class="folder-title">Labs</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs"><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-1.2-Packet-Tracer-Review---Class-Lab" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-1.2-Packet-Tracer-Review---Class-Lab">Lab 1.2 Packet Tracer Review - Class Lab</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-2.1-Subnet-Design" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-2.1-Subnet-Design">Lab 2.1 Subnet Design</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-3.3-DHCP-Server-in-Packet-Tracer" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-3.3-DHCP-Server-in-Packet-Tracer">Lab 3.3 DHCP Server in Packet Tracer</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-4.1-Console-Access-Mini-Lab" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-4.1-Console-Access-Mini-Lab">Lab 4.1 Console Access Mini-Lab</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-4.2-Small-Enterprise---Class-Lab" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-4.2-Small-Enterprise---Class-Lab">Lab 4.2 Small Enterprise - Class Lab</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-6.1-NAT-Configuration---Static-NAT" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-6.1-NAT-Configuration---Static-NAT">Lab 6.1 NAT Configuration - Static NAT</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-6.2-NAT-Configuration---PAT" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-6.2-NAT-Configuration---PAT">Lab 6.2 NAT Configuration - PAT</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-6.3-NAT-Lab-3---Champlain-Example-Lab" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-6.3-NAT-Lab-3---Champlain-Example-Lab">Lab 6.3 NAT Lab 3 - Champlain Example Lab</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-8.1B-Add-OSPF-Authentication" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-8.1B-Add-OSPF-Authentication">Lab 8.1B Add OSPF Authentication</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-8.1B-OSPF-PT-Activity" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-8.1B-OSPF-PT-Activity">Lab 8.1B OSPF PT Activity</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-9.1-Build-a-Network-Challenge---1" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-9.1-Build-a-Network-Challenge---1">Lab 9.1 Build a Network Challenge - 1</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-9.2-Build-a-Network-Challenge-2---BGP" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-9.2-Build-a-Network-Challenge-2---BGP">Lab 9.2 Build a Network Challenge 2 - BGP</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-10.1-IPSEC-Packet-Tracer-1" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-10.1-IPSEC-Packet-Tracer-1">Lab 10.1 IPSEC Packet Tracer 1</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-11.1-Access-Lists" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-11.1-Access-Lists">Lab 11.1 Access-Lists</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-13.1-IPv6" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-13.1-IPv6">Lab 13.1 IPv6</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes"><button class="folder-button"><span class="folder-title">Notes</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes"><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-1-Subnet-Refresher" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-1-Subnet-Refresher">Week 1 Subnet Refresher</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-2-Subnetting,-VLANS,--and--Cisco-Commands" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-2-Subnetting,-VLANS,--and--Cisco-Commands">Week 2 Subnetting, VLANS, &amp; Cisco Commands</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-3-DHCP" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-3-DHCP">Week 3 DHCP</a></li></ul></div></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/NET-330-Network-Design-Dashboard" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/NET-330-Network-Design-Dashboard">NET-330 Network Design</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Junior/SYS-300-Linux-From-Scratch"><button class="folder-button"><span class="folder-title">SYS-300 Linux From Scratch</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Junior/SYS-300-Linux-From-Scratch"><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/SYS-300-Linux-From-Scratch/SYS-300-Linux-From-Scratch-Dashboard" data-for="everything/School/Undergrad---Champlain/Classes/Junior/SYS-300-Linux-From-Scratch/SYS-300-Linux-From-Scratch-Dashboard">SYS-300 Linux From Scratch</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Junior/SYS-320-Automation-and-Scripting"><button class="folder-button"><span class="folder-title">SYS-320 Automation and Scripting</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Junior/SYS-320-Automation-and-Scripting"><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/SYS-320-Automation-and-Scripting/SYS-320-Automation-and-Scripting-Dashboard" data-for="everything/School/Undergrad---Champlain/Classes/Junior/SYS-320-Automation-and-Scripting/SYS-320-Automation-and-Scripting-Dashboard">SYS-320 Automation and Scripting</a></li></ul></div></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Sophomore"><button class="folder-button"><span class="folder-title">Sophomore</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Sophomore"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I"><button class="folder-button"><span class="folder-title">SYS-255 System Admin &amp; Network Services I</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Assignments"><button class="folder-button"><span class="folder-title">Assignments</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Assignments"><li><a href="../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Assignments/Assignment-1.0-File-Permissions--and--User-Groups" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Assignments/Assignment-1.0-File-Permissions--and--User-Groups">Assignment 1.0 File Permissions &amp; User Groups</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Assignments/Assignment-2.0-DHCP-is-Down!" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Assignments/Assignment-2.0-DHCP-is-Down!">Assignment 2.0 DHCP is Down!</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Assignments/Assignment-3.0-Securing-SSH" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Assignments/Assignment-3.0-Securing-SSH">Assignment 3.0 Securing SSH</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs"><button class="folder-button"><span class="folder-title">Labs</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs"><li><a href="../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-1.0-Firewall-and-Work-Station" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-1.0-Firewall-and-Work-Station">Lab 1.0 Firewall and Work Station</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-2.0-Active-Directory-DNS" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-2.0-Active-Directory-DNS">Lab 2.0 Active Directory DNS</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-3.0-CentOS-Intro" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-3.0-CentOS-Intro">Lab 3.0 CentOS Intro</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-4.0-DHCP-Server" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-4.0-DHCP-Server">Lab 4.0 DHCP Server</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-5.0-ADDS-Group-Policy" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-5.0-ADDS-Group-Policy">Lab 5.0 ADDS Group Policy</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-6.0-Server-Core--and--Remote-Administrator-Tools" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-6.0-Server-Core--and--Remote-Administrator-Tools">Lab 6.0 Server Core &amp; Remote Administrator Tools</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-7.0-Apache" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-7.0-Apache">Lab 7.0 Apache</a></li></ul></div></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/SYS-255-System-Admin--and--Network-Services-I-Dashboard" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/SYS-255-System-Admin--and--Network-Services-I-Dashboard">SYS-255 System Admin &amp; Network Services I</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II"><button class="folder-button"><span class="folder-title">SYS-265 System Admin &amp; Network Services II</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs"><button class="folder-button"><span class="folder-title">Labs</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs"><li><a href="../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-0.0-Routing-and-Windows" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-0.0-Routing-and-Windows">Lab 0.0 Routing and Windows</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-1.0-Network-Management" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-1.0-Network-Management">Lab 1.0 Network Management</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-2.0-Docker" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-2.0-Docker">Lab 2.0 Docker</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-3.0-Git--and--SSH-keys" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-3.0-Git--and--SSH-keys">Lab 3.0 Git &amp; SSH keys</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-4.0-Ansible" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-4.0-Ansible">Lab 4.0 Ansible</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-5.0-AD-GPO" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-5.0-AD-GPO">Lab 5.0 AD GPO</a></li></ul></div></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/SYS-265-Sysadmin--and--Net-Services-II-Dashboard" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/SYS-265-Sysadmin--and--Net-Services-II-Dashboard">SYS-265 Sysadmin &amp; Net Services II</a></li></ul></div></li></ul></div></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Class-Dashboard" data-for="everything/School/Undergrad---Champlain/Classes/Class-Dashboard">Class Dashboard</a></li></ul></div></li></ul></div></li></ul></div></li></ul></div></li><li><div class="folder-outer "><ul style="padding-left:0;" class="content" data-folderul></ul></div></li><li><a href="../../010-Cyber" data-for="010-Cyber">010 Cyber</a></li><li><a href="../../020-Undergrad---Champlain" data-for="020-Undergrad---Champlain">020 Undergrad - Champlain</a></li><li><a href="../../100-References" data-for="100-References">100 References</a></li><li><a href="../../Dashboard" data-for="Dashboard">Dashboard</a></li></ul></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../everything/">everything</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../everything/Refernces/">Refernces</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Cisco IOS</a></div></nav><h1 class="article-title">Cisco IOS</h1><p class="content-meta">Mar 30, 2024, 10 min read</p><ul class="tags"><li><a href="../../tags/ref" class="internal tag-link">ref</a></li><li><a href="../../tags/Cisco" class="internal tag-link">Cisco</a></li></ul></div></div><article class="popover-hint"><h1 id="mocs">MOCs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mocs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li><a href="#overview" class="internal alias">Overview</a></li>
+<li><a href="#tips-and-tricks" class="internal alias">Tips and Tricks</a></li>
+<li><a href="#console-into-cisco-device" class="internal alias">Console Into Cisco Device</a></li>
+<li><a href="#config" class="internal alias">Config</a></li>
+<li><a href="#interfaces" class="internal alias">Interfaces</a></li>
+<li><a href="#vlans" class="internal alias">VLANs</a></li>
+<li><a href="#dhcp" class="internal alias">DHCP</a></li>
+<li><a href="#nat" class="internal alias">NAT</a></li>
+<li><a href="#ospf" class="internal alias">OSPF</a></li>
+<li><a href="#bgp" class="internal alias">BGP</a></li>
+<li><a href="#ipsec-site-to-site-vpn" class="internal alias">IPSEC Site-to-Site VPN</a></li>
+<li><a href="#access-lists" class="internal alias">Access-Lists</a></li>
+<li><a href="#ipv6" class="internal alias">IPv6</a></li>
+<li><a href="#ssh" class="internal alias">SSH</a></li>
+</ul>
+<h2 id="overview">Overview<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#overview" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="documentation-">Documentation <a href="#commands-to-navigate-different-modes-on-a-cisco-switch-router-enable-config-t...-and-how-you-know-wh" id="commands-to-navigate-different-modes-on-a-cisco-switch-router-enable-config-t...-and-how-you-know-wh" class="internal"></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#documentation-" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="https://www.cisco.com/c/en/us/td/docs/ios/fundamentals/command/reference/cf_book/cf_c1.html" class="external">Documentation<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<h3 id="exec-modes-">EXEC Modes <a href="#commands-to-navigate-different-modes-on-a-cisco-switch-router-enable-config-t...-and-how-you-know-wh" id="commands-to-navigate-different-modes-on-a-cisco-switch-router-enable-config-t...-and-how-you-know-wh" class="internal"></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#exec-modes-" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>If terminal reads <code>Router></code> type <code>enable</code> to enter <code>Router#</code>
+<ul>
+<li>Under <code>Router></code> you’re allowed to do <code>ping, show, enable, etc...</code></li>
+</ul>
+</li>
+<li>If terminal reads <code>Router#</code> type <code>config</code> to enter <code>Router(config)#</code>
+<ul>
+<li>Under <code>Router#</code> you’re allowed to do <code>all User EXEC Commands, debug commands, reload, configure(config), etc...</code></li>
+</ul>
+</li>
+<li>If terminal reads <code>Router(config)#</code> view the Official Guide because config branches into 3 different sections.
+<ul>
+<li>Under <code>Router(config)#</code> you’re allowed to do <code>hostname, enable secret, ip route, interface (ethernet, serial, bri, etc...), router (rip, ospf, igrp, etc...), line (vty, console, etc...)</code></li>
+</ul>
+</li>
+<li>​<a href="https://www.cisco.com/E-Learning/bulk/public/tac/cim/cib/using_cisco_ios_software/02_cisco_ios_hierarchy.htm" class="external">Official Cisco Guide<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> (Below is image and table included on the website)</li>
+</ul>
+<figure><img src="https://www.cisco.com/E-Learning/bulk/public/tac/cim/cib/using_cisco_ios_software/mod_pix/iostree.gif" alt/><figcaption></figcaption></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>EXEC Mode</th><th>Decription</th></tr></thead><tbody><tr><td><strong>Router></strong></td><td>User EXEC mode</td></tr><tr><td><strong>Router#</strong></td><td>Privileged EXEC mode</td></tr><tr><td><strong>Router(config)#</strong></td><td>Configuration mode (notice the # sign indicates this is accessible only at privileged EXEC mode)</td></tr><tr><td><strong>Router(config-if)#</strong></td><td>Interface level within configuration mode</td></tr><tr><td><strong>Router(config-router)#</strong></td><td>Routing engine level within configuration mode</td></tr><tr><td><strong>Router(config-line)#</strong></td><td>Line level (vty, tty, async) within configuration mode</td></tr></tbody></table></div>
+<h2 id="tips-and-tricks">Tips and Tricks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tips-and-tricks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="make-script-from-command-list">Make Script from Command List<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#make-script-from-command-list" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>If you’re given a command list of</p>
+<pre><code>Router>enable
+Router#configure terminal
+Router(config)#hostname R0
+R0(config)#interface fastethernet 0/0
+R0(config-if)#ip address 30.0.0.1 255.0.0.0
+R0(config-if)#no shutdown
+R0(config-if)#exit
+R0(config)#interface serial 0/0/0
+R0(config-if)#ip address 20.0.0.1 255.0.0.0
+R0(config-if)#clock rate 64000
+R0(config-if)#bandwidth 64
+R0(config-if)#no shutdown
+R0(config-if)#exit
+</code></pre>
+<p>Use <a href="https://gchq.github.io/CyberChef/" class="external">cyberchef<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> with <code>Find / Replace</code> to remove the EXEC mode</p>
+<p><img src="../../Pasted-image-20240330164526.png" width="auto" height="auto" alt/></p>
+<p>What is happening here is</p>
+<pre><code>.* is a wildcard 
+| means or
+[] denotes a character class
+</code></pre>
+<p>This means remove anything that comes before a <code>#</code> or <code>></code> and replace it with nothing.</p>
+<pre><code>.*[#|>]
+</code></pre>
+<p>Now in packet tracer copy all of the output code and click paste. This will run all of the code line by line.</p>
+<p><img src="../../Pasted-image-20240330164617.png" width="auto" height="auto" alt/></p>
+<p>I had run this before so I get the overlap output
+<img src="../../Pasted-image-20240330164627.png" width="auto" height="auto" alt/></p>
+<h2 id="console-into-cisco-device">Console Into Cisco Device<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#console-into-cisco-device" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="steps-to-setup-computer">Steps to Setup Computer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#steps-to-setup-computer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>After connection to the console port open <code>Device Manager</code>
+<ol>
+<li>Take now of the COM&lt;Num> is. This will be used later in the PuTTY config</li>
+</ol>
+</li>
+<li>You want the setting to be the same as the table below</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Variable</th><th>Value</th></tr></thead><tbody><tr><td>Bits per sec</td><td>9600</td></tr><tr><td>Data bits</td><td>8</td></tr><tr><td>Parity</td><td>None</td></tr><tr><td>Stop bits</td><td>1</td></tr><tr><td>Flow Control</td><td>None</td></tr></tbody></table></div>
+<ol start="3">
+<li>
+<p>Now open PuTTY and navigator to <code>Serial</code> under <code>SSH</code>
+<img src="../../Pasted-image-20240330164730.png" width="auto" height="auto" alt/></p>
+</li>
+<li>
+<p>Now under Session Select the COM&lt;Num> from earlier
+<img src="../../Pasted-image-20240330164739.png" width="auto" height="auto" alt/></p>
+</li>
+<li>
+<p>Click <code>Open</code> and if everything was setup properly you should be in the CISCO CLI</p>
+</li>
+</ol>
+<h2 id="config">Config<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#config" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="cisco-steps-to-clear-config">CISCO Steps to clear config<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cisco-steps-to-clear-config" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>Say <code>no</code> if prompted to run setup wizard</li>
+<li>Enter privileged mode <code>enable</code></li>
+<li>Enter the command <code>write erase</code>, which erases the NVRAM file system and removes all files.</li>
+<li>At the prompt, confirm that you want to erase all files.</li>
+<li>Enter command <code>reload</code>, and enter <code>no</code> when prompted whether to save the configuration. (Otherwise, the switch will reload the current running configuration.)</li>
+<li>Confirm that you want to reload the switch, and your switch configuration is almost clean.</li>
+<li>Upon reboot, say <code>no</code> if prompted to run setup wizard</li>
+</ol>
+<pre><code>router>enable
+router#write erase
+router#reload
+</code></pre>
+<h3 id="running-config-save">Running Config Save<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#running-config-save" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Fully written out</p>
+<pre><code>switch#copy running-config startup-config
+</code></pre>
+<p>Short version</p>
+<pre><code>switch#copy run start
+</code></pre>
+<h2 id="interfaces">Interfaces<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#interfaces" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="configure-ports">Configure Ports<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#configure-ports" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>To configure one port</p>
+<pre><code>Switch(config)#interface range FastEthernet 0/{port}
+</code></pre>
+<p>Allows you to control a range of interfaces from the start to stop port</p>
+<pre><code>Switch(config)#interface range FastEthernet 0/{start port}-{stop port}
+</code></pre>
+<h3 id="port-state">Port State<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#port-state" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="vlans">VLANs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vlans" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout description" data-callout="description">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Description</p></div>
+                  
+                </div>
+<p>Virtual Local Area Network</p>
+</blockquote>
+<h3 id="description">Description<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#description" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A virtual LAN (VLAN) is a logical overlay network that groups together a subset of devices that share a physical LAN, isolating the traffic for each group. A LAN is a group of computers or other devices in the same place — e.g., the same building or campus — that share the same physical network.</p>
+<p>VLANs operate at Layer 3 <a href="https://www.techtarget.com/searchnetworking/definition/virtual-LAN" class="external">Source<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<h3 id="create-vlans">Create VLANs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#create-vlans" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>Switch(config)# vlan {number}
+Switch(config-vlan)# name {name}
+</code></pre>
+<h3 id="set-access-and-trunk-ports">Set Access and Trunk Ports<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#set-access-and-trunk-ports" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>For this to work you must select an interface using</p>
+<pre><code>Switch(config)# interface range FastEthernet 0/{port}
+</code></pre>
+<p>For an individual port type</p>
+<pre><code>Switch(config-if)# switchport 'access or trunk' vlan {port}
+</code></pre>
+<p>Configure interfaces in “ranges”</p>
+<pre><code>Switch(config)# interface range FastEthernet 0/{start port}-{stop port}
+</code></pre>
+<h3 id="assigning-vlan-ip">Assigning VLAN IP<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#assigning-vlan-ip" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>Router(config)# interface vlan &lt;vlan-id>
+Router(config-if)# ip address &lt;ip-address> &lt;subnet>
+</code></pre>
+<h3 id="vlan-state">VLAN State<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vlan-state" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>This will make sure the vlan is in the up state. For the love of all make sure that you do this to vlan 1!</p>
+<pre><code>Router(config)#interface vlan {vlan-id}
+Router(config-if)#no shutdown
+</code></pre>
+<h2 id="dhcp">DHCP<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dhcp" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout description" data-callout="description">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Description</p></div>
+                  
+                </div>
+<p>Dynamic Host Configuration Protocol</p>
+</blockquote>
+<h3 id="how-to-create-pools">How to create pools<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#how-to-create-pools" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><img src="https://user-images.githubusercontent.com/71086240/189728852-ddf5f08d-e89e-4e64-8779-9a5b6777d8b8.PNG" alt="Pool Creation"/></p>
+<ol>
+<li>First select <code>Services</code> tab</li>
+<li>Then select <code>DHCP</code> on the right side</li>
+<li>Next type in the information you want</li>
+<li>Finally Saving and Adding a. If new Pool select <code>Add</code> b. If editing Pool select <code>Save</code></li>
+</ol>
+<h3 id="working-with-serverpool">Working with serverPool<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#working-with-serverpool" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The Pool creates the DHCP limitations for specific subnets</p>
+<ul>
+<li><code>serverPool</code> is the Default Pool and cannot be removed</li>
+<li>In this lab we used <code>serverPool</code> for <code>VLAN 1 Management</code></li>
+<li>In the photo shown above once you edit <code>serverPool</code> select <code>Save</code> because it’s already been made</li>
+</ul>
+<h3 id="assigning-ip-helper-addresses">Assigning IP Helper Addresses<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#assigning-ip-helper-addresses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>IP helpers allow computers on different VLANs to be able to access the DHCP Server</p>
+<ol>
+<li>Enter the <code>CLI</code> for a MLS</li>
+<li>Enter <code>config</code> mode and type</li>
+</ol>
+<pre><code>router(config)# interface vlan {VLAN-ID}
+</code></pre>
+<ol start="3">
+<li>Then type</li>
+</ol>
+<pre><code>router(config-if)# ip helper-address {IPaddr-DHCP-Server}
+</code></pre>
+<ol start="4">
+<li>Finally type</li>
+</ol>
+<pre><code>exit
+</code></pre>
+<ol start="5">
+<li>Repeat steps 2 to 4 for the rest of the VLANs</li>
+</ol>
+<h2 id="nat">NAT<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nat" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout description" data-callout="description">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Description</p></div>
+                  
+                </div>
+<p>Network Address Translation</p>
+</blockquote>
+<h3 id="types-of-nat">Types of NAT<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#types-of-nat" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="static">Static<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#static" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<h5 id="base-setup">Base Setup:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#base-setup" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>enable
+conf t
+interface {interface} {interface_#}
+ip nat inside
+exit
+interface {interface} {{interface_#}
+ip nat outside
+exit
+ip nat inside source static {source_ip} {static_ip}
+</code></pre>
+<h5 id="example">Example:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#example" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>enable
+conf t
+interface fastEthernet 0/0
+ip nat inside
+exit
+interface serial 0/0/0
+ip nat outside
+exit
+ip nat inside source static 10.0.0.2 50.0.0.1
+</code></pre>
+<h4 id="pat">PAT<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pat" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<blockquote class="callout description" data-callout="description">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Description</p></div>
+                  
+                </div>
+<p>Port Address Translation</p>
+</blockquote>
+<h5 id="base-setup-1">Base Setup:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#base-setup-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>enable
+conf t
+interface {interface} {interface_#}
+ip nat inside
+exit
+interface {interface} {{interface_#}
+ip nat outside
+exit
+ip nat pool {pool_name} {start_ip} {stop_ip} netmask {subnet_mask}
+access-list 1 permit {internal_network_address} {wildcard_subnet}
+ip nat inside source list 1 pool {pool_name} overload
+</code></pre>
+<h5 id="example-1">Example:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#example-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>enable
+conf t
+interface fastEthernet 0/0
+ip nat inside
+exit
+interface serial 0/0/0
+ip nat outside
+exit
+ip nat pool test 30.0.0.120 30.0.0.120 netmask 255.0.0.0
+access-list 1 permit 192.168.0.0 0.0.0.255
+ip nat inside source list 1 pool test overload
+</code></pre>
+<h4 id="notes">Notes:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#notes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>To show active nat stats</p>
+<pre><code>enable
+show ip nat statistics
+</code></pre>
+<h2 id="ospf">OSPF<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ospf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout description" data-callout="description">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Description</p></div>
+                  
+                </div>
+<p>Open Shortest Path First</p>
+</blockquote>
+<h5 id="base-setup-2">Base Setup<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#base-setup-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>enable
+config t
+interface {interface} {interface_#}
+no shutdown
+ip address {ip_address} {subnet}
+router ospf 1
+network {network_address} {wildcard} area {area_#}
+</code></pre>
+<h5 id="example-2">Example:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#example-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>enable
+config t
+interface GigabitEthernet 0/0
+no shutdown
+ip address 10.8.1.1 255.255.255.248
+router ospf 1
+network 10.8.1.0 0.0.0.7 area 0
+</code></pre>
+<h3 id="add-authentication">Add Authentication<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#add-authentication" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="md5">MD5:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#md5" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><a href="https://networklessons.com/ospf/how-to-configure-ospf-md5-authentication" class="external">Documentation<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<h5 id="base-setup-3">Base Setup:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#base-setup-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>enable 
+config t 
+interface {interface} {interface #} 
+ip ospf message-digest-key {instance #} md5 {password}
+ip ospf authentication message-digest
+</code></pre>
+<h5 id="example-3">Example:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#example-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>enable 
+config t 
+interface GigabitEthernet 0/0 
+ip ospf message-digest-key 1 md5 testing 
+ip ospf authentication message-digest
+</code></pre>
+<h5 id="verification">Verification:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#verification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>enable
+show ip ospf interface fastEthernet 0/0
+</code></pre>
+<h5 id="output">Output:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#output" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<p><img src="../../Pasted-image-20240330165640.png" width="auto" height="auto" alt/></p>
+<h4 id="sha-512">SHA-512:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sha-512" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><a href="https://networklessons.com/cisco/ccie-routing-switching-written/ospf-hmac-sha-extended-authentication" class="external">Documentation<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<h5 id="base-setup-4">Base Setup:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#base-setup-4" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>enable
+config t
+key chain {key_name}
+key {#}
+cryptographic-algorithm {algorithm}
+key-string {password}
+exit
+interface {interface} {interface_#}
+ip ospf authentication key-chain {key_name}
+</code></pre>
+<h5 id="example-4">Example:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#example-4" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>enable
+config t
+key chain R2
+key 1
+cryptographic-algorithm hmac-sha-512
+key-string testing
+exit
+interface GigabitEthernet 0/1
+ip ospf authentication key-chain R2
+</code></pre>
+<h5 id="verification-1">Verification:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#verification-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>enable
+show ip ospf interface GigabitEthernet 0/1 | begin auth
+</code></pre>
+<h5 id="output-1">Output:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#output-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<p><img src="../../Pasted-image-20240330165733.png" width="auto" height="auto" alt/></p>
+<h2 id="bgp">BGP<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bgp" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout description" data-callout="description">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Description</p></div>
+                  
+                </div>
+<p>Border Gateway Protocol</p>
+</blockquote>
+<h5 id="base-setup-5">Base Setup:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#base-setup-5" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>enable
+config t
+interface {interface} {interface_#}
+no shutdown
+ip address {ip_address} {subnet_mask}
+router bgp {as_#}
+neighbor {neighbor_ip} remote-as {neighbor_as}
+network {network} mask {subnet_mask}
+</code></pre>
+<h5 id="example-5">Example<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#example-5" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>enable
+config t
+interface GigabitEthernet 0/0
+no shutdown
+ip address 10.8.1.1 255.255.255.248
+router bgp 1010
+neighbor 192.168.2.2 remote-as 3033
+network 192.168.1.0 mask 255.255.255.252
+</code></pre>
+<h5 id="notes-1">Notes:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#notes-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<p>For the line only 1 of the routers has to advertise the network. AS WELL INTERNET NETWORKS NEED TO BE ADVERTISED!</p>
+<pre><code>network 192.168.1.0 mask 255.255.255.252
+</code></pre>
+<h2 id="ipsec-site-to-site-vpn">IPSEC Site-to-Site VPN<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ipsec-site-to-site-vpn" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<blockquote class="callout description" data-callout="description">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Description</p></div>
+                  
+                </div>
+<p>Internet Protocol Security</p>
+</blockquote>
+<h5 id="base-setup-6">Base Setup:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#base-setup-6" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<p>The {access_list_#} must be greater than 100</p>
+<pre><code>! Identify traffic to send through tunnel with access-list
+access-list {access_list_#} permit ip {src_net} {src_mask_wildcard} {dst_net} {dst_mask_wildcard}
+! Configure IKE Phase 1 ISAKMP Policy on Router
+crypto isakmp policy 10
+encryption aes 256
+authentication pre-share
+group 5
+exit
+crypto isakmp key {KEY} address {public_ip_of_other_router}
+! Configure the IKE Phase 2 IPsec policy
+!- Create the transform-set &quot;VPN-SET&quot;
+crypto ipsec transform-set VPN-SET esp-aes esp-sha-hmac
+!- Create the crypto map &quot;VPN-MAP&quot;
+crypto map VPN-MAP 10 ipsec-isakmp
+description VPN connection to {peer_router_name}
+set peer {public_ip_of_other_router}
+set transform-set VPN-SET
+match address {access_list_#}
+exit
+! Configure the &quot;crypto map&quot; on the outgoing interface.
+interface {interface} {interface_#}
+crypto map VPN-MAP
+</code></pre>
+<h4 id="example-6">Example:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#example-6" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<pre><code>! Identify traffic to send through tunnel with access-list
+access-list 101 permit ip 172.16.84.0 0.0.0.255 192.168.25.0 0.0.0.255 
+! Configure IKE Phase 1 ISAKMP Policy on Champlain Router
+crypto isakmp policy 10
+encryption aes 256
+authentication pre-share
+group 5
+exit
+crypto isakmp key NET330 address 140.230.18.2
+! Configure the IKE Phase 2 IPsec policy
+!- Create the transform-set &quot;VPN-SET&quot;
+crypto ipsec transform-set VPN-SET esp-aes esp-sha-hmac
+!- Create the crypto map &quot;VPN-MAP&quot;
+crypto map VPN-MAP 10 ipsec-isakmp
+description VPN connection to Middlebury
+set peer 140.230.18.2
+set transform-set VPN-SET
+match address 101
+exit
+! Configure the &quot;crypto map&quot; on the outgoing interface.
+interface FastEthernet 0/0
+crypto map VPN-MAP
+</code></pre>
+<h5 id="notes-2">Notes:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#notes-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<p>To see if the VPN is working:</p>
+<pre><code>enable
+show crypto ipsec sa
+</code></pre>
+<h1 id="access-lists">Access-Lists<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#access-lists" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><a href="https://www.cisco.com/c/en/us/support/docs/security/ios-firewall/23602-confaccesslists.html" class="external">Documentation<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<h5 id="base-setup-7">Base Setup:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#base-setup-7" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<h6 id="standard">Standard<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#standard" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<pre><code>enable
+config t
+ip access-list standard {list name}
+! To deny network and allow everything else
+deny {network address} {wildcard subnet}
+permit any
+! To permit network and deny everything else
+permit {network address} {wildcard subnet}
+! This works becuase of the hidden deny any any
+exit
+! Below is to apply list to interface
+interface {interface} {interface #}
+ip access-group {list name} {in or out}
+</code></pre>
+<h6 id="extended">Extended<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#extended" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<pre><code>enable
+config t
+ip access-list extended {list name}
+! To deny ip from the network to specified host and allow ip for everything else
+deny ip {network address} {wildcard subnet} host {host ip}
+permit ip any any
+! To permit only www (website) traffic to specifed machine and deny everything else
+permit tcp any host {host ip} eq www
+! This works becuase of the hidden deny any any
+exit
+! Below is to apply list to interface
+interface {interface} {interface #}
+ip access-group {list name} {in or out}
+</code></pre>
+<h5 id="example-7">Example:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#example-7" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<h6 id="standard-1">Standard<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#standard-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<pre><code>enable
+config t
+ip access-list standard STND-1
+! To deny network and allow everything else
+deny 192.168.10.0 0.0.255.255
+permit any
+! To permit network and deny everything else
+permit 192.168.1.0 0.0.255.255
+! This works becuase of the hidden deny any any
+exit
+! Below is to apply list to interface
+interface serial 0/0/0
+ip access-group STND-1 in
+</code></pre>
+<h6 id="extended-1">Extended<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#extended-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+<pre><code>enable
+config t
+ip access-list extended EXTEND-1
+! To deny ip from the network to specified host and allow ip for everything else
+deny ip 200.200.200.0 0.0.0.3 host 192.168.20.210
+permit ip any any
+! To permit only www (website) traffic to specifed machine and deny everything else
+permit tcp any host 192.168.20.201 eq www
+! This works becuase of the hidden deny any any
+exit
+! Below is to apply list to interface
+interface FastEthernet 0/0
+ip access-group EXTEND-1 out
+</code></pre>
+<h2 id="ipv6">IPv6<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ipv6" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h5 id="base-setup-8">Base Setup:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#base-setup-8" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>enable
+config t
+ipv6 general-prefix {prefix name} {prefix}
+interface {interface} {interface #}
+no shutdown
+ipv6 address {ipv6 address}
+ipv6 unicast-routing
+interface {interface} {interface #}
+ipv6 rip process1 enable
+interface {interface} {interface #}
+ipv6 address autoconfig
+no shutdown
+ipv6 rip process1 enable
+</code></pre>
+<h5 id="examples">Examples:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#examples" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>enable
+config t
+ipv6 general-prefix champ-pre 2620:E4:C000::/64
+interface FastEthernet 0/1
+no shutdown
+ipv6 address 2620:E4:C000::1/64
+ipv6 unicast-routing
+interface FastEthernet 0/1
+ipv6 rip process1 enable
+interface FastEthernet 0/0
+ipv6 address autoconfig
+no shutdown
+ipv6 rip process1 enable
+</code></pre>
+<h5 id="notes-3">Notes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#notes-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>! For eui-64
+enable
+config t
+ipv6 general-prefix {prefix name} {prefix}
+interface {interface} {interface #}
+no shutdown
+ipv6 address {ipv6 address} eui-64
+ipv6 unicast-routing
+interface {interface} {interface #}
+ipv6 rip process1 enable
+interface {interface} {interface #}
+ipv6 address autoconfig
+no shutdown
+ipv6 rip process1 enable
+</code></pre>
+<h2 id="ssh">SSH<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ssh" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="https://www.cisco.com/c/en/us/support/docs/security-vpn/secure-shell-ssh/4145-ssh.html" class="external">Documentation<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<h5 id="enable-ssh">Enable SSH:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#enable-ssh" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<pre><code>enable
+config t
+hostname {hostname}
+aaa new-model
+username {username} password 0 {password}
+ip domain-name {domain}
+crypto key generate rsa
+ip ssh time-out 60
+ip ssh authentication-retries 2
+line vty 0 4
+transport input ssh
+</code></pre></article></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div id="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false}"></div><svg version="1.1" id="global-graph-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+	s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+	c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+	C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+	c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+	v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+	s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+	C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+	S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+	s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+	s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></div><div id="global-graph-outer"><div id="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" id="toc" class><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="toc-content"><ul class="overflow"><li class="depth-0"><a href="#mocs" data-for="mocs">MOCs</a></li><li class="depth-1"><a href="#overview" data-for="overview">Overview</a></li><li class="depth-2"><a href="#documentation-a-hrefcommands-to-navigate-different-modes-on-a-cisco-switch-router-enable-config-t-and-how-you-know-wh-idcommands-to-navigate-different-modes-on-a-cisco-switch-router-enable-config-t-and-how-you-know-wha" data-for="documentation-a-hrefcommands-to-navigate-different-modes-on-a-cisco-switch-router-enable-config-t-and-how-you-know-wh-idcommands-to-navigate-different-modes-on-a-cisco-switch-router-enable-config-t-and-how-you-know-wha">Documentation &lt;a href=&quot;#commands-to-navigate-different-modes-on-a-cisco-switch-router-enable-config-t...-and-how-you-know-wh&quot; id=&quot;commands-to-navigate-different-modes-on-a-cisco-switch-router-enable-config-t...-and-how-you-know-wh&quot;>&lt;/a></a></li><li class="depth-2"><a href="#exec-modes-a-hrefcommands-to-navigate-different-modes-on-a-cisco-switch-router-enable-config-t-and-how-you-know-wh-idcommands-to-navigate-different-modes-on-a-cisco-switch-router-enable-config-t-and-how-you-know-wha" data-for="exec-modes-a-hrefcommands-to-navigate-different-modes-on-a-cisco-switch-router-enable-config-t-and-how-you-know-wh-idcommands-to-navigate-different-modes-on-a-cisco-switch-router-enable-config-t-and-how-you-know-wha">EXEC Modes &lt;a href=&quot;#commands-to-navigate-different-modes-on-a-cisco-switch-router-enable-config-t...-and-how-you-know-wh&quot; id=&quot;commands-to-navigate-different-modes-on-a-cisco-switch-router-enable-config-t...-and-how-you-know-wh&quot;>&lt;/a></a></li><li class="depth-1"><a href="#tips-and-tricks" data-for="tips-and-tricks">Tips and Tricks</a></li><li class="depth-2"><a href="#make-script-from-command-list" data-for="make-script-from-command-list">Make Script from Command List</a></li><li class="depth-1"><a href="#console-into-cisco-device" data-for="console-into-cisco-device">Console Into Cisco Device</a></li><li class="depth-2"><a href="#steps-to-setup-computer" data-for="steps-to-setup-computer">Steps to Setup Computer</a></li><li class="depth-1"><a href="#config" data-for="config">Config</a></li><li class="depth-2"><a href="#cisco-steps-to-clear-config" data-for="cisco-steps-to-clear-config">CISCO Steps to clear config</a></li><li class="depth-2"><a href="#running-config-save" data-for="running-config-save">Running Config Save</a></li><li class="depth-1"><a href="#interfaces" data-for="interfaces">Interfaces</a></li><li class="depth-2"><a href="#configure-ports" data-for="configure-ports">Configure Ports</a></li><li class="depth-2"><a href="#port-state" data-for="port-state">Port State</a></li><li class="depth-1"><a href="#vlans" data-for="vlans">VLANs</a></li><li class="depth-2"><a href="#description" data-for="description">Description</a></li><li class="depth-2"><a href="#create-vlans" data-for="create-vlans">Create VLANs</a></li><li class="depth-2"><a href="#set-access-and-trunk-ports" data-for="set-access-and-trunk-ports">Set Access and Trunk Ports</a></li><li class="depth-2"><a href="#assigning-vlan-ip" data-for="assigning-vlan-ip">Assigning VLAN IP</a></li><li class="depth-2"><a href="#vlan-state" data-for="vlan-state">VLAN State</a></li><li class="depth-1"><a href="#dhcp" data-for="dhcp">DHCP</a></li><li class="depth-2"><a href="#how-to-create-pools" data-for="how-to-create-pools">How to create pools</a></li><li class="depth-2"><a href="#working-with-serverpool" data-for="working-with-serverpool">Working with serverPool</a></li><li class="depth-2"><a href="#assigning-ip-helper-addresses" data-for="assigning-ip-helper-addresses">Assigning IP Helper Addresses</a></li><li class="depth-1"><a href="#nat" data-for="nat">NAT</a></li><li class="depth-2"><a href="#types-of-nat" data-for="types-of-nat">Types of NAT</a></li><li class="depth-1"><a href="#ospf" data-for="ospf">OSPF</a></li><li class="depth-2"><a href="#add-authentication" data-for="add-authentication">Add Authentication</a></li><li class="depth-1"><a href="#bgp" data-for="bgp">BGP</a></li><li class="depth-1"><a href="#ipsec-site-to-site-vpn" data-for="ipsec-site-to-site-vpn">IPSEC Site-to-Site VPN</a></li><li class="depth-0"><a href="#access-lists" data-for="access-lists">Access-Lists</a></li><li class="depth-1"><a href="#ipv6" data-for="ipv6">IPv6</a></li><li class="depth-1"><a href="#ssh" data-for="ssh">SSH</a></li></ul></div></div><div class="backlinks"><h3>Backlinks</h3><ul class="overflow"><li><a href="../../100-References" class="internal">100 References</a></li><li><a href="../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/NET-330-Network-Design-Dashboard" class="internal">NET-330 Network Design</a></li></ul></div></div></div><footer class><hr/><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.2.3</a> © 2024</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></body><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">function c(){let t=this.parentElement;t.classList.toggle("is-collapsed");let l=t.classList.contains("is-collapsed")?this.scrollHeight:t.scrollHeight;t.style.maxHeight=l+"px";let o=t,e=t.parentElement;for(;e;){if(!e.classList.contains("callout"))return;let n=e.classList.contains("is-collapsed")?e.scrollHeight:e.scrollHeight+o.scrollHeight;e.style.maxHeight=n+"px",o=e,e=e.parentElement}}function i(){let t=document.getElementsByClassName("callout is-collapsible");for(let s of t){let l=s.firstElementChild;if(l){l.addEventListener("click",c),window.addCleanup(()=>l.removeEventListener("click",c));let e=s.classList.contains("is-collapsed")?l.scrollHeight:s.scrollHeight;s.style.maxHeight=e+"px"}}}document.addEventListener("nav",i);window.addEventListener("resize",i);
+</script><script type="module">
+          let mermaidImport = undefined
+          document.addEventListener('nav', async () => {
+            if (document.querySelector("code.mermaid")) {
+              mermaidImport ||= await import('https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs')
+              const mermaid = mermaidImport.default
+              const darkMode = document.documentElement.getAttribute('saved-theme') === 'dark'
+              mermaid.initialize({
+                startOnLoad: false,
+                securityLevel: 'loose',
+                theme: darkMode ? 'dark' : 'default'
+              })
+
+              await mermaid.run({
+                querySelector: '.mermaid'
+              })
+            }
+          });
+          </script><script src="../../postscript.js" type="module"></script></html>
