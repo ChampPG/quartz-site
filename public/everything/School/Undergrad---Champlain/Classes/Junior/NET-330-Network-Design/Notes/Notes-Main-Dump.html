@@ -2,13 +2,13 @@
 <html lang="en"><head><title>Notes-Main-Dump</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="Notes-Main-Dump"/><meta property="og:description" content="All these notes will be split out into weeks NET 330 Resources: Basic Subnet Chart: www.ad-net.com.tw/subnet-chart-cidr-values/ VLSM Calculator: vlsmcalc.com/ OSPF: networklessons.com/ospf/basic-ospf-configuration study-ccna.com/ospf-configuration/ BGP: as2914.net/#/galaxy/internet?cx=-2408&amp;amp;cy=-1426&amp;amp;cz=234&amp;amp;lx=-0.0189&amp;amp;ly=0.2015&amp;amp;lz=-0.0262&amp;amp;lw=0.9790&amp;amp;ml=150&amp;amp;s=1.75&amp;amp;l=1&amp;amp;v=2020-01-28 Class: Refresher Week 1: 8/29/22 Dartmouth had hundreds of subnets just in the datacenter 2^32 IPv4 addresses | 32 bits Letter Packet Look up recipient address Phone Book? Other Directory? Get zip code and street address Put in addressed envelope Write recipient and return address on envelope Put letter in mailbox Mail carrier picks letter up Take letter to local post office Post Office sorts and sends to next PO facility Uses zip code How does PO know where to send next? Postal Service has “routing lists” Ends up at local PO recipient Mail Carrier delivers to recipient Uses street address Look up recipient address Domain Name System (DNS) Convert Hostname to IP address Add “Headers” to data (encapsulate) Send packet to network interface controller (NIC) ..."/><meta property="og:image" content="https://quartz.paulgleason.dev/static/og-image.png"/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="../../../../../../../static/icon.png"/><meta name="description" content="All these notes will be split out into weeks NET 330 Resources: Basic Subnet Chart: www.ad-net.com.tw/subnet-chart-cidr-values/ VLSM Calculator: vlsmcalc.com/ OSPF: networklessons.com/ospf/basic-ospf-configuration study-ccna.com/ospf-configuration/ BGP: as2914.net/#/galaxy/internet?cx=-2408&amp;amp;cy=-1426&amp;amp;cz=234&amp;amp;lx=-0.0189&amp;amp;ly=0.2015&amp;amp;lz=-0.0262&amp;amp;lw=0.9790&amp;amp;ml=150&amp;amp;s=1.75&amp;amp;l=1&amp;amp;v=2020-01-28 Class: Refresher Week 1: 8/29/22 Dartmouth had hundreds of subnets just in the datacenter 2^32 IPv4 addresses | 32 bits Letter Packet Look up recipient address Phone Book? Other Directory? Get zip code and street address Put in addressed envelope Write recipient and return address on envelope Put letter in mailbox Mail carrier picks letter up Take letter to local post office Post Office sorts and sends to next PO facility Uses zip code How does PO know where to send next? Postal Service has “routing lists” Ends up at local PO recipient Mail Carrier delivers to recipient Uses street address Look up recipient address Domain Name System (DNS) Convert Hostname to IP address Add “Headers” to data (encapsulate) Send packet to network interface controller (NIC) ..."/><meta name="generator" content="Quartz"/><link href="../../../../../../../index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://fonts.googleapis.com/css2?family=JetBrains Mono&amp;family=Schibsted Grotesk:wght@400;700&amp;family=Inter:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet" type="text/css" spa-preserve/><script src="../../../../../../../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../../../../../../../static/contentIndex.json").then(data => data.json())</script></head><body data-slug="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Notes-Main-Dump"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h1 class="page-title"><a href="../../../../../../..">Paul's Docs</a></h1><div class="spacer mobile-only"></div><div class="search"><div id="search-icon"><p>Search</p><div></div><svg tabindex="0" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search</title><desc id="desc">Search</desc><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></div><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="search-layout" data-preview="true"></div></div></div></div><div class="darkmode"><input class="toggle" id="darkmode-toggle" type="checkbox" tabindex="-1"/><label id="toggle-label-light" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg></label><label id="toggle-label-dark" for="darkmode-toggle" tabindex="-1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></label></div><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[{&quot;path&quot;:&quot;everything&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/Cyber&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/Cyber/HTB&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/Refernces&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Freshman&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals/Labs&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Junior&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Junior/SYS-300-Linux-From-Scratch&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Junior/SYS-320-Automation-and-Scripting&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Sophomore&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Assignments&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II&quot;,&quot;collapsed&quot;:true},{&quot;path&quot;:&quot;everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs&quot;,&quot;collapsed&quot;:true}]"><h1>Explorer</h1><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything"><button class="folder-button"><span class="folder-title">everything</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/Cyber"><button class="folder-button"><span class="folder-title">Cyber</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/Cyber"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/Cyber/HTB"><button class="folder-button"><span class="folder-title">HTB</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/Cyber/HTB"><li><a href="../../../../../../../everything/Cyber/HTB/htb-challenge-ancient-encodings" data-for="everything/Cyber/HTB/htb-challenge-ancient-encodings">Ancient Encodings</a></li><li><a href="../../../../../../../everything/Cyber/HTB/htb-builder" data-for="everything/Cyber/HTB/htb-builder">Builder</a></li></ul></div></li><li><a href="../../../../../../../everything/Cyber/011---HTB" data-for="everything/Cyber/011---HTB">011 - HTB</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/Refernces"><button class="folder-button"><span class="folder-title">Refernces</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/Refernces"><li><a href="../../../../../../../everything/Refernces/Cisco-IOS" data-for="everything/Refernces/Cisco-IOS">Cisco IOS</a></li><li><a href="../../../../../../../everything/Refernces/Kitty" data-for="everything/Refernces/Kitty">Kitty</a></li><li><a href="../../../../../../../everything/Refernces/Neovim" data-for="everything/Refernces/Neovim">Neovim</a></li><li><a href="../../../../../../../everything/Refernces/NMAP" data-for="everything/Refernces/NMAP">NMAP</a></li><li><a href="../../../../../../../everything/Refernces/Obsidian" data-for="everything/Refernces/Obsidian">Obsidian</a></li><li><a href="../../../../../../../everything/Refernces/Vim" data-for="everything/Refernces/Vim">Vim</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School"><button class="folder-button"><span class="folder-title">School</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain"><button class="folder-button"><span class="folder-title">Undergrad - Champlain</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes"><button class="folder-button"><span class="folder-title">Classes</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Freshman"><button class="folder-button"><span class="folder-title">Freshman</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Freshman"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals"><button class="folder-button"><span class="folder-title">NET-150 Network Funamentals</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs"><button class="folder-button"><span class="folder-title">Labs</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs"><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-1.1-Network-Connectivity-Testing" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-1.1-Network-Connectivity-Testing">Lab 1.1 Network Connectivity Testing</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-2.1-Packet-Tracer" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-2.1-Packet-Tracer">Lab 2.1 Packet Tracer</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-2.2-Observing-Lan-Activity" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-2.2-Observing-Lan-Activity">Lab 2.2 Observing Lan Activity</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-3.1-ARP-Observation" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-3.1-ARP-Observation">Lab 3.1 ARP Observation</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-3.2-Observing-ARP-in-Packet-Tracer" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-3.2-Observing-ARP-in-Packet-Tracer">Lab 3.2 Observing ARP in Packet Tracer</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-4.1-Simple-Routing" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-4.1-Simple-Routing">Lab 4.1 Simple Routing</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-5.1-IP-Subnet-Mask" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-5.1-IP-Subnet-Mask">Lab 5.1 IP Subnet Mask</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-5.2-Subnetting-Charts" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-5.2-Subnetting-Charts">Lab 5.2 Subnetting Charts</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-6.1-Simple-Subnet-Design" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-6.1-Simple-Subnet-Design">Lab 6.1 Simple Subnet Design</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-6.2-Subnetting-in-Packet-Tracer" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-6.2-Subnetting-in-Packet-Tracer">Lab 6.2 Subnetting in Packet Tracer</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-7.1-Tracing-Routes" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-7.1-Tracing-Routes">Lab 7.1 Tracing Routes</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-9.1-Packet-Tracer-Static-Routing" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-9.1-Packet-Tracer-Static-Routing">Lab 9.1 Packet Tracer Static Routing</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-9.2-Static-Routing-Part-2" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-9.2-Static-Routing-Part-2">Lab 9.2 Static Routing Part 2</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-10.1-Understanding-RIP" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-10.1-Understanding-RIP">Lab 10.1 Understanding RIP</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-10.2-More-RIP-Routing" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-10.2-More-RIP-Routing">Lab 10.2 More RIP Routing</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-11.1-VLANs-Part-1" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-11.1-VLANs-Part-1">Lab 11.1 VLANs Part 1</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-11.2-VLANs-in-Packet-Tracer" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-11.2-VLANs-in-Packet-Tracer">Lab 11.2 VLANs in Packet Tracer</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-12.1-Building-a-WLAN-in-Packet-Tracer" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-12.1-Building-a-WLAN-in-Packet-Tracer">Lab 12.1 Building a WLAN in Packet Tracer</a></li></ul></div></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/NET-150-Network-Fundamentals-Dashboard" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/NET-150-Network-Fundamentals-Dashboard">NET-150 Network Fundamentals</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals"><button class="folder-button"><span class="folder-title">SYS-140 Systems Fundamentals</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals/Labs"><button class="folder-button"><span class="folder-title">Labs</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals/Labs"><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals/Labs/Lab-0.0-Cyber.local-VPN" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals/Labs/Lab-0.0-Cyber.local-VPN">Lab 0.0 Cyber.local VPN</a></li></ul></div></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals/SYS-140-Systems-Fundamentals-Dashboard" data-for="everything/School/Undergrad---Champlain/Classes/Freshman/SYS-140-Systems-Fundamentals/SYS-140-Systems-Fundamentals-Dashboard">SYS-140 Systems Fundamentals</a></li></ul></div></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Junior"><button class="folder-button"><span class="folder-title">Junior</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Junior"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design"><button class="folder-button"><span class="folder-title">NET-330 Network Design</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs"><button class="folder-button"><span class="folder-title">Labs</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs"><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-1.2-Packet-Tracer-Review---Class-Lab" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-1.2-Packet-Tracer-Review---Class-Lab">Lab 1.2 Packet Tracer Review - Class Lab</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-2.1-Subnet-Design" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-2.1-Subnet-Design">Lab 2.1 Subnet Design</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-3.3-DHCP-Server-in-Packet-Tracer" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-3.3-DHCP-Server-in-Packet-Tracer">Lab 3.3 DHCP Server in Packet Tracer</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-4.1-Console-Access-Mini-Lab" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-4.1-Console-Access-Mini-Lab">Lab 4.1 Console Access Mini-Lab</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-4.2-Small-Enterprise---Class-Lab" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-4.2-Small-Enterprise---Class-Lab">Lab 4.2 Small Enterprise - Class Lab</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-6.1-NAT-Configuration---Static-NAT" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-6.1-NAT-Configuration---Static-NAT">Lab 6.1 NAT Configuration - Static NAT</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-6.2-NAT-Configuration---PAT" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-6.2-NAT-Configuration---PAT">Lab 6.2 NAT Configuration - PAT</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-6.3-NAT-Lab-3---Champlain-Example-Lab" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-6.3-NAT-Lab-3---Champlain-Example-Lab">Lab 6.3 NAT Lab 3 - Champlain Example Lab</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-8.1B-Add-OSPF-Authentication" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-8.1B-Add-OSPF-Authentication">Lab 8.1B Add OSPF Authentication</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-8.1B-OSPF-PT-Activity" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-8.1B-OSPF-PT-Activity">Lab 8.1B OSPF PT Activity</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-9.1-Build-a-Network-Challenge---1" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-9.1-Build-a-Network-Challenge---1">Lab 9.1 Build a Network Challenge - 1</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-9.2-Build-a-Network-Challenge-2---BGP" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-9.2-Build-a-Network-Challenge-2---BGP">Lab 9.2 Build a Network Challenge 2 - BGP</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-10.1-IPSEC-Packet-Tracer-1" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-10.1-IPSEC-Packet-Tracer-1">Lab 10.1 IPSEC Packet Tracer 1</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-11.1-Access-Lists" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-11.1-Access-Lists">Lab 11.1 Access-Lists</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-13.1-IPv6" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-13.1-IPv6">Lab 13.1 IPv6</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes"><button class="folder-button"><span class="folder-title">Notes</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes"><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Notes-Main-Dump" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Notes-Main-Dump">Notes-Main-Dump</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-1-Subnet-Refresher" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-1-Subnet-Refresher">Week 1 Subnet Refresher</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-2-Subnetting,-VLANS,--and--Cisco-Commands" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-2-Subnetting,-VLANS,--and--Cisco-Commands">Week 2 Subnetting, VLANS, &amp; Cisco Commands</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-3-DHCP" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-3-DHCP">Week 3 DHCP</a></li></ul></div></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/NET-330-Network-Design-Dashboard" data-for="everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/NET-330-Network-Design-Dashboard">NET-330 Network Design</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Junior/SYS-300-Linux-From-Scratch"><button class="folder-button"><span class="folder-title">SYS-300 Linux From Scratch</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Junior/SYS-300-Linux-From-Scratch"><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/SYS-300-Linux-From-Scratch/SYS-300-Linux-From-Scratch-Dashboard" data-for="everything/School/Undergrad---Champlain/Classes/Junior/SYS-300-Linux-From-Scratch/SYS-300-Linux-From-Scratch-Dashboard">SYS-300 Linux From Scratch</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Junior/SYS-320-Automation-and-Scripting"><button class="folder-button"><span class="folder-title">SYS-320 Automation and Scripting</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Junior/SYS-320-Automation-and-Scripting"><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/SYS-320-Automation-and-Scripting/SYS-320-Automation-and-Scripting-Dashboard" data-for="everything/School/Undergrad---Champlain/Classes/Junior/SYS-320-Automation-and-Scripting/SYS-320-Automation-and-Scripting-Dashboard">SYS-320 Automation and Scripting</a></li></ul></div></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Sophomore"><button class="folder-button"><span class="folder-title">Sophomore</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Sophomore"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I"><button class="folder-button"><span class="folder-title">SYS-255 System Admin &amp; Network Services I</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Assignments"><button class="folder-button"><span class="folder-title">Assignments</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Assignments"><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Assignments/Assignment-1.0-File-Permissions--and--User-Groups" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Assignments/Assignment-1.0-File-Permissions--and--User-Groups">Assignment 1.0 File Permissions &amp; User Groups</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Assignments/Assignment-2.0-DHCP-is-Down!" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Assignments/Assignment-2.0-DHCP-is-Down!">Assignment 2.0 DHCP is Down!</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Assignments/Assignment-3.0-Securing-SSH" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Assignments/Assignment-3.0-Securing-SSH">Assignment 3.0 Securing SSH</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs"><button class="folder-button"><span class="folder-title">Labs</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs"><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-1.0-Firewall-and-Work-Station" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-1.0-Firewall-and-Work-Station">Lab 1.0 Firewall and Work Station</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-2.0-Active-Directory-DNS" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-2.0-Active-Directory-DNS">Lab 2.0 Active Directory DNS</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-3.0-CentOS-Intro" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-3.0-CentOS-Intro">Lab 3.0 CentOS Intro</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-4.0-DHCP-Server" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-4.0-DHCP-Server">Lab 4.0 DHCP Server</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-5.0-ADDS-Group-Policy" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-5.0-ADDS-Group-Policy">Lab 5.0 ADDS Group Policy</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-6.0-Server-Core--and--Remote-Administrator-Tools" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-6.0-Server-Core--and--Remote-Administrator-Tools">Lab 6.0 Server Core &amp; Remote Administrator Tools</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-7.0-Apache" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-7.0-Apache">Lab 7.0 Apache</a></li></ul></div></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/SYS-255-System-Admin--and--Network-Services-I-Dashboard" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/SYS-255-System-Admin--and--Network-Services-I-Dashboard">SYS-255 System Admin &amp; Network Services I</a></li></ul></div></li><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II"><button class="folder-button"><span class="folder-title">SYS-265 System Admin &amp; Network Services II</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div data-folderpath="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs"><button class="folder-button"><span class="folder-title">Labs</span></button></div></div><div class="folder-outer "><ul style="padding-left:1.4rem;" class="content" data-folderul="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs"><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-0.0-Routing-and-Windows" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-0.0-Routing-and-Windows">Lab 0.0 Routing and Windows</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-1.0-Network-Management" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-1.0-Network-Management">Lab 1.0 Network Management</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-2.0-Docker" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-2.0-Docker">Lab 2.0 Docker</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-3.0-Git--and--SSH-keys" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-3.0-Git--and--SSH-keys">Lab 3.0 Git &amp; SSH keys</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-4.0-Ansible" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-4.0-Ansible">Lab 4.0 Ansible</a></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-5.0-AD-GPO" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/Labs/Lab-5.0-AD-GPO">Lab 5.0 AD GPO</a></li></ul></div></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/SYS-265-Sysadmin--and--Net-Services-II-Dashboard" data-for="everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-265-System-Admin--and--Network-Services-II/SYS-265-Sysadmin--and--Net-Services-II-Dashboard">SYS-265 Sysadmin &amp; Net Services II</a></li></ul></div></li></ul></div></li><li><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Class-Dashboard" data-for="everything/School/Undergrad---Champlain/Classes/Class-Dashboard">Class Dashboard</a></li></ul></div></li></ul></div></li></ul></div></li></ul></div></li><li><div class="folder-outer "><ul style="padding-left:0;" class="content" data-folderul></ul></div></li><li><a href="../../../../../../../010-Cyber" data-for="010-Cyber">010 Cyber</a></li><li><a href="../../../../../../../020-Undergrad---Champlain" data-for="020-Undergrad---Champlain">020 Undergrad - Champlain</a></li><li><a href="../../../../../../../100-References" data-for="100-References">100 References</a></li><li><a href="../../../../../../../Dashboard" data-for="Dashboard">Dashboard</a></li></ul></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../../../../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../../../everything/">everything</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../../../everything/School/">School</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../../../everything/School/Undergrad---Champlain/">Undergrad   Champlain</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/">Classes</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/">Junior</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/">NET 330 Network Design</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../../../../../everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/">Notes</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Notes-Main-Dump</a></div></nav><h1 class="article-title">Notes-Main-Dump</h1><p class="content-meta">Mar 30, 2024, 32 min read</p><ul class="tags"><li><a href="../../../../../../../tags/champlain/FA22" class="internal tag-link">champlain/FA22</a></li><li><a href="../../../../../../../tags/champlain/NET-330" class="internal tag-link">champlain/NET-330</a></li><li><a href="../../../../../../../tags/champlain" class="internal tag-link">champlain</a></li><li><a href="../../../../../../../tags/interface" class="internal tag-link">interface</a></li></ul></div></div><article class="popover-hint"><h1 id="all-these-notes-will-be-split-out-into-weeks">All these notes will be split out into weeks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#all-these-notes-will-be-split-out-into-weeks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
 <h1 id="net-330">NET 330<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#net-330" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
 <h2 id="resources">Resources:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#resources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
-<p>Basic Subnet Chart: <a href="https://www.ad-net.com.tw/subnet-chart-cidr-values/" class="external">https://www.ad-net.com.tw/subnet-chart-cidr-values/<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<p>Basic Subnet Chart: <a href="https://www.ad-net.com.tw/subnet-chart-cidr-values/" class="external">https://www.ad-net.com.tw/subnet-chart-cidr-values/<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><br/>
 VLSM Calculator: <a href="http://vlsmcalc.com/" class="external">http://vlsmcalc.com/<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
 <p><img src="https://lh7-us.googleusercontent.com/BejPUv9qGtuGFmPcvo1hM7ypYqOUfu34MkyrLBXa3N6OPsGeRqtJauWTH-6AWlVAR5ijl08F5xVru_4naRmkTMW-0k8Dr_YjvyWB9ytC7hyrc2B5fUqbwCJE4MHhbXQ6pPwcc4MWwhZsvultien1pC8" alt/></p>
-<p>OSPF:
-<a href="https://networklessons.com/ospf/basic-ospf-configuration" class="external">https://networklessons.com/ospf/basic-ospf-configuration<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<p>OSPF:<br/>
+<a href="https://networklessons.com/ospf/basic-ospf-configuration" class="external">https://networklessons.com/ospf/basic-ospf-configuration<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><br/>
 <a href="https://study-ccna.com/ospf-configuration/" class="external">https://study-ccna.com/ospf-configuration/<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
-<p>BGP:
+<p>BGP:<br/>
 <a href="https://as2914.net/#/galaxy/internet?cx=-2408&amp;cy=-1426&amp;cz=234&amp;lx=-0.0189&amp;ly=0.2015&amp;lz=-0.0262&amp;lw=0.9790&amp;ml=150&amp;s=1.75&amp;l=1&amp;v=2020-01-28" class="external">https://as2914.net/#/galaxy/internet?cx=-2408&amp;cy=-1426&amp;cz=234&amp;lx=-0.0189&amp;ly=0.2015&amp;lz=-0.0262&amp;lw=0.9790&amp;ml=150&amp;s=1.75&amp;l=1&amp;v=2020-01-28<svg class="external-icon" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
 <h1 id="class-refresher">Class: Refresher<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#class-refresher" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
 <h2 id="week-1-82922">Week 1: 8/29/22<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#week-1-82922" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
@@ -190,13 +190,13 @@ Letter
 <h2 id="week-3-91222">Week 3: 9/12/22<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#week-3-91222" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
 <p>The DHCP Server and Routers</p>
 <ul>
-<li>Allows hosts to dynamically obtain its IP address
+<li>Allows hosts to dynamically obtain its IP address<br/>
 <img src="https://lh7-us.googleusercontent.com/cFvu7THbfifr6Jm78BhRRwWeJ3QWsWxKFNtKnGRHLUKCDyzSPL8QECED7e3zZr5q35DQlwLooHRSMb994x31lkqXFloGlSx1toC4iorT8fgIucywB-p7DVvc5IHsKl2Ee_MRy5k0P7uQkoKrZdc-nmY" alt/></li>
 <li>Above shows a DHCP server setup on a network which has 3 subnets</li>
 <li>The router must be setup in a way that it knows the IP address of the DHCP server</li>
 <li>DHCP must work across routers or through the intervention of BOOTP relay agents</li>
 <li>DHCP DORA (Discover, Offer, Request, Accept)</li>
-<li>DHCP Port Client 68 and Server 67
+<li>DHCP Port Client 68 and Server 67<br/>
 <img src="https://lh7-us.googleusercontent.com/ROBck0DXtAblkUfviDrYtG2G1cM-HdUVGxPl63H4ogRrhYpPmjlzXlVl6FWlJawdjkV0WMqehwK5S8INvliEMb57tLExpn8HNwKEkcfOXIYDZKPEQL-AGhNboWWKBEy8JfG6cxSG0GhgglINej-J-J4" alt/></li>
 </ul>
 <p><img src="https://lh7-us.googleusercontent.com/jDzdday-tUkspY4DGTwetABvsIYULdeI3Ft4aC2YySGRKYsBjbaEn6t3cSoVUWYjFkmDqe2fFXKd3ljqUWnbCz5eJjxVnKsw2iwvKfcCwVPONMgFy8T--e3sJHiTTJi01n4s-EgnSQBiM1GCsTG_744" alt/></p>
@@ -222,7 +222,7 @@ Letter
 </ul>
 <h1 id="class-dhcp">Class: DHCP<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#class-dhcp" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
 <h2 id="week-3-91222-1">Week 3: 9/12/22<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#week-3-91222-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
-<p><strong>Dynamic Host Configuration Protocol</strong>
+<p><strong>Dynamic Host Configuration Protocol</strong><br/>
 What is DHCP?</p>
 <ul>
 <li>Statically: Manually entered by the administrator (Boo static is for nerds in data centers)</li>
@@ -368,7 +368,7 @@ What is DHCP?</p>
 <h1 id="class-campus-and-enterprise-network-design-layers">Class: Campus and Enterprise Network Design Layers<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#class-campus-and-enterprise-network-design-layers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
 <h2 id="week-4-91922">Week 4: 9/19/22<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#week-4-91922" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
 <p><strong>Campus and Enterprise Routing</strong></p>
-<p><strong>Internal</strong>
+<p><strong>Internal</strong><br/>
 <strong>Edge Layer/Access Layer (Layer 2)</strong></p>
 <ul>
 <li>Building Switches - A switch that controls only it’s building</li>
@@ -423,7 +423,7 @@ What is DHCP?</p>
 <h2 id="week-6-10322">Week 6: 10/3/22<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#week-6-10322" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
 <p><strong>NAT (Network Address Translation)</strong></p>
 <ul>
-<li>Is a method of remapping on IP address space into another
+<li>Is a method of remapping on IP address space into another<br/>
 <img src="https://lh7-us.googleusercontent.com/YoX5lXW3SQ0sYKfOjlmi5cKm6Db-kI3AjIphEqJb3RZrE1SCJW2TlFSozMQqiDOmqot0pZ9a4sPq_kNxqQTzRoqoovKpkr6ozYtYx4mH8PNAXHhpxzBFQdDyLhnUbd3JZnluzGMUoD0uv0ya_718Aws" alt/></li>
 <li>Rewriting the layer 3 and often layer 4 headers</li>
 <li></li>
@@ -463,7 +463,7 @@ What is DHCP?</p>
 </li>
 <li>Many-to-One IP mapping (<strong>Very Common</strong>)
 <ul>
-<li>Port Address Translation
+<li>Port Address Translation<br/>
 <img src="https://lh7-us.googleusercontent.com/Z7yXIhcARhOjrJpVMipyOU9IUu02Wi5zVTcSA-BXCrn0CiOdiLL_O_TRDRv5muFqClKrGfARfv6QVmz8vkXBUCM74YdONCf7wu68ue6UyFfHVSUjCI463AN_58XdgMsfMmGQdtla6LG6O1Uk4u9oC8c" alt/></li>
 <li>IP Masquerading
 <ul>
@@ -498,8 +498,8 @@ What is DHCP?</p>
 <li>(config-if)#ip nat outside</li>
 </ol>
 </li>
-<li>Set NAT Rules
-3. Static mappings
+<li>Set NAT Rules<br/>
+3. Static mappings<br/>
 4. PAT/Dynamic pool assignments</li>
 </ol>
 <p><strong>Wildcard Subnet Masks</strong></p>
@@ -519,13 +519,13 @@ What is DHCP?</p>
 <li>/23 has to have an even number in the third octet</li>
 <li>/22 multiple of 4 in the third octet</li>
 </ul>
-<p>External
-—--------
-Border
-Core
-Distribution
-Edge
-—--------
+<p>External<br/>
+—--------<br/>
+Border<br/>
+Core<br/>
+Distribution<br/>
+Edge<br/>
+—--------<br/>
 Internal</p>
 <h1 id="homework-ospf">Homework: OSPF<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#homework-ospf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
 <h2 id="week-9-102322">Week 9: 10/23/22<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#week-9-102322" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
@@ -545,8 +545,8 @@ Internal</p>
 <ul>
 <li>Router RA connects to Network N1 to Network N2</li>
 <li>Routers TB and RC connect Network N2 to Network N3</li>
-<li>Router RD connects Network N3 to Network N4
-<img src="https://lh7-us.googleusercontent.com/JYoFjjEh3kUzwEzyFK7JFly2Ljc4GwXMI9KwX57Id2c3KEBPvF-CgEj2cRlWBZRYAQM79qnc7Oi77iajeuvF8qpmtPDUaN3JMkmMalfKL8BFpAMd_UzzR-6PD9EBppdykJzAPzlzPCrePAqy1tKEeIY" alt/>
+<li>Router RD connects Network N3 to Network N4<br/>
+<img src="https://lh7-us.googleusercontent.com/JYoFjjEh3kUzwEzyFK7JFly2Ljc4GwXMI9KwX57Id2c3KEBPvF-CgEj2cRlWBZRYAQM79qnc7Oi77iajeuvF8qpmtPDUaN3JMkmMalfKL8BFpAMd_UzzR-6PD9EBppdykJzAPzlzPCrePAqy1tKEeIY" alt/><br/>
 <img src="https://lh7-us.googleusercontent.com/HEr_G5kBG4-ogFSW1sJXrLSMlhS66cRNg86XnUrBbg8jQIlgmUt1HxTct9hySPpP-LEv5MgCkwFgORNvdgfo9asYlv4IlqU45Ti6FRlY0kkI9C3sHxzAZlE_8uXwU_r9BGKx0ypFbaCtIZQL_ONkX6I" alt/></li>
 <li>Each of the routers running OSPF is considered a peer of the others. They maintain a link-state database that contains information about the topology of the entire AS.</li>
 </ul>
@@ -572,8 +572,8 @@ Internal</p>
 </ul>
 </li>
 <li>Area 1 contains Network N1, Router TA, Network N2, Router RB,. and Router RC</li>
-<li>Area 2 contains Router RB. Router RC, Network N3, Router RD, and Network N4
-<img src="https://lh7-us.googleusercontent.com/-UarSb63XWce8TzFJDZVs4TKhjmDkUcSm-PNCOUDimSVC6VVvXAcvKY7hIMtBTTNay_OFgqftBmVzNjullcSeSilz5xeErKgNHbC_xOBtYxRcKNze3R-FiMvx6DJog3L2smw6nLBJJnKI-B9ZneO5Tc" alt/>
+<li>Area 2 contains Router RB. Router RC, Network N3, Router RD, and Network N4<br/>
+<img src="https://lh7-us.googleusercontent.com/-UarSb63XWce8TzFJDZVs4TKhjmDkUcSm-PNCOUDimSVC6VVvXAcvKY7hIMtBTTNay_OFgqftBmVzNjullcSeSilz5xeErKgNHbC_xOBtYxRcKNze3R-FiMvx6DJog3L2smw6nLBJJnKI-B9ZneO5Tc" alt/><br/>
 <strong>OSPF Route Determination Using SPF Trees</strong></li>
 </ul>
 <p><strong>The SPF Tree</strong></p>
@@ -581,11 +581,11 @@ Internal</p>
 <li>Router generates a shortest-path first tree (SPF Tree) from its LSDB.</li>
 <li>This step uses more calculations to put cost into the mix</li>
 </ul>
-<p><strong>OSPF Router Determination</strong>
-<img src="https://lh7-us.googleusercontent.com/w7xnGcLPf7n4ulH4BYbSyzfvFf2M5slzREmbgLY80E5By8PNbrzUe-4-dxwi52WejfavTWv4kXlrn5UOUtLUjneDNhKOxSGqPqC4aBe5lDynO1WCZL5JNJ_qHwziFahVA4joJpY8P5M0v-BlXLM39w" alt/>
-<img src="https://lh7-us.googleusercontent.com/a9lF5LkWb8B2KAz-xLAOGW1OqxXrS_jWs8N3dcIwJgHamMnEqJ_V9xXj2MLqQlYVI7syC1CWVQYGx7_csN5MzzO7Z81fbWR1F9UYIzna-y8FieomW0xmP2dWSIc9dT0vQgqNOVsEPdz40CuoH_RpxQ" alt/>
-<img src="https://lh7-us.googleusercontent.com/NeuSk0FL_PhU45mKlxwdzu9GWzov7ATVgPXPTwbloyWaVOv_eqao-oqRArRv_EMx7PvGX5afXJ3-HG8KmZTbMBm7Pe_v81T11OP074Z77tWxKSjysoUMcNhbyv24NrVWqzPh32W09djhu8bS8Zme4Q" alt/>
-<img src="https://lh7-us.googleusercontent.com/7_5yw8VOhg4FSdWgDBBw3TQLWOVIOcP6UsrD_3mOt2BlEqqAYuIxE9K7dtIaVvmZ77bwZ3GCRiykPnQYrNiFqUtQx4oAIqFcPuGHNLNxsNHPDDGoNpD0xpL6WRajjkBs3pXlPJ44DtJXPkYciZ1eVA" alt/>
+<p><strong>OSPF Router Determination</strong><br/>
+<img src="https://lh7-us.googleusercontent.com/w7xnGcLPf7n4ulH4BYbSyzfvFf2M5slzREmbgLY80E5By8PNbrzUe-4-dxwi52WejfavTWv4kXlrn5UOUtLUjneDNhKOxSGqPqC4aBe5lDynO1WCZL5JNJ_qHwziFahVA4joJpY8P5M0v-BlXLM39w" alt/><br/>
+<img src="https://lh7-us.googleusercontent.com/a9lF5LkWb8B2KAz-xLAOGW1OqxXrS_jWs8N3dcIwJgHamMnEqJ_V9xXj2MLqQlYVI7syC1CWVQYGx7_csN5MzzO7Z81fbWR1F9UYIzna-y8FieomW0xmP2dWSIc9dT0vQgqNOVsEPdz40CuoH_RpxQ" alt/><br/>
+<img src="https://lh7-us.googleusercontent.com/NeuSk0FL_PhU45mKlxwdzu9GWzov7ATVgPXPTwbloyWaVOv_eqao-oqRArRv_EMx7PvGX5afXJ3-HG8KmZTbMBm7Pe_v81T11OP074Z77tWxKSjysoUMcNhbyv24NrVWqzPh32W09djhu8bS8Zme4Q" alt/><br/>
+<img src="https://lh7-us.googleusercontent.com/7_5yw8VOhg4FSdWgDBBw3TQLWOVIOcP6UsrD_3mOt2BlEqqAYuIxE9K7dtIaVvmZ77bwZ3GCRiykPnQYrNiFqUtQx4oAIqFcPuGHNLNxsNHPDDGoNpD0xpL6WRajjkBs3pXlPJ44DtJXPkYciZ1eVA" alt/><br/>
 <strong>OSPF General Operations</strong></p>
 <ul>
 <li>Main job is to facilitate the exchange of routing information between routers</li>
@@ -598,7 +598,7 @@ Internal</p>
 <li>_<span style="text-decoration:underline;">Link State Update</span> _| These messages contain updated information about the state of certain links on the LSDB.</li>
 <li>_<span style="text-decoration:underline;">Link State Acknowledgment</span> _| These messages provide reliability to the link-state exchange process by explicitly acknowledging receipt of a link state update.</li>
 </ul>
-<p><strong>OSPF Common Header Format</strong>
+<p><strong>OSPF Common Header Format</strong><br/>
 <img src="https://lh7-us.googleusercontent.com/lieVaUJ3EmS35pF8uMzapKHHhSxmEuwgDtAgzbxoeiF3D-K9C0paqPBvvGLRTIiRARKLyF8Et7mDMSyGAfPg82v5hAT6RmANoDlMV8nIZHD93MyZyktuAZZkWVs0-YHq4llAUyg-xBXrS-Rrx5bvGlA" alt/></p>
 <p><img src="https://lh7-us.googleusercontent.com/T6htoQaRvtQR-vXuk0BAGYT-pxzXmAne8zXEzZvWPFOoPuUD2U9ea_1DrWpHsmyDf4rP-3Q7bJMeqy6Zov-tzcoEzQL8z9vtUWTiEPVMEMEVb73m_4YAJC1vT_J4VCWbkUXK0KELfPDeA986CRDLHR8" alt/></p>
 <h1 id="classwork-interior-routing">Classwork: Interior Routing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#classwork-interior-routing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
@@ -629,7 +629,7 @@ Internal</p>
 </ul>
 <p><strong>Routing Tables</strong></p>
 <ul>
-<li>Feed the Forwarding tables
+<li>Feed the Forwarding tables<br/>
 <img src="https://lh7-us.googleusercontent.com/E2t0lVYGr7mhhnKSyvrGnmzMmkIETR21Fxwblk-xNvwu0iJDWu8h17wE-Mm0seCJgZ7EQo0rkgzw63G1ej73eBo9TOr_eFYaU0GsmT-X4m2BL7IyksHYUeaDyyFDtDccly-_6gr84K7XcsJg5wROlfo" alt/></li>
 </ul>
 <p><strong>IP Routing - finding the path</strong></p>
@@ -710,7 +710,7 @@ Internal</p>
 <ul>
 <li>Control reachability of prefixes</li>
 <li>Merge separate organizations</li>
-<li>Connect multiple IGPs
+<li>Connect multiple IGPs<br/>
 <img src="https://lh7-us.googleusercontent.com/bQykXlnPhh_LP8LCPRxMGSG9PHfYa1SgkcuHuY2CDkd6jxZEuL4aNYLLML7vycHFhNsKv2dfZKV5GI5UlSxvvfODnBuPZBGn8IF8wOkhk-5KSMWtu_1QNboJl03KZqz5sWmkbjwIToKgWuu4QtOmfuM" alt/></li>
 </ul>
 </li>
@@ -780,8 +780,8 @@ Internal</p>
 </li>
 </ol>
 </li>
-<li>Add all of the **Directly Connected Networks **on that router
-3. Network address with **wildcard mask **and <strong>area #</strong>
+<li>Add all of the **Directly Connected Networks **on that router<br/>
+3. Network address with **wildcard mask **and <strong>area #</strong><br/>
 4. #(config-router) network 192.168.0.0 0.0.0.255 area 0</li>
 </ol>
 <h1 id="classwork-bgp">Classwork: BGP<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#classwork-bgp" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
@@ -807,7 +807,7 @@ Internal</p>
 <li>A unique ASN is allocated to each AS for use in BGP routing</li>
 <li>AS numbers are important because the ASN uniquely identifies each (aggregated) network on the Internet</li>
 <li>Until 2007, AS numbers were defined as 16-bit integers, which allowed for a maximum of 65536 assignments</li>
-<li>Now, registries can hand out 32 bit AS numbers (over 4 Billion)
+<li>Now, registries can hand out 32 bit AS numbers (over 4 Billion)<br/>
 <img src="https://lh7-us.googleusercontent.com/0BEV_oqY3WC6cXCf_I9jfks-qtkPychcgvZ07D9h0GeYmBY4-rUxD4cog2lHraMnkxBTl9RpUXSCfNCDq3I5GzxvVSN3V6fUnOuLZLOZqrjfY_zkUupceQoF35Z5jZcN-e8E3jZ5SBGf9o69rZmuAoA" alt/></li>
 </ul>
 <p><strong>BGP Operations</strong></p>
@@ -828,7 +828,7 @@ Internal</p>
 <li>Your AS will be advertised through your multiple peers - this allows multiple paths to your IP networks from the Internet</li>
 <li>Other routers pick the best “path” to your network</li>
 </ul>
-<p><strong>Multi-homed Peering</strong>
+<p><strong>Multi-homed Peering</strong><br/>
 <img src="https://lh7-us.googleusercontent.com/UTviVjlP9GOn0TLZvUrnHVv-EgvExwVb5BdlUKx9vskoQ_7K9Wrn-hWuMucAilEoPFEF8p7vhoFu3UIJULFykRY7ENfDigVzJZPT7mRRZ_A4EbbAfIGteQqBhUaf9DRhK3TKNX7-5BWWdg05RM0OJo8" alt/></p>
 <p><strong>BGP - Path Vector Protocol</strong></p>
 <ul>
@@ -845,7 +845,7 @@ Internal</p>
 </ul>
 </li>
 </ul>
-<p><strong>Path Vector</strong>
+<p><strong>Path Vector</strong><br/>
 <img src="https://lh7-us.googleusercontent.com/bOI5HiXmaIQZ5cH6dcMpMGMzQMFZ_1w8BESJSHsuvt9cgIx_PHdXvfGN1-qtGomXApnipXs6rUm8WHMtu_HuGhPtjHtVuRf5EDoZyK190ps9WLWG7DDUKcu3CvDn4zVxH8inyNasBgBkApol6kepuJk" alt/></p>
 <p><strong>BGP - Best Path Algorithm</strong></p>
 <ul>
@@ -854,7 +854,7 @@ Internal</p>
 <li>BGP router can receive numerous copies of these routes from various providers</li>
 <li>So, it has to compare the multiple routing tables and choose the optimal route on the router.</li>
 </ul>
-<p>**BGP Attributes for Selecting Path
+<p>**BGP Attributes for Selecting Path<br/>
 <img src="https://lh7-us.googleusercontent.com/1Rn6vqQ3k-dkfccfCQMGNzEPuiRmXRsXmBHfyGjCdpnEfi-3n_illl9moYc0uhoXowtiy8fGaC0fVk6Nyqk84p4XQqC2AmNujCaIaQphuSqYgisMjZlFj7JWn7owaRXGqYQdHEwLcwzO_i36O0TdPFQ" alt/></p>
 <p><strong>Configuring BGP</strong></p>
 <ol>
@@ -862,21 +862,21 @@ Internal</p>
 <li>Identify peer neighbors by IP address</li>
 <li>Identify any networks that the router is responsible to advertise</li>
 </ol>
-<p>Code:
-<span style="text-decoration:underline;">Define Router instance:</span>
-router bgp {AS_Number_for_Router}
+<p>Code:<br/>
+<span style="text-decoration:underline;">Define Router instance:</span><br/>
+router bgp {AS_Number_for_Router}<br/>
 router bgp 1010</p>
-<p><span style="text-decoration:underline;">Identify peers</span>
-neighbor {ip_of_peer} remote as {as_number_of_peer}
+<p><span style="text-decoration:underline;">Identify peers</span><br/>
+neighbor {ip_of_peer} remote as {as_number_of_peer}<br/>
 neighbor 192.168.1.2 remote-as 2352</p>
-<p><span style="text-decoration:underline;">Advertise Networks</span>
-network {network} mask {subnet_mask}
+<p><span style="text-decoration:underline;">Advertise Networks</span><br/>
+network {network} mask {subnet_mask}<br/>
 network 10.10.52.0 mask 255.255.255.0</p>
-<p><span style="text-decoration:underline;">Playbook:</span>
-enable
-config t
-router bgp {AS_Number_for_Router}
-neighbor {ip_of_peer} remote as {as_number_of_peer}
+<p><span style="text-decoration:underline;">Playbook:</span><br/>
+enable<br/>
+config t<br/>
+router bgp {AS_Number_for_Router}<br/>
+neighbor {ip_of_peer} remote as {as_number_of_peer}<br/>
 network {network} mask {subnet_mask}</p>
 <h1 id="classwork-ipsec">Classwork: IPSEC<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#classwork-ipsec" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
 <h2 id="week-11-1072022">Week 11: 10/7/2022<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#week-11-1072022" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
@@ -904,7 +904,7 @@ network {network} mask {subnet_mask}</p>
 <li>Widely used to secure communications on Virtual Private Networks (VPN)</li>
 <li>Can protect against eavesdropping, tampering, and spoofing</li>
 </ul>
-<p><strong>IPSEC Concepts:</strong>
+<p><strong>IPSEC Concepts:</strong><br/>
 <span style="text-decoration:underline;">Two main wire-level protocols</span></p>
 <ul>
 <li><strong>AH</strong> (Authentication Header): Authentication, Integrity, and Non-repudiation</li>
@@ -921,7 +921,7 @@ network {network} mask {subnet_mask}</p>
 <li>All of the parameters needed for an IPsex session (modes, algorithms, keys etc…)</li>
 <li>Both sides must agree on the SA for secure communication to work</li>
 </ul>
-<p><strong>AH and ESP:</strong>
+<p><strong>AH and ESP:</strong><br/>
 <span style="text-decoration:underline;">Authentication Header</span></p>
 <ul>
 <li>Header added to IP packet</li>
@@ -943,24 +943,24 @@ network {network} mask {subnet_mask}</p>
 </ul>
 </li>
 </ul>
-<p><strong>Tunnel and Transport Modes</strong>
-<em>Shaded shows authenticated and/or encrypted components</em>
+<p><strong>Tunnel and Transport Modes</strong><br/>
+<em>Shaded shows authenticated and/or encrypted components</em><br/>
 <span style="text-decoration:underline;">Transport Mode</span></p>
 <ul>
-<li>Only the payload is authenticated and/or encrypted
-<img src="https://lh7-us.googleusercontent.com/VOE7D7MltdlXgoY_XpH2bLjybXru1agnZLozbhxHA-mxywd46yBq2PnzH4_bn1QayCdY9HQC0Tw2RNna9sU2-3v3xrtHVigfB-rqiGo1nE-UDqjmHVzbXGLTCLuTTFQ5fDPkp3vp9Rd0VgMmTL1X4aM" alt/>
+<li>Only the payload is authenticated and/or encrypted<br/>
+<img src="https://lh7-us.googleusercontent.com/VOE7D7MltdlXgoY_XpH2bLjybXru1agnZLozbhxHA-mxywd46yBq2PnzH4_bn1QayCdY9HQC0Tw2RNna9sU2-3v3xrtHVigfB-rqiGo1nE-UDqjmHVzbXGLTCLuTTFQ5fDPkp3vp9Rd0VgMmTL1X4aM" alt/><br/>
 <span style="text-decoration:underline;">Tunnel Mode</span></li>
 <li>Entire packet is authenticated and/or encrypted</li>
 </ul>
 <p><img src="https://lh7-us.googleusercontent.com/33fLnLDUFHxRhKzBTpylEqSQPhzmpX9L7WHsEL6b0MRGDIto3F3kdaOjwLK3w8J9sjTybGn6YZrLwKPrW56XQzokVQYM1tIWp_rbIe0oREsPTmYSP7MGCOP4AkZp7w0neITTj6ODnNs1iCxFqkjrnF0" alt/></p>
-<p><strong>AH and ESP -Transport and Tunnel</strong>
-<span style="text-decoration:underline;">AH IPSEC</span>
-<img src="https://lh7-us.googleusercontent.com/jWLYQmCu5YbQfxKc1-VUervX4A5J1bXR1dXoL10l7x6yMQsU_MlRWIOk4AC0jbQ3aJAHCMBTQvLUZEq6q7QHiMJEPuuIyjPQaMvhyOSlpHVRqBrLITt4JZnhhL1UMGR3DLo4cKBxopLN9HIqkJtv3EQ" alt/>
-<span style="text-decoration:underline;">ESP IPSEC</span>
-<img src="https://lh7-us.googleusercontent.com/NWJNMW0KkPtgRZhnaHJ7ljvx0YlHnTeczj5PAyyM-FKRw6ooZ3t_jR5nZVTXIAu1CBhiEHxiKFVQmFTAM3SFIT_yzcAu7caV20_9YucqAN6qP3kdFAf1JWbwsHabE7ojUTbqCGkftwZaHGBbCE2aezA" alt/>
-<strong>The IPSEC Matrix</strong>
-<img src="https://lh7-us.googleusercontent.com/lHysRnD35W2pm8vWA2dCB1RBYIIIrSpl7oLSOFEeYZVr32oQTRkP-dNXwuK6Uc90aRIfl_-stTRp4GeycuGpdOSf42L3hdYvpag4-aFFrKrUsPMx4GXq3TUjab7EWdWWHqjLi3N0tTLp3g0qqlPCFX0" alt/>
-<strong>Security Associations:</strong>
+<p><strong>AH and ESP -Transport and Tunnel</strong><br/>
+<span style="text-decoration:underline;">AH IPSEC</span><br/>
+<img src="https://lh7-us.googleusercontent.com/jWLYQmCu5YbQfxKc1-VUervX4A5J1bXR1dXoL10l7x6yMQsU_MlRWIOk4AC0jbQ3aJAHCMBTQvLUZEq6q7QHiMJEPuuIyjPQaMvhyOSlpHVRqBrLITt4JZnhhL1UMGR3DLo4cKBxopLN9HIqkJtv3EQ" alt/><br/>
+<span style="text-decoration:underline;">ESP IPSEC</span><br/>
+<img src="https://lh7-us.googleusercontent.com/NWJNMW0KkPtgRZhnaHJ7ljvx0YlHnTeczj5PAyyM-FKRw6ooZ3t_jR5nZVTXIAu1CBhiEHxiKFVQmFTAM3SFIT_yzcAu7caV20_9YucqAN6qP3kdFAf1JWbwsHabE7ojUTbqCGkftwZaHGBbCE2aezA" alt/><br/>
+<strong>The IPSEC Matrix</strong><br/>
+<img src="https://lh7-us.googleusercontent.com/lHysRnD35W2pm8vWA2dCB1RBYIIIrSpl7oLSOFEeYZVr32oQTRkP-dNXwuK6Uc90aRIfl_-stTRp4GeycuGpdOSf42L3hdYvpag4-aFFrKrUsPMx4GXq3TUjab7EWdWWHqjLi3N0tTLp3g0qqlPCFX0" alt/><br/>
+<strong>Security Associations:</strong><br/>
 <span style="text-decoration:underline;">Security Association (SA)</span></p>
 <ul>
 <li>The set of algorithms and keys used to encrypt and/or authenticate **one direction **of a flow.</li>
@@ -976,7 +976,7 @@ network {network} mask {subnet_mask}</p>
 <li>IKE uses ISAKMP to set up the SA for IPsec to use</li>
 <li>IKE creates the cryptography keys used to authenticate peers</li>
 </ul>
-<p><strong>SAs and ISAKMP</strong>
+<p><strong>SAs and ISAKMP</strong><br/>
 <span style="text-decoration:underline;">ISAKMP separates negotiation into two phases</span></p>
 <ul>
 <li>Phase 1: “Main Mode”
@@ -991,24 +991,24 @@ network {network} mask {subnet_mask}</p>
 </ul>
 </li>
 </ul>
-<p><strong>IPSEC Configuration - Cisco Example</strong>
-<span style="text-decoration:underline;">Phase 1 - IKE Policy</span>
-enable
-config t
-crypto ikev1 policy 10
-authentication pre-share
-encryption aes-256
-hash sha
-group 2
+<p><strong>IPSEC Configuration - Cisco Example</strong><br/>
+<span style="text-decoration:underline;">Phase 1 - IKE Policy</span><br/>
+enable<br/>
+config t<br/>
+crypto ikev1 policy 10<br/>
+authentication pre-share<br/>
+encryption aes-256<br/>
+hash sha<br/>
+group 2<br/>
 lifetime 86400</p>
-<p><span style="text-decoration:underline;">Phase 2 - Transform Set</span>
+<p><span style="text-decoration:underline;">Phase 2 - Transform Set</span><br/>
 crypto ipsec ikev1 transform-set ESP-AES-256-SHA esp-aes-256 esp-sha-hmac</p>
 <p><strong>IPSEC Today</strong></p>
 <ul>
 <li>AH rarely used</li>
 <li>Popular with Site-to-Site VPNs</li>
 </ul>
-<p><strong>TLS and IPSEC</strong>
+<p><strong>TLS and IPSEC</strong><br/>
 <span style="text-decoration:underline;">TLS</span></p>
 <ul>
 <li>As it work with Layers 5+ much easier from a networking perspective</li>
@@ -1027,66 +1027,66 @@ crypto ipsec ikev1 transform-set ESP-AES-256-SHA esp-aes-256 esp-sha-hmac</p>
 <ul>
 <li>Using a “!” will leave a comment in Cisco (good for comments)</li>
 </ul>
-<p><strong>Cisco IPsec:</strong>
-Router A:
-<strong>Create an ISAKMP policy for Phase 1 negotiations for the L2L tunnels.</strong>
-enable
-config t
-crypto isakmp policy 10
-encryption aes
-hash sha256
-authentication pre-share
+<p><strong>Cisco IPsec:</strong><br/>
+Router A:<br/>
+<strong>Create an ISAKMP policy for Phase 1 negotiations for the L2L tunnels.</strong><br/>
+enable<br/>
+config t<br/>
+crypto isakmp policy 10<br/>
+encryption aes<br/>
+hash sha256<br/>
+authentication pre-share<br/>
 group 14</p>
-<p><strong>Specify the pre-shared key and the remote peer address | to match for the L2L tunnel.</strong>
+<p><strong>Specify the pre-shared key and the remote peer address | to match for the L2L tunnel.</strong><br/>
 crypto isakmp key vpnuser address 10.0.0.2</p>
-<p><strong>Create the Phase 2 policy for IPsec negotiation.</strong>
-crypto ipsec transform-set myset esp-aes esp-sha256-hmac
-<strong>Create an ACL for the traffic to be encrypted. In this example, the traffic from 10.1.1.0/24 to 172.16.2.0/24 is encrypted. The traffic which does not match the access list is unencrypted for the Internet.</strong>
+<p><strong>Create the Phase 2 policy for IPsec negotiation.</strong><br/>
+crypto ipsec transform-set myset esp-aes esp-sha256-hmac<br/>
+<strong>Create an ACL for the traffic to be encrypted. In this example, the traffic from 10.1.1.0/24 to 172.16.2.0/24 is encrypted. The traffic which does not match the access list is unencrypted for the Internet.</strong><br/>
 access-list 100 permit ip 10.1.1.0 0.0.0.255 172.16.2.0 0.0.0.255</p>
-<p><strong>Create the actual crypto map. Specify an access control list (ACL), which defines the proxy identities (local and remote host/networks).</strong>
-crypto map mymap 10 ipsec-isakmp
-set peer 10.0.0.2
-set transform-set myset
-match address 100
-interface GigabitEthernet0/1
+<p><strong>Create the actual crypto map. Specify an access control list (ACL), which defines the proxy identities (local and remote host/networks).</strong><br/>
+crypto map mymap 10 ipsec-isakmp<br/>
+set peer 10.0.0.2<br/>
+set transform-set myset<br/>
+match address 100<br/>
+interface GigabitEthernet0/1<br/>
 ip address 10.1.1.2 255.255.255.0</p>
 <p><strong>Apply the crypto map on the outside interface.</strong></p>
-<p>interface GigabitEthernet0/0
-ip address 172.16.1.1 255.255.255.0
+<p>interface GigabitEthernet0/0<br/>
+ip address 172.16.1.1 255.255.255.0<br/>
 crypto map mymap</p>
-<p><strong>Route to the default gateway</strong>
+<p><strong>Route to the default gateway</strong><br/>
 ip route 0.0.0.0 0.0.0.0 172.16.1.2</p>
-<p>Router B:
-<strong>Create an ISAKMP policy for Phase 1 negotiations for the L2L tunnels.</strong>
-enable
-config t
-crypto isakmp policy 10
-encryption aes
-hash sha256
-authentication pre-share
+<p>Router B:<br/>
+<strong>Create an ISAKMP policy for Phase 1 negotiations for the L2L tunnels.</strong><br/>
+enable<br/>
+config t<br/>
+crypto isakmp policy 10<br/>
+encryption aes<br/>
+hash sha256<br/>
+authentication pre-share<br/>
 group 14</p>
-<p><strong>Specify the pre-shared key and the remote peer address to match for the L2L tunnel.</strong>
+<p><strong>Specify the pre-shared key and the remote peer address to match for the L2L tunnel.</strong><br/>
 crypto isakmp key vpnuser address 172.16.1.1</p>
-<p><strong>Create the Phase 2 policy for IPsec negotiation.</strong>
+<p><strong>Create the Phase 2 policy for IPsec negotiation.</strong><br/>
 crypto ipsec transform-set myset esp-aes esp-sha256-hmac</p>
-<p><strong>Create an ACL for the traffic to be encrypted. In this example, the traffic from 172.16.2.0/24 to 10.1.1.0/24 is encrypted. The traffic which does not match the access list is unencrypted for the Internet.</strong>
+<p><strong>Create an ACL for the traffic to be encrypted. In this example, the traffic from 172.16.2.0/24 to 10.1.1.0/24 is encrypted. The traffic which does not match the access list is unencrypted for the Internet.</strong><br/>
 access-list 100 permit ip 172.16.2.0 0.0.0.255 10.1.1.0 0.0.0.255</p>
-<p><strong>Create the actual crypto map. Specify an access control list (ACL), which defines the proxy identities (local and remote host/networks).</strong>
-crypto map mymap 10 ipsec-isakmp
-set peer 172.16.1.1
-set transform-set myset
-match address 100
-interface GigabitEthernet0/1
+<p><strong>Create the actual crypto map. Specify an access control list (ACL), which defines the proxy identities (local and remote host/networks).</strong><br/>
+crypto map mymap 10 ipsec-isakmp<br/>
+set peer 172.16.1.1<br/>
+set transform-set myset<br/>
+match address 100<br/>
+interface GigabitEthernet0/1<br/>
 ip address 172.16.2.1 255.255.255.0</p>
-<p><strong>Apply the crypto map on the outside interface.</strong>
-interface GigabitEthernet0/0
-ip address 10.0.0.2 255.255.255.0
+<p><strong>Apply the crypto map on the outside interface.</strong><br/>
+interface GigabitEthernet0/0<br/>
+ip address 10.0.0.2 255.255.255.0<br/>
 crypto map mymap</p>
-<p><strong>Route to the default gateway.</strong>
+<p><strong>Route to the default gateway.</strong><br/>
 ip route 0.0.0.0 0.0.0.0 10.0.01</p>
-<p><strong>Router A:</strong>
-<strong>Verify it’s working</strong>
-enable
+<p><strong>Router A:</strong><br/>
+<strong>Verify it’s working</strong><br/>
+enable<br/>
 show crypto ipsec sa</p>
 <h1 id="classwork-zoning-and-acl">Classwork: Zoning and ACL<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#classwork-zoning-and-acl" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
 <h2 id="week-12-11142022">Week 12: 11/14/2022<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#week-12-11142022" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
@@ -1104,8 +1104,8 @@ show crypto ipsec sa</p>
 <li>Providing network access to servers/services introduces risk- therefore limit access to only those remote systems that need it</li>
 </ul>
 <p><strong>Least Privilege for Network Access:</strong></p>
-<p><span style="text-decoration:underline;">Risk Matrix:</span>
-<img src="https://lh7-us.googleusercontent.com/EFzhGSn0oWcg-XJ6Hlhbg6JwRLiOjKPVtiV6uqnvz5Mx-pYlwGbSWGoCHXsYQ3dpzvxSvw8EDeN0hM7K8SkuMxzjQmwxZ6IYIDViVEVVmeN5YSPLHCE4Zhv3lBotPcS61igBFkfeWwtf2ccT8t6CPQ8" alt/>
+<p><span style="text-decoration:underline;">Risk Matrix:</span><br/>
+<img src="https://lh7-us.googleusercontent.com/EFzhGSn0oWcg-XJ6Hlhbg6JwRLiOjKPVtiV6uqnvz5Mx-pYlwGbSWGoCHXsYQ3dpzvxSvw8EDeN0hM7K8SkuMxzjQmwxZ6IYIDViVEVVmeN5YSPLHCE4Zhv3lBotPcS61igBFkfeWwtf2ccT8t6CPQ8" alt/><br/>
 (Want to be as far up this as possible WHILE having functionality)</p>
 <p><strong>Network-based Defenses: Access Control</strong></p>
 <ul>
@@ -1158,7 +1158,7 @@ show crypto ipsec sa</p>
 <li>Organizations use private addresses on the local network</li>
 <li>Router translates private to public IP’s and keeps track of translation in a table</li>
 </ul>
-<p><strong>Access Control-NAT:</strong>
+<p><strong>Access Control-NAT:</strong><br/>
 <img src="https://lh7-us.googleusercontent.com/LAatFXUGDIkvwM3Ou-gKs7J1X4D4UgUo3Gga136ZfsL2mb05LLXgRQAFs3Fkr2kbvKRX_ua-hoADA25MnMkL19jTSsVJ8oNl48YN5W7mxnOOW4gmAvLEkRvMfmj3izWSjB3lrrXBEhie9YF33taZCI4" alt/></p>
 <p><strong>Network-based Defenses: Access Control</strong></p>
 <ul>
@@ -1176,10 +1176,10 @@ show crypto ipsec sa</p>
 </ul>
 <p><strong>Network-based Defenses: Firewalls</strong></p>
 <ul>
-<li>Device that controls traffic in and out of a network based on ruleset
+<li>Device that controls traffic in and out of a network based on ruleset<br/>
 <img src="https://lh7-us.googleusercontent.com/ShG4rV2kT5UdmpVEzsp29eIP5Wb41cb2JKoj-OgR2MLJLC9BdS37tvJSb2bkwRVsXMqhXDChuqMGyMueN94ZOHiipLzKRK8YgVjSIvldU3gjijklPzxpClVQIP71KcsJzd2tZT4mUccmQ6WlITIbIYA" alt/></li>
 </ul>
-<p><strong>Layer 4 Firewalls:</strong>
+<p><strong>Layer 4 Firewalls:</strong><br/>
 <span style="text-decoration:underline;">Rules based on Layer 3:</span></p>
 <ul>
 <li>IP Addresses of both internal and external computers
@@ -1220,7 +1220,7 @@ show crypto ipsec sa</p>
 </li>
 <li>Layer 7 firewalls can block known bad certificates and certificate authorities</li>
 </ul>
-<p><strong>Network Zoning</strong>
+<p><strong>Network Zoning</strong><br/>
 <span style="text-decoration:underline;">Designing networks to improve security by:</span></p>
 <ul>
 <li>Placing systems with <span style="text-decoration:underline;">similar security requirements</span> in “zones” <span style="text-decoration:underline;">protected by firewalls</span></li>
@@ -1271,7 +1271,7 @@ show crypto ipsec sa</p>
 <li><span style="text-decoration:underline;">Improve intrusion prevention and monitoring</span></li>
 <li><span style="text-decoration:underline;">Defense-in-depth</span></li>
 </ul>
-<p><strong>Firewall Contexts:</strong>
+<p><strong>Firewall Contexts:</strong><br/>
 <span style="text-decoration:underline;">Context:</span> Firewall contexts can be viewed as “virtual” firewalls on the same hardware</p>
 <ul>
 <li>Reasons for configuring separate contexts include:
@@ -1296,14 +1296,14 @@ show crypto ipsec sa</p>
 </ul>
 </li>
 </ul>
-<p><strong>VLAN Groups:</strong>
+<p><strong>VLAN Groups:</strong><br/>
 Grouping of VLANs within a context. These can include:</p>
 <ul>
 <li><span style="text-decoration:underline;">DMZ:</span> VLANS with systems directly accessible by Internal and/or External users.</li>
 <li><span style="text-decoration:underline;">Production:</span> Production systems <span style="text-decoration:underline;">only directly accessible by administrators and load balancers</span>.</li>
 <li><span style="text-decoration:underline;">Dev/Non-prod</span>: Development and/or non-production systems</li>
 </ul>
-<p><strong>VLAN Groups (2):</strong>
+<p><strong>VLAN Groups (2):</strong><br/>
 Grouping of VLANs within a context. These can include:</p>
 <ul>
 <li>DMZ and Production will have both Public and Private (10.x) VLANs</li>
@@ -1316,10 +1316,10 @@ Grouping of VLANs within a context. These can include:</p>
 </ul>
 </li>
 </ul>
-<p><strong>Example Context and VLAN Table:</strong>
-<img src="https://lh7-us.googleusercontent.com/pUa_sySIyYL9X6ahDdqlqgKtdf6cwygv0lPkcxf4z7KEDohLPvhZXETbsPV6sLnmbJIwt_IkhQvbj_qQeO89a4ETlA24uTyBU0Ti1165aZ4O1KRpmUcokcnvUgDn5OuXVfT96DFOH9YoA_Gsj7MFQN0" alt/>
+<p><strong>Example Context and VLAN Table:</strong><br/>
+<img src="https://lh7-us.googleusercontent.com/pUa_sySIyYL9X6ahDdqlqgKtdf6cwygv0lPkcxf4z7KEDohLPvhZXETbsPV6sLnmbJIwt_IkhQvbj_qQeO89a4ETlA24uTyBU0Ti1165aZ4O1KRpmUcokcnvUgDn5OuXVfT96DFOH9YoA_Gsj7MFQN0" alt/><br/>
 F5-only means the system only talks to the load balancer. F5 is the maker of big IP which is a data center load balancer.</p>
-<p><strong>Data Center Network Zoning Example:</strong>
+<p><strong>Data Center Network Zoning Example:</strong><br/>
 <img src="https://lh7-us.googleusercontent.com/TPgG7pWPMc9CMS-sutt7p-moiIk21pia8wBTViNfl6DDKz2j5WVXuiB8574jO7Up7QQlvHkmeKj7f5xgzQEFCT16BhXxnB-4TCH7N3d5Oy0B-i_RzEUrno5cRFLfZewFa_ZOSuhF-KRiRTUyUNX0KVU" alt/></p>
 <p><strong>Access-Lists on Cisco:</strong></p>
 <ul>
@@ -1342,7 +1342,7 @@ F5-only means the system only talks to the load balancer. F5 is the maker of big
 </ul>
 </li>
 </ul>
-<p><strong>Creating Access Lists:</strong>
+<p><strong>Creating Access Lists:</strong><br/>
 Two-Step Process</p>
 <ul>
 <li>In global config mode – use ip access-list command to create list</li>
@@ -1367,7 +1367,7 @@ Two-Step Process</p>
 </ul>
 </li>
 </ul>
-<p><strong>Standard ACL Example:</strong>
+<p><strong>Standard ACL Example:</strong><br/>
 <span style="text-decoration:underline;">1. Create ACL:</span></p>
 <ul>
 <li>device(config)# ip access-list standard Net1</li>
@@ -1529,7 +1529,7 @@ Two-Step Process</p>
 </ul>
 </li>
 </ul>
-<p><strong>Network vs Server</strong>
+<p><strong>Network vs Server</strong><br/>
 <span style="text-decoration:underline;">Network</span></p>
 <ul>
 <li>Balance traffic across network links</li>
@@ -1609,12 +1609,12 @@ Two-Step Process</p>
 <li>Particular protocol response</li>
 <li>Presence of a certain resources</li>
 </ul>
-<p><strong>Issues</strong>
+<p><strong>Issues</strong><br/>
 <span style="text-decoration:underline;">Access Logging</span></p>
 <ul>
 <li>Does a backend server know the Ip address of the client/source?
 <ul>
-<li>No…
+<li>No…<br/>
 <span style="text-decoration:underline;">Session Persistence</span></li>
 </ul>
 </li>
@@ -1638,7 +1638,7 @@ Two-Step Process</p>
 <li>NGINX and HAProxy are open-source software LB’s
 <ul>
 <li>Also very popular and used by many of the most active Internet Sites</li>
-<li>Software-based - they run on high performance server-hardware
+<li>Software-based - they run on high performance server-hardware<br/>
 Notes:</li>
 </ul>
 </li>
