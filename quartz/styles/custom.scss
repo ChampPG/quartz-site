@@ -1,3 +1,26 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+h1 {
+    color: #DDB6F2; /* Lavender, for primary headings */
+}
+
+h2 {
+    color: #F5C2E7; /* Light Pink, for secondary headings */
+}
+
+h3 {
+    color: #F28FAD; /* Muted Pink, for tertiary headings */
+}
+
+h4 {
+    color: #ABE9B3; /* Soft Green, for quaternary headings */
+}
+
+h5 {
+    color: #96CDFB; /* Sky Blue, for quinary headings */
+}
+
+h6 {
+    color: #F8BD96; /* Peach, for senary headings */
+}
