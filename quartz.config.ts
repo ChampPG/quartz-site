@@ -8,13 +8,13 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Paul's Docs",
+    pageTitle: "Paul's Resources",
     enableSPA: true,
     enablePopovers: true,
     analytics: null,
     locale: "en-US",
     baseUrl: "quartz.paulgleason.dev",
-    ignorePatterns: ["private", "templates", ".obsidian", "!(PUBLISH_ASSETS)**/!(*.md)", "!(*.md)"],
+    ignorePatterns: ["private", "templates", ".obsidian", "!(everything/Assets)**/!(*.md)", "!(*.md)"],
     defaultDateType: "created",
     theme: {
       typography: {

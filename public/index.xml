@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
     <channel>
-      <title>Paul&#039;s Docs</title>
+      <title>Paul&#039;s Resources</title>
       <link>https://quartz.paulgleason.dev</link>
-      <description>Last 10 notes on Paul&#039;s Docs</description>
+      <description>Last 10 notes on Paul&#039;s Resources</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>index</title>
+    <link>https://quartz.paulgleason.dev/Assets/</link>
+    <guid>https://quartz.paulgleason.dev/Assets/</guid>
+    <description>This is the index for all images on the website.</description>
+    <pubDate>Sun, 31 Mar 2024 05:09:09 GMT</pubDate>
+  </item><item>
     <title>Notes-Main-Dump</title>
     <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Notes-Main-Dump</link>
     <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Notes-Main-Dump</guid>
@@ -59,12 +65,6 @@
     <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-9.1-Build-a-Network-Challenge---1</guid>
     <description>Lab 9.1: Build a Network Challenge - 1 Summary During this lab we had to configure User-labtop and DataCenter-Station to be able to communicate with Montreal Laptop ...</description>
     <pubDate>Sat, 30 Mar 2024 21:51:50 GMT</pubDate>
-  </item><item>
-    <title>Lab 8.1B Add OSPF Authentication</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-8.1B-Add-OSPF-Authentication</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-8.1B-Add-OSPF-Authentication</guid>
-    <description>Lab 8.1B: Add OSPF Authentication Summary During this lab we added OSPF Authentication to the framework from the lab Lab 8.1B OSPF PT Activity Steps Border Router: Network 1 enable config t interface GigabitEthernet 0/0 ip ospf message-digest-key 1 md5 testing ip ospf authentication message-digest East Router: Network 2 enable config t interface GigabitEthernet 0/0 ip ospf message-digest-key 1 md5 testing ip ospf authentication message-digest Data Center: Network 3 enable config t interface GigabitEthernet 0/0 ip ospf message-digest-key 1 md5 testing ip ospf authentication message-digest exit interface GigabitEthernet 0/1 ip ospf message-digest-key 1 md5 testing ip ospf authentication message-digest exit interface GigabitEthernet 0/2 ip ospf message-digest-key 1 md5 testing ip ospf authentication message-digest West Router: Network 4 enable config t interface GigabitEthernet 0/0 ip ospf message-digest-key 1 md5 testing ip ospf authentication message-digest Tips and Tricks If you run the command below it will show all ospf configuration on the ...</description>
-    <pubDate>Sat, 30 Mar 2024 21:51:49 GMT</pubDate>
   </item>
     </channel>
   </rss>
