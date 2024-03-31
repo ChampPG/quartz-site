@@ -1,3 +1,33 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+$mocha-lavender: #DDB6F2;
+$mocha-light-pink: #F5C2E7;
+$mocha-muted-pink: #F28FAD;
+$mocha-soft-green: #ABE9B3;
+$mocha-sky-blue: #96CDFB;
+$mocha-peach: #F8BD96;
+
+h1 {
+  color: $mocha-lavender; // Lavender, for primary headings
+}
+
+h2 {
+  color: $mocha-light-pink; // Light Pink, for secondary headings
+}
+
+h3 {
+  color: $mocha-muted-pink; // Muted Pink, for tertiary headings
+}
+
+h4 {
+  color: $mocha-soft-green; // Soft Green, for quaternary headings
+}
+
+h5 {
+  color: $mocha-sky-blue; // Sky Blue, for quinary headings
+}
+
+h6 {
+  color: $mocha-peach; // Peach, for senary headings
+}
