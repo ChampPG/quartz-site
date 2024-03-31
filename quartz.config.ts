@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "en-US",
     baseUrl: "quartz.paulgleason.dev",
-    ignorePatterns: ["private", "templates", ".obsidian", "!(everything/Assets)**/!(*.md)", "!(*.md)"],
+    ignorePatterns: ["private", "templates", ".obsidian", "!(Assets)**/!(*.md)", "!(*.md)"],
     defaultDateType: "created",
     theme: {
       typography: {
