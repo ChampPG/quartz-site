@@ -2,6 +2,13 @@
 @use "./syntax.scss";
 @use "./callouts.scss";
 
+$mocha-lavender: #DDB6F2;
+$mocha-light-pink: #F5C2E7;
+$mocha-muted-pink: #F28FAD;
+$mocha-soft-green: #ABE9B3;
+$mocha-sky-blue: #96CDFB;
+$mocha-peach: #F8BD96;
+
 html {
   scroll-behavior: smooth;
   text-size-adjust: none;
@@ -256,12 +263,36 @@ blockquote {
   transition: border-color 0.2s ease;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+h1 {
+  color: $mocha-lavender; // Lavender, for primary headings
+}
+
+h2 {
+  color: $mocha-light-pink; // Light Pink, for secondary headings
+}
+
+h3 {
+  color: $mocha-muted-pink; // Muted Pink, for tertiary headings
+}
+
+h4 {
+  color: $mocha-soft-green; // Soft Green, for quaternary headings
+}
+
+h5 {
+  color: $mocha-sky-blue; // Sky Blue, for quinary headings
+}
+
+h6 {
+  color: $mocha-peach; // Peach, for senary headings
+}
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
 thead {
   font-family: var(--headerFont);
   color: var(--dark);
