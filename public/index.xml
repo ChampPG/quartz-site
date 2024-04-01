@@ -6,65 +6,65 @@
       <description>Last 10 notes on Paul&#039;s Resources</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>index</title>
-    <link>https://quartz.paulgleason.dev/Assets/</link>
-    <guid>https://quartz.paulgleason.dev/Assets/</guid>
-    <description>This is the index for all images on the website.</description>
-    <pubDate>Sun, 31 Mar 2024 05:09:09 GMT</pubDate>
+    <title>SEC-250 Computer &amp; Network Security</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Freshman/SEC-250-Computer--and--Network-Security/SEC-250-Computer--and--Network-Security-Dashboard</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Freshman/SEC-250-Computer--and--Network-Security/SEC-250-Computer--and--Network-Security-Dashboard</guid>
+    <description>Course Overview Course: SEC-250 Computer &amp; Network Security Semester: SP21 Professor: Joseph Letourneau Course Description Labs References/Notes.</description>
+    <pubDate>Mon, 01 Apr 2024 00:56:10 GMT</pubDate>
   </item><item>
-    <title>Notes-Main-Dump</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Notes-Main-Dump</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Notes-Main-Dump</guid>
-    <description>All these notes will be split out into weeks NET 330 Resources: Basic Subnet Chart: www.ad-net.com.tw/subnet-chart-cidr-values/ VLSM Calculator: vlsmcalc.com/ OSPF: networklessons.com/ospf/basic-ospf-configuration study-ccna.com/ospf-configuration/ BGP: as2914.net/#/galaxy/internet?cx=-2408&amp;cy=-1426&amp;cz=234&amp;lx=-0.0189&amp;ly=0.2015&amp;lz=-0.0262&amp;lw=0.9790&amp;ml=150&amp;s=1.75&amp;l=1&amp;v=2020-01-28 Class: Refresher Week 1: 8/29/22 Dartmouth had hundreds of subnets just in the datacenter 2^32 IPv4 addresses | 32 bits Letter Packet Look up recipient address Phone Book? Other Directory? Get zip code and street address Put in addressed envelope Write recipient and return address on envelope Put letter in mailbox Mail carrier picks letter up Take letter to local post office Post Office sorts and sends to next PO facility Uses zip code How does PO know where to send next? Postal Service has “routing lists” Ends up at local PO recipient Mail Carrier delivers to recipient Uses street address Look up recipient address Domain Name System (DNS) Convert Hostname to IP address Add “Headers” to data (encapsulate) Send packet to network interface controller (NIC) ...</description>
-    <pubDate>Sat, 30 Mar 2024 22:57:02 GMT</pubDate>
+    <title>CSI-160 Python Programming</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/CSI-160-Python-Programming/CSI-160-Python-Programming-Dashboard</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/CSI-160-Python-Programming/CSI-160-Python-Programming-Dashboard</guid>
+    <description>Course Overview Course: CSI-160 Python Programming Semester: FA21 Professor: Josh Blumberg Course Description Labs References/Notes.</description>
+    <pubDate>Mon, 01 Apr 2024 00:55:11 GMT</pubDate>
   </item><item>
-    <title>Week 3 DHCP</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-3-DHCP</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-3-DHCP</guid>
-    <description>Week 3: DHCP Homework - Reading: The DHCP Server and Routers Allows hosts to dynamically obtain its IP address Above shows a DHCP server setup on a network which has 3 subnets The router must be setup in a way that it knows the IP address of the DHCP server DHCP must work across routers or through the intervention of BOOTP relay agents DHCP DORA (Discover, Offer, Request, Accept) DHCP Port Client 68 and Server 67 * DHCP options field: * Subnet mask * Default Gateway * Lease Time * DNS Server * Most DHCP servers are configured to let a client reuse a previously allocated IP * This can reduce the amount of broadcast traffic * A client will broadcast a DHCPREQUEST message on its local subnet ...</description>
-    <pubDate>Sat, 30 Mar 2024 22:48:24 GMT</pubDate>
+    <title>SEC-345 Information Assurance</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-345-Information-Assurance/SEC-345-Information-Assurance-Dashboard</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-345-Information-Assurance/SEC-345-Information-Assurance-Dashboard</guid>
+    <description>Course Overview Course: SEC-345 Information Assurance Semester: SP22 Professor: Duane Dunston Course Description Labs References/Notes.</description>
+    <pubDate>Mon, 01 Apr 2024 00:54:22 GMT</pubDate>
   </item><item>
-    <title>Week 2 Subnetting, VLANS, &amp; Cisco Commands</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-2-Subnetting,-VLANS,--and--Cisco-Commands</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-2-Subnetting,-VLANS,--and--Cisco-Commands</guid>
-    <description>Week 2: Subnetting, VLANS, &amp; Cisco Commands Subnetting Allow very common subnets: /24 (256 IP’s, 254 Usable), /23 (512 IP’s, 510 Usable), /22 (1024 IP’s, 1022 Usable), /30 (4 IP’s, 2 Usable), /29 (8 IP’s, 6 Usable) Organizations are “assigned” a network address to use on the internet 216.93.144.0/20 All champlain IPs start with the same 20 bits Last 12 bits are used for host ID 2^12 IPs can be used All zeros and all 1’s in the host ID can’t be used But a /20 network cna support 4094 hosts - do we want them all on the same network? Lots of broadcast packets congest the network Machines are slowed by trying to process them Anyone can contact anyone else on the network! Our network ID can’t change but what if we took some host ID bits to create a subnet ID These bits are then ”added” to the ...</description>
-    <pubDate>Sat, 30 Mar 2024 22:48:23 GMT</pubDate>
+    <title>SEC-260 Web and Applications Security</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-260-Web-and-Applications-Security/SEC-260-Web-and-Applications-Security-Dashboard</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-260-Web-and-Applications-Security/SEC-260-Web-and-Applications-Security-Dashboard</guid>
+    <description>Course Overview Course: SEC-260 Web and Applications Security Semester: SP22 Professor: Joe Eastman Course Description Labs References/Notes.</description>
+    <pubDate>Mon, 01 Apr 2024 00:53:50 GMT</pubDate>
   </item><item>
-    <title>Week 1 Subnet Refresher</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-1-Subnet-Refresher</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-1-Subnet-Refresher</guid>
-    <description>Week 1: Subnet Refresher Dartmouth had hundreds of subnets just in the datacenter 2^32 IPv4 addresses | 32 bits LetterPacketLook up recipient addressPhone Book? Other Directory?Get zip code and street addressPut in addressed envelopeWrite recipient and return address on envelopePut letter in mailboxMail carrier picks letter upTake letter to local post officePost Office sorts and sends to next PO facilityUses zip codeHow does PO know where to send next?Postal Service has “routing lists”Ends up at local PO recipientMail Carrier delivers to recipientUses street addressLook up recipient addressDomain Name System (DNS)Convert Hostname to IP addressAdd “Headers” to data (encapsulate)Send packet to network interface controller (NIC)Transmits onto networkSent to local router (AKA default gateway)Router sends packet to next routerUses network part of the IP AddressHow does the router know where to send next?“Routing table” of IP networksEnds up at local router of recipientRouter and switches send to recipientUses Host part and IP ...</description>
-    <pubDate>Sat, 30 Mar 2024 22:47:04 GMT</pubDate>
+    <title>SEC-300 Special Topic - Wireless &amp; Cyber</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-300-Special-Topic---Wireless--and--Cyber/SEC-300-Special-Topic---Wireless--and--Cyber-Dashboard</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-300-Special-Topic---Wireless--and--Cyber/SEC-300-Special-Topic---Wireless--and--Cyber-Dashboard</guid>
+    <description>Course Overview Course: SEC-300 Special Topic - Wireless &amp; Cyber Semester: SP24 Professor: Adam Goldstein/Capstone Class Course Description Labs References/Notes ...</description>
+    <pubDate>Mon, 01 Apr 2024 00:51:52 GMT</pubDate>
   </item><item>
-    <title>Lab 13.1 IPv6</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-13.1-IPv6</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-13.1-IPv6</guid>
-    <description>Lab 13.1: IPv6 Summary Setup Machines On Champlain &amp; Middlebury Hosts: Desktop-IP configuration: Click Auto-Config under IPv6 Configuration CC-R enable config t ipv6 general-prefix champ-pre 2620:E4:C000::/64 interface FastEthernet 0/1 no shutdown ipv6 address 2620:E4:C000::1/64 ipv6 unicast-routing interface FastEthernet 0/1 ipv6 rip process1 enable interface FastEthernet 0/0 ipv6 address autoconfig no shutdown ipv6 rip process1 enable MC-R enable config t ipv6 general-prefix mid-pre 2001:1890:139D::/64 interface FastEthernet 0/1 no shutdown ipv6 address 2001:1890:139D::1/64 ipv6 unicast-routing interface FastEthernet 0/1 ipv6 rip process1 enable interface FastEthernet 0/0 ipv6 address autoconfig no shutdown ipv6 rip process1 enable VTEL-ISP enable config t ipv6 general-prefix vtel-pre 1800:2200:185::/64 interface FastEthernet 0/0 no shutdown ipv6 address 1800:2200:185::/64 eui-64 ipv6 unicast-routing interface FastEthernet 0/0 ipv6 rip process1 enable ! Exit config mode and run show ipv6 interface brief ...</description>
-    <pubDate>Sat, 30 Mar 2024 21:51:52 GMT</pubDate>
+    <title>CSI-140 Introduction to Programming</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/CSI-140-Introduction-to-Programming/CSI-140-Introduction-to-Programming-Dashboard</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/CSI-140-Introduction-to-Programming/CSI-140-Introduction-to-Programming-Dashboard</guid>
+    <description>Course Overview Course: CSI-140 Introduction to Programming Semester: FA23 Professor: Alexandre Tolstenko Course Description Labs References/Notes.</description>
+    <pubDate>Mon, 01 Apr 2024 00:50:57 GMT</pubDate>
   </item><item>
-    <title>Lab 11.1 Access-Lists</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-11.1-Access-Lists</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-11.1-Access-Lists</guid>
-    <description>Lab 11.1: Access-Lists Summary During this lab we used a PT activity to learn more about Access-Lists and how they operate. Setup Router 3 block traffic inbound from 192.168.11.0/24 !- must do enable and password by hand config t ip access-list standard STND-1 deny 192.168.11.0 0.0.0.255 permit any exit interface serial 0/0/0 ip access-group STND-1 in Router 2 outbound block 192.168.10.0/24 to 200.200.200.1 !- must do enable and password by hand config t ip access-list extended EXTEND-1 deny ip 192.168.10.0 0.0.0.255 host 200.200.200.1 permit ip any any exit interface serial 0/0/0 ip access-group EXTEND-1 out Router 1 deny all access from ISP to File Server 200.200.200.0/30 to 192.168.20.210 !- must do enable and password by hand config t ip access-list extended FILE-1 deny ip 200.200.200.0 0.0.0.3 host 192.168.20.210 permit ip any any exit interface serial 0/2/0 ip access-group FILE-1 in Router 1 only web access to the web server 0.0.0.0 0.0.0.0 to 192.168.20.201 eq www !- must do enable and password by hand config t ip access-list extended Web-1 permit tcp any host 192.168.20.201 eq www exit interface FastEthernet 0/0 ip access-group Web-1 out .</description>
-    <pubDate>Sat, 30 Mar 2024 21:51:52 GMT</pubDate>
+    <title>CSI-260 Advanced Python</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/CSI-260-Advanced-Python/CSI-260-Advanced-Python-Dashboard</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/CSI-260-Advanced-Python/CSI-260-Advanced-Python-Dashboard</guid>
+    <description>Course Overview Course: CSI-260 Advanced Python Semester: FA23 Professor: Josh Blumberg Course Description Labs References/Notes.</description>
+    <pubDate>Mon, 01 Apr 2024 00:50:08 GMT</pubDate>
   </item><item>
-    <title>Lab 10.1 IPSEC Packet Tracer 1</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-10.1-IPSEC-Packet-Tracer-1</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-10.1-IPSEC-Packet-Tracer-1</guid>
-    <description>Lab 10.1: IPSEC Packet Tracer 1 Summary The goal of this lab is to setup an IPSEC Site-to-Site VPN between Champlain and Middlebury. Subnet Table NameNetwork AddressSubnetDefault GatewayVTEL to Champlain216.93.144.0255.255.255.0216.93.144.1VTEL to Middlebury140.230.18.0255.255.255.0140.230.18.1Champlain Private172.16.84.0255.255.255.0172.16.84.1Middlebury Private192.168.28.0255.255.255.0192.168.28.1 Steps: Servers Configure both servers to have proper gateway and IP address. Champlain router enable conf t hostname champlain-router ! Interface setup for VTEL to Champlain interface FastEthernet 0/0 ip address 216.93.144.2 255.255.255.0 no shutdown ! Interface setup for internal Champlain interface FastEthernet 0/1 ip address 172.16.84.1 255.255.255.0 no shutdown ip route 0.0.0.0 0.0.0.0 216.93.144.1 ! Identify traffic to send through tunnel with access-list access-list 101 permit ip 172.16.84.0 0.0.0.255 192.168.25.0 0.0.0.255 ! Configure IKE Phase 1 ISAKMP Policy on Champlain Router crypto isakmp policy 10 encryption aes 256 authentication pre-share group 5 exit crypto isakmp key NET330 address 140.230.18.2 ! Configure the IKE Phase 2 IPsec policy !- Create the transform-set &quot;VPN-SET&quot; crypto ipsec transform-set VPN-SET esp-aes esp-sha-hmac !- Create the crypto map &quot;VPN-MAP&quot; crypto map VPN-MAP 10 ipsec-isakmp description VPN connection to Middlebury set peer 140.230.18.2 set transform-set VPN-SET match address 101 exit ! Configure the &quot;crypto map&quot; on the outgoing interface. interface FastEthernet 0/0 crypto map VPN-MAP Middlebury Router enable conf t hostname middlebury-router ! Interface setup for VTEL to Middlebury interface FastEthernet 0/0 ip address 140.230.18.2 255.255.255.0 no shutdown ! Interface setup for internal Champlain interface FastEthernet 0/1 ip address 192.168.25.1 255.255.255.0 no shutdown ip route 0.0.0.0 0.0.0.0 140.230.18.1 ! Identify traffic to send through tunnel with access-list access-list 101 permit ip 192.168.25.0 0.0.0.255 172.16.84.0 0.0.0.255 ! Configure IKE Phase 1 ISAKMP Policy on Middlebury Router crypto isakmp policy 10 encryption aes 256 authentication pre-share group 5 exit crypto isakmp key NET330 address 216.93.144.2 ! Configure the IKE Phase 2 IPsec policy !- Create the transform-set &quot;VPN-SET&quot; crypto ipsec transform-set VPN-SET esp-aes esp-sha-hmac !- Create the crypto map &quot;VPN-MAP&quot; crypto map VPN-MAP 10 ipsec-isakmp description VPN connection to Champlain set peer 216.93.144.2 set transform-set VPN-SET match address 101 exit ! Configure the &quot;crypto map&quot; on the outgoing interface. interface FastEthernet 0/0 crypto map VPN-MAP VTEL enable conf t hostname vtel-router ! Interface setup for VTEL to Champlain interface FastEthernet 0/0 ip address 216.93.144.1 255.255.255.0 no shutdown ! Interface setup for VTEL to Middlebury interface FastEthernet 0/1 ip address 140.230.18.1 255.255.255.0 no shutdown .</description>
-    <pubDate>Sat, 30 Mar 2024 21:51:51 GMT</pubDate>
+    <title>SYS-360 Cloud Admin</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/SYS-360-Cloud-Admin-Dashboard</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/SYS-360-Cloud-Admin-Dashboard</guid>
+    <description>Course Overview Course: SYS-360 Cloud Admin Semester: SP24 Professor: Adam Goldstein Course Description Labs References/Notes.</description>
+    <pubDate>Mon, 01 Apr 2024 00:46:47 GMT</pubDate>
   </item><item>
-    <title>Lab 9.2 Build a Network Challenge 2 - BGP</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-9.2-Build-a-Network-Challenge-2---BGP</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-9.2-Build-a-Network-Challenge-2---BGP</guid>
-    <description>Lab 9.2: Build a Network Challenge 2 - BGP Summary During this lab we took the frame work from the last lab and built out BGP from BTV-Router to Vermont-ISP then to Pacific-ISP ...</description>
-    <pubDate>Sat, 30 Mar 2024 21:51:50 GMT</pubDate>
+    <title>SYS-350 Enterprise Virtualization</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/SYS-350-Enterprise-Virtualization-Dashboard</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/SYS-350-Enterprise-Virtualization-Dashboard</guid>
+    <description>Course Overview Course: SYS-350 Enterprise Virtualization Semester: FA23 Professor: Adam Goldstein Course Description Labs References/Notes.</description>
+    <pubDate>Mon, 01 Apr 2024 00:46:44 GMT</pubDate>
   </item><item>
-    <title>Lab 9.1 Build a Network Challenge - 1</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-9.1-Build-a-Network-Challenge---1</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-9.1-Build-a-Network-Challenge---1</guid>
-    <description>Lab 9.1: Build a Network Challenge - 1 Summary During this lab we had to configure User-labtop and DataCenter-Station to be able to communicate with Montreal Laptop ...</description>
-    <pubDate>Sat, 30 Mar 2024 21:51:50 GMT</pubDate>
+    <title>SEC-440 Systems Security</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-440-Systems-Security/SEC-440-Systems-Security-Dashboard</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-440-Systems-Security/SEC-440-Systems-Security-Dashboard</guid>
+    <description>Course Overview Course: SEC-440 Systems Security Semester: FA23 Professor: Adam Goldstein Course Description Labs References/Notes.</description>
+    <pubDate>Mon, 01 Apr 2024 00:46:42 GMT</pubDate>
   </item>
     </channel>
   </rss>
