@@ -6,65 +6,65 @@
       <description>Last 10 notes on Paul&#039;s Resources</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>SEC-250 Computer &amp; Network Security</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Freshman/SEC-250-Computer--and--Network-Security/SEC-250-Computer--and--Network-Security-Dashboard</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Freshman/SEC-250-Computer--and--Network-Security/SEC-250-Computer--and--Network-Security-Dashboard</guid>
-    <description>Course Overview Course: SEC-250 Computer &amp; Network Security Semester: SP21 Professor: Joseph Letourneau Course Description Labs References/Notes.</description>
-    <pubDate>Mon, 01 Apr 2024 00:56:10 GMT</pubDate>
+    <title>Dashboard</title>
+    <link>https://quartz.paulgleason.dev/Dashboard</link>
+    <guid>https://quartz.paulgleason.dev/Dashboard</guid>
+    <description>...</description>
+    <pubDate>Mon, 01 Apr 2024 21:39:15 GMT</pubDate>
   </item><item>
-    <title>CSI-160 Python Programming</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/CSI-160-Python-Programming/CSI-160-Python-Programming-Dashboard</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/CSI-160-Python-Programming/CSI-160-Python-Programming-Dashboard</guid>
-    <description>Course Overview Course: CSI-160 Python Programming Semester: FA21 Professor: Josh Blumberg Course Description Labs References/Notes.</description>
-    <pubDate>Mon, 01 Apr 2024 00:55:11 GMT</pubDate>
+    <title>SEC-335 Eth. Hacking &amp; Pen. Testing</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/SEC-335-Eth.-Hacking--and--Pen.-Testing-Dashboard</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/SEC-335-Eth.-Hacking--and--Pen.-Testing-Dashboard</guid>
+    <description>Course Overview Course: SEC-335 Eth. Hacking &amp; Pen. Testing Semester: SP23 Professor: Mackenzie Marsocci Course Description Labs Assignments Assignment 1.2 The Kali Virtual Machine Assignment 2.1 Host Discovery Assignment 3.1 DNS Enumeration Assignment 4.1 Exploiting Cupcake References/Notes NMAP Metasploit Active &amp; Passive Recon Shodan The Harvester Metagoofil CEWL RsMangler Hydra DIRB FFUF John the Ripper Hashcat Full Terminal Reverse Shells .</description>
+    <pubDate>Mon, 01 Apr 2024 21:39:15 GMT</pubDate>
   </item><item>
-    <title>SEC-345 Information Assurance</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-345-Information-Assurance/SEC-345-Information-Assurance-Dashboard</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-345-Information-Assurance/SEC-345-Information-Assurance-Dashboard</guid>
-    <description>Course Overview Course: SEC-345 Information Assurance Semester: SP22 Professor: Duane Dunston Course Description Labs References/Notes.</description>
-    <pubDate>Mon, 01 Apr 2024 00:54:22 GMT</pubDate>
+    <title>Ansible</title>
+    <link>https://quartz.paulgleason.dev/everything/References/Ansible</link>
+    <guid>https://quartz.paulgleason.dev/everything/References/Ansible</guid>
+    <description>MOCs Overview Tips and Tricks Overview Documentation Base Documentation Ansible Galaxy Tips and Tricks.</description>
+    <pubDate>Mon, 01 Apr 2024 21:39:15 GMT</pubDate>
   </item><item>
-    <title>SEC-260 Web and Applications Security</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-260-Web-and-Applications-Security/SEC-260-Web-and-Applications-Security-Dashboard</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-260-Web-and-Applications-Security/SEC-260-Web-and-Applications-Security-Dashboard</guid>
-    <description>Course Overview Course: SEC-260 Web and Applications Security Semester: SP22 Professor: Joe Eastman Course Description Labs References/Notes.</description>
-    <pubDate>Mon, 01 Apr 2024 00:53:50 GMT</pubDate>
+    <title>Notes-Main-Dump</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Notes-Main-Dump</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Notes-Main-Dump</guid>
+    <description>All these notes will be split out into weeks NET 330 Resources: Basic Subnet Chart: www.ad-net.com.tw/subnet-chart-cidr-values/ VLSM Calculator: vlsmcalc.com/ OSPF: networklessons.com/ospf/basic-ospf-configuration study-ccna.com/ospf-configuration/ BGP: as2914.net/#/galaxy/internet?cx=-2408&amp;cy=-1426&amp;cz=234&amp;lx=-0.0189&amp;ly=0.2015&amp;lz=-0.0262&amp;lw=0.9790&amp;ml=150&amp;s=1.75&amp;l=1&amp;v=2020-01-28 Class: Refresher Week 1: 8/29/22 Dartmouth had hundreds of subnets just in the datacenter 2^32 IPv4 addresses | 32 bits Letter Packet Look up recipient address Phone Book? Other Directory? Get zip code and street address Put in addressed envelope Write recipient and return address on envelope Put letter in mailbox Mail carrier picks letter up Take letter to local post office Post Office sorts and sends to next PO facility Uses zip code How does PO know where to send next? Postal Service has “routing lists” Ends up at local PO recipient Mail Carrier delivers to recipient Uses street address Look up recipient address Domain Name System (DNS) Convert Hostname to IP address Add “Headers” to data (encapsulate) Send packet to network interface controller (NIC) ...</description>
+    <pubDate>Mon, 01 Apr 2024 21:39:15 GMT</pubDate>
   </item><item>
-    <title>SEC-300 Special Topic - Wireless &amp; Cyber</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-300-Special-Topic---Wireless--and--Cyber/SEC-300-Special-Topic---Wireless--and--Cyber-Dashboard</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-300-Special-Topic---Wireless--and--Cyber/SEC-300-Special-Topic---Wireless--and--Cyber-Dashboard</guid>
-    <description>Course Overview Course: SEC-300 Special Topic - Wireless &amp; Cyber Semester: SP24 Professor: Adam Goldstein/Capstone Class Course Description Labs References/Notes ...</description>
-    <pubDate>Mon, 01 Apr 2024 00:51:52 GMT</pubDate>
+    <title>index</title>
+    <link>https://quartz.paulgleason.dev/</link>
+    <guid>https://quartz.paulgleason.dev/</guid>
+    <description>...</description>
+    <pubDate>Mon, 01 Apr 2024 21:39:15 GMT</pubDate>
   </item><item>
-    <title>CSI-140 Introduction to Programming</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/CSI-140-Introduction-to-Programming/CSI-140-Introduction-to-Programming-Dashboard</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/CSI-140-Introduction-to-Programming/CSI-140-Introduction-to-Programming-Dashboard</guid>
-    <description>Course Overview Course: CSI-140 Introduction to Programming Semester: FA23 Professor: Alexandre Tolstenko Course Description Labs References/Notes.</description>
-    <pubDate>Mon, 01 Apr 2024 00:50:57 GMT</pubDate>
+    <title>Class Dashboard</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Class-Dashboard</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Class-Dashboard</guid>
+    <description>MOCs Warning WIP to move all tech journals over Capstone Senior Junior Sophomore Freshman Capstone Info Capstone will be published once our capstone class is over Senior SP24 SYS-360 Cloud Admin Dashboard SEC-300 Special Topic - Wireless &amp; Cyber Dashboard - 1 Credit FOR-100 Into to DF Dashboard FA23 SYS-350 Enterprise Virtualization Dashboard SEC-440 Systems Security Dashboard SEC-300 ELK Stack for Security Operations Dashboard - 1 Credit CSI-260 Advanced Python Dashboard CSI-140 Introduction to Programming Dashboard Junior SP23 SEC-335 Eth ...</description>
+    <pubDate>Mon, 01 Apr 2024 21:39:15 GMT</pubDate>
   </item><item>
-    <title>CSI-260 Advanced Python</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/CSI-260-Advanced-Python/CSI-260-Advanced-Python-Dashboard</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/CSI-260-Advanced-Python/CSI-260-Advanced-Python-Dashboard</guid>
-    <description>Course Overview Course: CSI-260 Advanced Python Semester: FA23 Professor: Josh Blumberg Course Description Labs References/Notes.</description>
-    <pubDate>Mon, 01 Apr 2024 00:50:08 GMT</pubDate>
+    <title>Untitled 2 1 1</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Untitled-2-1-1</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Untitled-2-1-1</guid>
+    <description></description>
+    <pubDate>Mon, 01 Apr 2024 03:36:36 GMT</pubDate>
   </item><item>
-    <title>SYS-360 Cloud Admin</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/SYS-360-Cloud-Admin-Dashboard</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/SYS-360-Cloud-Admin-Dashboard</guid>
-    <description>Course Overview Course: SYS-360 Cloud Admin Semester: SP24 Professor: Adam Goldstein Course Description Labs References/Notes.</description>
-    <pubDate>Mon, 01 Apr 2024 00:46:47 GMT</pubDate>
+    <title>Untitled 2 1</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Untitled-2-1</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Untitled-2-1</guid>
+    <description></description>
+    <pubDate>Mon, 01 Apr 2024 03:36:35 GMT</pubDate>
   </item><item>
-    <title>SYS-350 Enterprise Virtualization</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/SYS-350-Enterprise-Virtualization-Dashboard</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/SYS-350-Enterprise-Virtualization-Dashboard</guid>
-    <description>Course Overview Course: SYS-350 Enterprise Virtualization Semester: FA23 Professor: Adam Goldstein Course Description Labs References/Notes.</description>
-    <pubDate>Mon, 01 Apr 2024 00:46:44 GMT</pubDate>
+    <title>Untitled 2</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Untitled-2</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Untitled-2</guid>
+    <description></description>
+    <pubDate>Mon, 01 Apr 2024 03:36:33 GMT</pubDate>
   </item><item>
-    <title>SEC-440 Systems Security</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-440-Systems-Security/SEC-440-Systems-Security-Dashboard</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-440-Systems-Security/SEC-440-Systems-Security-Dashboard</guid>
-    <description>Course Overview Course: SEC-440 Systems Security Semester: FA23 Professor: Adam Goldstein Course Description Labs References/Notes.</description>
-    <pubDate>Mon, 01 Apr 2024 00:46:42 GMT</pubDate>
+    <title>Assignment 4.1 Exploiting Cupcake</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Assignment-4.1-Exploiting-Cupcake</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Assignment-4.1-Exploiting-Cupcake</guid>
+    <description>Assignment 4.1: Exploiting Cupcake Summary During this activity we did active recon on the cupcake box and then used nmap and the shell-shock vulnerability to gain access to the samwise user ...</description>
+    <pubDate>Mon, 01 Apr 2024 03:36:31 GMT</pubDate>
   </item>
     </channel>
   </rss>
