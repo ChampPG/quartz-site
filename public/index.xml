@@ -6,6 +6,12 @@
       <description>Last 10 notes on Paul&#039;s Resources</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Github</title>
+    <link>https://quartz.paulgleason.dev/everything/References/Github</link>
+    <guid>https://quartz.paulgleason.dev/everything/References/Github</guid>
+    <description>MOCs Overview Documentation Tips and Tricks Github-CLI Instalation Authentication Cloning repo with ssh Overview Documentation git documentation Tips and Tricks If you want an easier time using github you can install lazygit which is a tui for git ...</description>
+    <pubDate>Sat, 06 Apr 2024 02:11:27 GMT</pubDate>
+  </item><item>
     <title>Dashboard</title>
     <link>https://quartz.paulgleason.dev/Dashboard</link>
     <guid>https://quartz.paulgleason.dev/Dashboard</guid>
@@ -15,7 +21,7 @@
     <title>SEC-335 Eth. Hacking &amp; Pen. Testing</title>
     <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/SEC-335-Eth.-Hacking--and--Pen.-Testing-Dashboard</link>
     <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/SEC-335-Eth.-Hacking--and--Pen.-Testing-Dashboard</guid>
-    <description>Course Overview Course: SEC-335 Eth. Hacking &amp; Pen. Testing Semester: SP23 Professor: Mackenzie Marsocci Course Description Labs Assignments Assignment 1.2 The Kali Virtual Machine Assignment 2.1 Host Discovery Assignment 3.1 DNS Enumeration Assignment 4.1 Exploiting Cupcake References/Notes NMAP Metasploit Active &amp; Passive Recon Shodan The Harvester Metagoofil CEWL RsMangler Hydra DIRB FFUF John the Ripper Hashcat Full Terminal Reverse Shells .</description>
+    <description>Course Overview Course: SEC-335 Eth. Hacking &amp; Pen. Testing Semester: SP23 Professor: Mackenzie Marsocci Course Description Labs Assignments Assignment 1.2 The Kali Virtual Machine Assignment 2.1 Host Discovery Assignment 3.1 DNS Enumeration Assignment 4.1 Exploiting Cupcake Assignment 5.1 Breaking into Kali References/Notes NMAP Metasploit Active &amp; Passive Recon Shodan The Harvester Metagoofil CEWL RsMangler Hydra DIRB FFUF John the Ripper Hashcat Full Terminal Reverse Shells .</description>
     <pubDate>Mon, 01 Apr 2024 21:39:15 GMT</pubDate>
   </item><item>
     <title>Ansible</title>
@@ -54,17 +60,11 @@
     <description></description>
     <pubDate>Mon, 01 Apr 2024 03:36:35 GMT</pubDate>
   </item><item>
-    <title>Untitled 2</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Untitled-2</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Untitled-2</guid>
-    <description></description>
+    <title>Assignment 5.1 Breaking into Kali</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Assignment-5.1-Breaking-into-Kali</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Assignment-5.1-Breaking-into-Kali</guid>
+    <description>Assignment 5.1: Breaking into Kali Changing Boot Configuration: Reboot Kali box and hit space to enter boot menu Press ‘e’ on Kali GNU/Linux Add single init=/bin/bash to the end of the linux line ...</description>
     <pubDate>Mon, 01 Apr 2024 03:36:33 GMT</pubDate>
-  </item><item>
-    <title>Assignment 4.1 Exploiting Cupcake</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Assignment-4.1-Exploiting-Cupcake</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Assignment-4.1-Exploiting-Cupcake</guid>
-    <description>Assignment 4.1: Exploiting Cupcake Summary During this activity we did active recon on the cupcake box and then used nmap and the shell-shock vulnerability to gain access to the samwise user ...</description>
-    <pubDate>Mon, 01 Apr 2024 03:36:31 GMT</pubDate>
   </item>
     </channel>
   </rss>
