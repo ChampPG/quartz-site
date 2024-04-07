@@ -23,14 +23,23 @@
     <loc>https://quartz.paulgleason.dev/everything/Cyber/HTB/htb-challenge-ancient-encodings</loc>
     <lastmod>2024-03-20T22:18:53.628Z</lastmod>
   </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/References/AWS</loc>
+    <lastmod>2024-04-07T05:13:52.658Z</lastmod>
+  </url><url>
     <loc>https://quartz.paulgleason.dev/everything/References/Ansible</loc>
     <lastmod>2024-04-01T21:39:15.695Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/References/Chrome-Remote-Desktop</loc>
+    <lastmod>2024-04-06T21:58:23.978Z</lastmod>
   </url><url>
     <loc>https://quartz.paulgleason.dev/everything/References/Cisco-IOS</loc>
     <lastmod>2024-03-30T20:42:16.434Z</lastmod>
   </url><url>
     <loc>https://quartz.paulgleason.dev/everything/References/Github</loc>
     <lastmod>2024-04-06T02:11:27.419Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/References/HyperV</loc>
+    <lastmod>2024-04-07T04:57:04.926Z</lastmod>
   </url><url>
     <loc>https://quartz.paulgleason.dev/everything/References/Kitty</loc>
     <lastmod>2024-03-08T01:05:05.447Z</lastmod>
@@ -44,8 +53,17 @@
     <loc>https://quartz.paulgleason.dev/everything/References/Obsidian</loc>
     <lastmod>2024-03-08T01:05:05.053Z</lastmod>
   </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/References/OpenStack</loc>
+    <lastmod>2024-04-07T04:50:06.845Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/References/PfSense</loc>
+    <lastmod>2024-04-07T05:00:54.882Z</lastmod>
+  </url><url>
     <loc>https://quartz.paulgleason.dev/everything/References/PowerCLI</loc>
     <lastmod>2024-04-01T00:45:10.400Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/References/Python</loc>
+    <lastmod>2024-04-07T00:45:02.778Z</lastmod>
   </url><url>
     <loc>https://quartz.paulgleason.dev/everything/References/VYOS</loc>
     <lastmod>2024-03-31T21:56:39.495Z</lastmod>
@@ -188,6 +206,15 @@
     <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Week-3-DHCP</loc>
     <lastmod>2024-03-30T22:48:24.537Z</lastmod>
   </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-300-Quantitative-Cyber-Risk/Labs/Lab-1.0-Catastrophe-Modeling</loc>
+    <lastmod>2024-04-07T00:53:42.028Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-300-Quantitative-Cyber-Risk/Labs/Lab-2.0-Risk-Matrices-and-FAIR-Threat-Profiling</loc>
+    <lastmod>2024-04-07T01:06:15.568Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-300-Quantitative-Cyber-Risk/Labs/Lab-3.0-Calibrated-Estimates</loc>
+    <lastmod>2024-04-07T01:15:37.815Z</lastmod>
+  </url><url>
     <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-300-Quantitative-Cyber-Risk/SEC-300-Quantitative-Cyber-Risk-Dashboard</loc>
     <lastmod>2024-03-30T20:34:00.192Z</lastmod>
   </url><url>
@@ -206,11 +233,47 @@
     <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Assignment-5.1-Breaking-into-Kali</loc>
     <lastmod>2024-04-01T03:36:33.251Z</lastmod>
   </url><url>
-    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Untitled-2-1-1</loc>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Labs/Final-Bree</loc>
+    <lastmod>2024-04-07T01:47:41.676Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Labs/Lab-10.1-Linux---Permission-Vulnerabilities</loc>
+    <lastmod>2024-04-07T01:47:35.736Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Labs/Lab-10.2-Exploiting-nancurunir</loc>
+    <lastmod>2024-04-07T01:47:37.426Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Labs/Lab-11.1-Metasploit</loc>
+    <lastmod>2024-04-07T01:47:39.192Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Labs/Lab-2.1-Port-Scanning-1</loc>
+    <lastmod>2024-04-01T03:36:35.121Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Labs/Lab-2.2-Port-Scanning-2</loc>
     <lastmod>2024-04-01T03:36:36.667Z</lastmod>
   </url><url>
-    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Untitled-2-1</loc>
-    <lastmod>2024-04-01T03:36:35.121Z</lastmod>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Labs/Lab-3.1-Powershell-and-DNS</loc>
+    <lastmod>2024-04-06T22:39:52.829Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Labs/Lab-3.2-DNS-Uses-both-UDP-and-TCP</loc>
+    <lastmod>2024-04-06T22:39:54.649Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Labs/Lab-5.1-Password-Guessing</loc>
+    <lastmod>2024-04-06T22:39:57.279Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Labs/Lab-6.1-Cracking-Linux-Passwords-with-JtR-and-Hashcat</loc>
+    <lastmod>2024-04-06T22:40:07.202Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Labs/Lab-7.1-Exploiting-pippin.shire.org</loc>
+    <lastmod>2024-04-06T22:40:08.922Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Labs/Lab-8.1-Weevely</loc>
+    <lastmod>2024-04-07T01:47:44.492Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Labs/Lab-8.2-Reverse-Shell</loc>
+    <lastmod>2024-04-06T22:40:10.726Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Labs/Lab-9.1-Exploit-Gloin</loc>
+    <lastmod>2024-04-07T01:47:23.189Z</lastmod>
   </url><url>
     <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/SEC-335-Eth.-Hacking--and--Pen.-Testing-Dashboard</loc>
     <lastmod>2024-04-01T21:39:15.791Z</lastmod>
@@ -302,14 +365,89 @@
     <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/FOR-100-Into-to-DF/FOR-100-Into-to-DF-Dashboard</loc>
     <lastmod>2024-04-01T00:46:38.086Z</lastmod>
   </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-300-ELK-Stack-for-Security-Operations/Labs/Lab-1-Setting-up-Elastic-in-AWS</loc>
+    <lastmod>2024-04-07T03:02:33.521Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-300-ELK-Stack-for-Security-Operations/Labs/Lab-2-Elasticsearch-Queries</loc>
+    <lastmod>2024-04-07T03:10:00.852Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-300-ELK-Stack-for-Security-Operations/Labs/Lab-3.1-Configuring-Metricbeat</loc>
+    <lastmod>2024-04-07T03:10:29.182Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-300-ELK-Stack-for-Security-Operations/Labs/Lab-3.2-Configuring-Filebeat</loc>
+    <lastmod>2024-04-07T03:10:26.225Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-300-ELK-Stack-for-Security-Operations/Labs/Lab-4.2-Auditbeat-with-Logstash</loc>
+    <lastmod>2024-04-07T03:10:27.612Z</lastmod>
+  </url><url>
     <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-300-ELK-Stack-for-Security-Operations/SEC-300-ELK-Stack-for-Security-Operations-Dashboard</loc>
     <lastmod>2024-04-01T00:46:39.910Z</lastmod>
   </url><url>
     <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-300-Special-Topic---Wireless--and--Cyber/SEC-300-Special-Topic---Wireless--and--Cyber-Dashboard</loc>
     <lastmod>2024-04-01T00:51:52.791Z</lastmod>
   </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-440-Systems-Security/Labs/Lab-2-Web-and-Proxy-Redundancy</loc>
+    <lastmod>2024-04-07T02:23:36.488Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-440-Systems-Security/Labs/Lab-3-Web-Application-and-Database-Redundancy</loc>
+    <lastmod>2024-04-07T02:24:01.552Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-440-Systems-Security/Labs/Lab-4-AWS</loc>
+    <lastmod>2024-04-07T02:24:03.158Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-440-Systems-Security/Labs/Lab-5-Wireguard-with-AWS</loc>
+    <lastmod>2024-04-07T02:24:04.998Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-440-Systems-Security/Labs/Lab-7-Windows-Admin-Center</loc>
+    <lastmod>2024-04-07T02:24:06.598Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-440-Systems-Security/Labs/Lab-7.1-Kerberos-Deep-Dive</loc>
+    <lastmod>2024-04-07T02:24:08.392Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-440-Systems-Security/Notes/Notes</loc>
+    <lastmod>2024-04-07T05:10:28.322Z</lastmod>
+  </url><url>
     <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-440-Systems-Security/SEC-440-Systems-Security-Dashboard</loc>
     <lastmod>2024-04-01T00:46:42.006Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-1-Hypervisor-Setup</loc>
+    <lastmod>2024-04-07T04:05:10.990Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-10-Openstack-and-Windows</loc>
+    <lastmod>2024-04-07T04:34:02.764Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-11-HyperV</loc>
+    <lastmod>2024-04-07T04:58:02.896Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-12-HyperV-Automation</loc>
+    <lastmod>2024-04-07T04:58:04.449Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-13-Server-Decommission</loc>
+    <lastmod>2024-04-07T05:02:19.898Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-2-AD-and-vCenter</loc>
+    <lastmod>2024-04-07T04:07:53.403Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-3-Nested-Virtualization-and-Templates</loc>
+    <lastmod>2024-04-07T04:08:01.812Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-4-pyVmomi</loc>
+    <lastmod>2024-04-07T04:08:14.549Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-5.1-More-Automation</loc>
+    <lastmod>2024-04-07T04:08:17.989Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-6.1-NFS-and-Perms</loc>
+    <lastmod>2024-04-07T04:08:19.396Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-7.1-VMware-Review</loc>
+    <lastmod>2024-04-07T04:08:21.236Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-8-OpenStack</loc>
+    <lastmod>2024-04-07T04:33:59.704Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-9-OpenStack-Tutorials</loc>
+    <lastmod>2024-04-07T04:34:01.317Z</lastmod>
   </url><url>
     <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/SYS-350-Enterprise-Virtualization-Dashboard</loc>
     <lastmod>2024-04-01T00:46:44.793Z</lastmod>
@@ -319,6 +457,42 @@
   </url><url>
     <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/CSI-160-Python-Programming/CSI-160-Python-Programming-Dashboard</loc>
     <lastmod>2024-04-01T00:55:11.487Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-260-Web-and-Applications-Security/Notes/Week-1-Encryption</loc>
+    <lastmod>2024-04-06T22:48:33.173Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-260-Web-and-Applications-Security/Notes/Week-10-XSS--and--PHP</loc>
+    <lastmod>2024-04-06T22:59:47.056Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-260-Web-and-Applications-Security/Notes/Week-11-SQL</loc>
+    <lastmod>2024-04-06T22:59:48.970Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-260-Web-and-Applications-Security/Notes/Week-12-SQL-Injection--and--Prepared-Statements</loc>
+    <lastmod>2024-04-06T23:07:55.967Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-260-Web-and-Applications-Security/Notes/Week-13-Quiz-Prep-Week</loc>
+    <lastmod>2024-04-06T23:07:57.387Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-260-Web-and-Applications-Security/Notes/Week-3-Apache-Web-Servers</loc>
+    <lastmod>2024-04-06T22:50:51.816Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-260-Web-and-Applications-Security/Notes/Week-4-CIA</loc>
+    <lastmod>2024-04-06T22:51:01.866Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-260-Web-and-Applications-Security/Notes/Week-5-MOD-SSL-Security</loc>
+    <lastmod>2024-04-06T22:51:03.472Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-260-Web-and-Applications-Security/Notes/Week-6-Microsoft-ISS</loc>
+    <lastmod>2024-04-06T22:51:05.529Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-260-Web-and-Applications-Security/Notes/Week-7-Hardneing</loc>
+    <lastmod>2024-04-06T22:51:07.212Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-260-Web-and-Applications-Security/Notes/Week-8-OWASP-Top-10</loc>
+    <lastmod>2024-04-06T22:51:08.792Z</lastmod>
+  </url><url>
+    <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-260-Web-and-Applications-Security/Notes/Week-9-Introduction-to-JavaScript</loc>
+    <lastmod>2024-04-06T22:51:10.252Z</lastmod>
   </url><url>
     <loc>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SEC-260-Web-and-Applications-Security/SEC-260-Web-and-Applications-Security-Dashboard</loc>
     <lastmod>2024-04-01T00:53:50.604Z</lastmod>

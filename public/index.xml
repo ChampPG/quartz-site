@@ -6,65 +6,65 @@
       <description>Last 10 notes on Paul&#039;s Resources</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Github</title>
-    <link>https://quartz.paulgleason.dev/everything/References/Github</link>
-    <guid>https://quartz.paulgleason.dev/everything/References/Github</guid>
-    <description>MOCs Overview Documentation Tips and Tricks Github-CLI Instalation Authentication Cloning repo with ssh Overview Documentation git documentation Tips and Tricks If you want an easier time using github you can install lazygit which is a tui for git ...</description>
-    <pubDate>Sat, 06 Apr 2024 02:11:27 GMT</pubDate>
-  </item><item>
-    <title>Dashboard</title>
-    <link>https://quartz.paulgleason.dev/Dashboard</link>
-    <guid>https://quartz.paulgleason.dev/Dashboard</guid>
-    <description>...</description>
-    <pubDate>Mon, 01 Apr 2024 21:39:15 GMT</pubDate>
-  </item><item>
-    <title>SEC-335 Eth. Hacking &amp; Pen. Testing</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/SEC-335-Eth.-Hacking--and--Pen.-Testing-Dashboard</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/SEC-335-Eth.-Hacking--and--Pen.-Testing-Dashboard</guid>
-    <description>Course Overview Course: SEC-335 Eth. Hacking &amp; Pen. Testing Semester: SP23 Professor: Mackenzie Marsocci Course Description Labs Assignments Assignment 1.2 The Kali Virtual Machine Assignment 2.1 Host Discovery Assignment 3.1 DNS Enumeration Assignment 4.1 Exploiting Cupcake Assignment 5.1 Breaking into Kali References/Notes NMAP Metasploit Active &amp; Passive Recon Shodan The Harvester Metagoofil CEWL RsMangler Hydra DIRB FFUF John the Ripper Hashcat Full Terminal Reverse Shells .</description>
-    <pubDate>Mon, 01 Apr 2024 21:39:15 GMT</pubDate>
-  </item><item>
-    <title>Ansible</title>
-    <link>https://quartz.paulgleason.dev/everything/References/Ansible</link>
-    <guid>https://quartz.paulgleason.dev/everything/References/Ansible</guid>
-    <description>MOCs Overview Tips and Tricks Overview Documentation Base Documentation Ansible Galaxy Tips and Tricks.</description>
-    <pubDate>Mon, 01 Apr 2024 21:39:15 GMT</pubDate>
-  </item><item>
-    <title>Notes-Main-Dump</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Notes-Main-Dump</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Notes/Notes-Main-Dump</guid>
-    <description>All these notes will be split out into weeks NET 330 Resources: Basic Subnet Chart: www.ad-net.com.tw/subnet-chart-cidr-values/ VLSM Calculator: vlsmcalc.com/ OSPF: networklessons.com/ospf/basic-ospf-configuration study-ccna.com/ospf-configuration/ BGP: as2914.net/#/galaxy/internet?cx=-2408&amp;cy=-1426&amp;cz=234&amp;lx=-0.0189&amp;ly=0.2015&amp;lz=-0.0262&amp;lw=0.9790&amp;ml=150&amp;s=1.75&amp;l=1&amp;v=2020-01-28 Class: Refresher Week 1: 8/29/22 Dartmouth had hundreds of subnets just in the datacenter 2^32 IPv4 addresses | 32 bits Letter Packet Look up recipient address Phone Book? Other Directory? Get zip code and street address Put in addressed envelope Write recipient and return address on envelope Put letter in mailbox Mail carrier picks letter up Take letter to local post office Post Office sorts and sends to next PO facility Uses zip code How does PO know where to send next? Postal Service has “routing lists” Ends up at local PO recipient Mail Carrier delivers to recipient Uses street address Look up recipient address Domain Name System (DNS) Convert Hostname to IP address Add “Headers” to data (encapsulate) Send packet to network interface controller (NIC) ...</description>
-    <pubDate>Mon, 01 Apr 2024 21:39:15 GMT</pubDate>
-  </item><item>
-    <title>index</title>
-    <link>https://quartz.paulgleason.dev/</link>
-    <guid>https://quartz.paulgleason.dev/</guid>
-    <description>...</description>
-    <pubDate>Mon, 01 Apr 2024 21:39:15 GMT</pubDate>
-  </item><item>
-    <title>Class Dashboard</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Class-Dashboard</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Class-Dashboard</guid>
-    <description>MOCs Warning WIP to move all tech journals over Capstone Senior Junior Sophomore Freshman Capstone Info Capstone will be published once our capstone class is over Senior SP24 SYS-360 Cloud Admin Dashboard SEC-300 Special Topic - Wireless &amp; Cyber Dashboard - 1 Credit FOR-100 Into to DF Dashboard FA23 SYS-350 Enterprise Virtualization Dashboard SEC-440 Systems Security Dashboard SEC-300 ELK Stack for Security Operations Dashboard - 1 Credit CSI-260 Advanced Python Dashboard CSI-140 Introduction to Programming Dashboard Junior SP23 SEC-335 Eth ...</description>
-    <pubDate>Mon, 01 Apr 2024 21:39:15 GMT</pubDate>
-  </item><item>
-    <title>Untitled 2 1 1</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Untitled-2-1-1</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Untitled-2-1-1</guid>
+    <title>AWS</title>
+    <link>https://quartz.paulgleason.dev/everything/References/AWS</link>
+    <guid>https://quartz.paulgleason.dev/everything/References/AWS</guid>
     <description></description>
-    <pubDate>Mon, 01 Apr 2024 03:36:36 GMT</pubDate>
+    <pubDate>Sun, 07 Apr 2024 05:13:52 GMT</pubDate>
   </item><item>
-    <title>Untitled 2 1</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Untitled-2-1</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Untitled-2-1</guid>
+    <title>Notes</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-440-Systems-Security/Notes/Notes</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SEC-440-Systems-Security/Notes/Notes</guid>
+    <description>Resources 2FA for ssh www.digitalocean.com/community/tutorials/how-to-set-up-multi-factor-authentication-for-ssh-on-ubuntu-18-04 8/31/23 - Availability and Redundancy CIA Triad Confidentiality - encryption in transit (TLS), encryption at rest, access-control Integrity - Hashing! Threats to Availability Why is availability important $$$ Clients What are the threats to availability? Poor network setup Bad Configs Natural Disaster What are the barriers to good availability Cost Disaster Recovery Site Options Hot $$$, Cold $, and Warm $$ Types of Failover Like Sites Hot $$$, Cold $, and Warm $$ Disaster Recovery Means Data - Replication, Offiste Backup Networks - High availability options, Double People Complex issues here Who goes to the backup site? Do cloud providers and services fix the problem Cons Must rely on another company for support Pros Can access anywhere Larger companies have more availability zones Cloud can scale 9/7/23 - First hop redundancy protocol PKI signing (and singing in general is the future They present the illusion ...</description>
+    <pubDate>Sun, 07 Apr 2024 05:10:28 GMT</pubDate>
+  </item><item>
+    <title>Milestone 13 Server Decommission</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-13-Server-Decommission</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-13-Server-Decommission</guid>
+    <description>Milestone 13: Server Decommission Steps Make a g-parted live usb Live boot g-parted Hit enter Select English langauge 0 Start deleting partitions Should look like the screenshot below when the disk is clean ...</description>
+    <pubDate>Sun, 07 Apr 2024 05:02:19 GMT</pubDate>
+  </item><item>
+    <title>PfSense</title>
+    <link>https://quartz.paulgleason.dev/everything/References/PfSense</link>
+    <guid>https://quartz.paulgleason.dev/everything/References/PfSense</guid>
     <description></description>
-    <pubDate>Mon, 01 Apr 2024 03:36:35 GMT</pubDate>
+    <pubDate>Sun, 07 Apr 2024 05:00:54 GMT</pubDate>
   </item><item>
-    <title>Assignment 5.1 Breaking into Kali</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Assignment-5.1-Breaking-into-Kali</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Assignments/Assignment-5.1-Breaking-into-Kali</guid>
-    <description>Assignment 5.1: Breaking into Kali Changing Boot Configuration: Reboot Kali box and hit space to enter boot menu Press ‘e’ on Kali GNU/Linux Add single init=/bin/bash to the end of the linux line ...</description>
-    <pubDate>Mon, 01 Apr 2024 03:36:33 GMT</pubDate>
+    <title>Milestone 12 HyperV Automation</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-12-HyperV-Automation</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-12-HyperV-Automation</guid>
+    <description>Milestone 12: HyperV Automation Repo for the code used in this milestone Link Make ubuntu server base vm: Download ubuntu iso Make VM curl github.com/gmcyber/480share/blob/master/hyperv-ubuntu-sealer.sh Then run that script Turn off vm Take base snapshot Deliverable 1 ...</description>
+    <pubDate>Sun, 07 Apr 2024 04:58:04 GMT</pubDate>
+  </item><item>
+    <title>Milestone 11 HyperV</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-11-HyperV</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-11-HyperV</guid>
+    <description>Milestone 11: HyperV Installing Hyper-V: Go under roles and features and select Hyper-V: IMPORT NOTE: Windows Admin Center will not load on Firefox!! Use Chome!! Hyper-V Virtual Switches: Pfsense Config: I used pfsense for my firewall of choice so I set it up the same way I always have… PfSense Importing VM: Then follow the steps but when you get to the setting up of the disk select the disk image you downloaded. ...</description>
+    <pubDate>Sun, 07 Apr 2024 04:58:02 GMT</pubDate>
+  </item><item>
+    <title>HyperV</title>
+    <link>https://quartz.paulgleason.dev/everything/References/HyperV</link>
+    <guid>https://quartz.paulgleason.dev/everything/References/HyperV</guid>
+    <description></description>
+    <pubDate>Sun, 07 Apr 2024 04:57:04 GMT</pubDate>
+  </item><item>
+    <title>OpenStack</title>
+    <link>https://quartz.paulgleason.dev/everything/References/OpenStack</link>
+    <guid>https://quartz.paulgleason.dev/everything/References/OpenStack</guid>
+    <description>MOCs Overview Services Commands Dashboard Navigation Themes Users Project Menu Admin Menu Identity Menu Templates Manage flavors Identities Manage Domains Manage Roles Project management User and group management Membership and assignment management Multi-tenancy Setup Keypair Networking Network Subnet Routers Floating IPs Security Groups Instances Launch instance Floating IP to instance Attach security to instance Attach security group Delete Instance Overview Documentation Services Commands: Display services: microstack.openstack catalog list Display users: microstack.openstack user list Display images: microstack.openstack image list Display networks: microstack.openstack network list Display hypervisors: microstack.openstack hypervisor list Dashboard Navigation: Themes: Users: Access users: Change user password: Project Menu: Project drop down: The Project menu on the left is grouped into three sections: API Access provides information about API endpoints of OpenStack services ...</description>
+    <pubDate>Sun, 07 Apr 2024 04:50:06 GMT</pubDate>
+  </item><item>
+    <title>Milestone 10 Openstack and Windows</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-10-Openstack-and-Windows</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-10-Openstack-and-Windows</guid>
+    <description>I personally did not complete this lab so please go over to Oliver Mustoes tech journal on this milestone if you need help link.</description>
+    <pubDate>Sun, 07 Apr 2024 04:34:02 GMT</pubDate>
+  </item><item>
+    <title>Milestone 9 OpenStack Tutorials</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-9-OpenStack-Tutorials</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-9-OpenStack-Tutorials</guid>
+    <description>Milestone 9: OpenStack Tutorials Reference Page OpenStack Services Commands: Display services: microstack.openstack catalog list Display users: microstack.openstack user list Display images: microstack.openstack image list Display networks: microstack.openstack network list Display hypervisors: microstack.openstack hypervisor list Dashboard Navigation: Themes: Users: Access users: Change user password: Project Menu: Project drop down: The Project menu on the left is grouped into three sections: API Access provides information about API endpoints of OpenStack services ...</description>
+    <pubDate>Sun, 07 Apr 2024 04:34:01 GMT</pubDate>
   </item>
     </channel>
   </rss>
