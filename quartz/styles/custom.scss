@@ -1,36 +1,101 @@
 @use "./base.scss";
 
-// put your custom CSS here!
-$mocha-light-pink: #F5C2E7;
-$mocha-muted-pink: #F28FAD;
-$mocha-soft-green: #ABE9B3;
-$mocha-sky-blue: #96CDFB;
-$mocha-peach: #F8BD96;
-$mocha-red: #f38ba8;
-$mocha-sapphire: #74c7ec;
-$mocha-lavender: #b4befe;
-$mocha-mauve: #cba6f7;
+[saved-theme="dark"] {
+    article {
+        h1 {
+            color: rgb(255, 117, 127);
+        }
 
-h1 {
-  color: $mocha-red; 
+        h2 {
+            color: rgb(224, 175, 104);
+        }
+
+        h3 {
+            color: rgb(158, 206, 106);
+        }
+
+        h4 {
+            color: rgb(125, 207, 255);
+        }
+
+        h5 {
+            color: rgb(122, 162, 247);
+        }
+
+        h6 {
+            color: rgb(187, 154, 247);
+        }
+    }
+
+    strong,
+    code {
+        color: #7dcfff !important;
+    }
+
+    span.text-highlight {
+         
+        background-color: rgba(255, 158, 100, 0.4) !important;
+    }
+
+    em {
+        color: #7dcfff !important;
+        ;
+     }
+
+     ::selection {
+        background: rgba(39, 71, 125, 0.6);
+      }
 }
 
-h2 {
-  color: $mocha-peach; 
+[saved-theme="light"] {
+article {
+        h1 {
+            color: #8c4308;
+    
+        }
+
+        h2 {
+            color: rgb(143, 94, 21);
+        }
+
+        h3 {
+            color: #33635c;
+        }
+
+        h4 {
+            color: rgb(15, 75, 110);
+        }
+
+        h5 {
+            color: rgb(52, 84, 138);
+        }
+
+        h6 {
+            color: rgb(90, 74, 120);
+        }
+    }
+
+    strong{
+        color: #0F4B6E !important;
+    }
+    
+    em {
+        color:#0F4B6E !important;
+    }
+
+    code {
+      color: #343B58 !important; /* tokyonight foreground */
+      background-color: #C3C5C9;
+    }
+
+    span.text-highlight {
+        color: #343B58 !important;
+        background: #BCA093 !important;
+    }
+
 }
 
-h3 {
-  color: $mocha-soft-green; 
-}
-
-h4 {
-  color: $mocha-sapphire; 
-}
-
-h5 {
-  color: $mocha-lavender; 
-}
-
-h6 {
-  color: $mocha-mauve; 
-}
+::selection {
+    background: rgba(39,71,125,0.6)!important;
+    // color: var(--darkgray);
+  }
