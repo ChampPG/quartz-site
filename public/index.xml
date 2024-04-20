@@ -6,6 +6,18 @@
       <description>Last 10 notes on Paul&#039;s Resources</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>NCAE-Database</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Clubs/NCAE/NCAE-Database</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Clubs/NCAE/NCAE-Database</guid>
+    <description>MOCs .</description>
+    <pubDate>Sat, 20 Apr 2024 02:00:41 GMT</pubDate>
+  </item><item>
+    <title>NCAE-Scripts</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Clubs/NCAE/NCAE-Scripts</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Clubs/NCAE/NCAE-Scripts</guid>
+    <description>MOCs .</description>
+    <pubDate>Sat, 20 Apr 2024 01:59:23 GMT</pubDate>
+  </item><item>
     <title>NCAE-FTP</title>
     <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Clubs/NCAE/NCAE-FTP</link>
     <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Clubs/NCAE/NCAE-FTP</guid>
@@ -33,7 +45,7 @@
     <title>NCAE Dashboard</title>
     <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Clubs/NCAE/NCAE-Dashboard</link>
     <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Clubs/NCAE/NCAE-Dashboard</guid>
-    <description>MOCs Services MICS Services NCAE-Firewall NCAE-DNS MICS NCAE-Spice .</description>
+    <description>MOCs Services MICS Services Firewall DNS FTP Database MICS Scripts Spice .</description>
     <pubDate>Sat, 20 Apr 2024 01:10:56 GMT</pubDate>
   </item><item>
     <title>Lab 12.2 CloudTrail, SNS, CloudWatch, EventBuilder and Athena</title>
@@ -53,18 +65,6 @@
     <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Lab-5.3-Setting-up-WordPress-on-LAMP</guid>
     <description>Lab 5.3: Setting up WordPress on LAMP Install WordPress: Download the latest WordPress installation package with the wget command. The following command should always download the latest release. wget wordpress.org/latest.tar.gz Unzip and unarchive the installation package. The installation folder is unzipped to a folder called wordpress. tar -xzf latest.tar.gz Log in to the database server as the root user. Enter your database root password when prompted; this may be different than your root system password, or it may even be empty if you have not secured your database server. mysql -u root -p Create a user and password for your MySQL database. Your WordPress installation uses these values to communicate with your MySQL database. Enter the following command, substituting a unique user name and password. CREATE USER &#039;wordpress-user&#039;@&#039;localhost&#039; IDENTIFIED BY &#039;your_strong_password&#039;; Create your database. Give your database a descriptive, meaningful name, such as wordpress-db. CREATE DATABASE `wordpress-db`; Grant full privileges for your database to the WordPress user that you created earlier. GRANT ALL PRIVILEGES ON `wordpress-db`.* TO &quot;wordpress-user&quot;@&quot;localhost&quot;; Flush the database privileges to pick up all of your changes. FLUSH PRIVILEGES; Exit the mysql client. exit To create and edit the wp-config.php file Copy the wp-config-sample.php file to a file called wp-config.php. This creates a new configuration file and keeps the original sample file intact as a backup. cp wordpress/wp-config-sample.php wordpress/wp-config.php Edit the wp-config.php file with your favorite text editor (such as nano or vim) and enter values for your installation. If you do not have a favorite text editor, vi is suitable for beginners. vi wordpress/wp-config.php Find the section called Authentication Unique Keys and Salts. These KEY and SALT values provide a layer of encryption to the browser cookies that WordPress users store on their local machines. Basically, adding long, random values here makes your site more secure. You can create unique values by visiting api.wordpress.org/secret-key/1.1/salt/ Links to an external site. Links to an external site.to randomly generate a set of key values that you can copy and paste into your wp-config.php file. To paste text into a PuTTY terminal, place the cursor where you want to paste the text and right-click your mouse inside the PuTTY terminal. WordPress will run at your document root, socopy the contents of the wordpress installation directory (but not the directory itself) as follows: cp -r wordpress/* /var/www/html/ Open the httpd.conf file with your favorite text editor (such as nano or vim). If you do not have a favorite text editor, nano is suitable for beginners. sudo vim /etc/httpd/conf/httpd.conf Change the AllowOverride None line in the above section to read AllowOverride All. Info There are multiple AllowOverride lines in this file; be sure you change the line in the &lt;Directory &quot;/var/www/html&quot;&gt; section. To install the PHP graphics drawing library on Amazon Linux 2: Use the following command to install the PHP graphics drawing library on Amazon Linux 2. For example, if you installed php7.2 from amazon-linux-extras as part of installing the LAMP stack, this command installs version 7.2 of the PHP graphics drawing library. sudo yum install php-gd To verify the installed version, use the following command: sudo yum list installed | grep php To fix file permissions for the Apache web server Grant file ownership of /var/www and its contents to the apache user. sudo chown -R apache /var/www Grant group ownership of /var/www and its contents to the apache group. sudo chgrp -R apache /var/www Change the directory permissions of /var/www and its subdirectories to add group write permissions and to set the group ID on future subdirectories. sudo chmod 2775 /var/www find /var/www -type d -exec sudo chmod 2775 {} \; Recursively change the file permissions of /var/www and its subdirectories to add group write permissions. find /var/www -type f -exec sudo chmod 0664 {} \; Restart the Apache web server to pick up the new group and permissions. sudo systemctl restart httpd To run the WordPress installation script with Amazon Linux 2 Use the systemctl command to ensure that the httpd and database services start at every system boot. sudo systemctl enable httpd &amp;&amp; sudo systemctl enable mariadb SUBMIT: Screenshot of Post-Install Wordpress Site.</description>
     <pubDate>Wed, 10 Apr 2024 17:10:51 GMT</pubDate>
-  </item><item>
-    <title>AWS</title>
-    <link>https://quartz.paulgleason.dev/everything/References/AWS</link>
-    <guid>https://quartz.paulgleason.dev/everything/References/AWS</guid>
-    <description>MOCs Overview Tips and Tricks Installation Configuration EC2 Management S3 Operations IAM Management RDS Operations Lambda Functions CloudFormation CloudWatch Overview The AWS CLI is an open-source tool that enables you to interact with AWS services using commands in your command-line shell ...</description>
-    <pubDate>Wed, 10 Apr 2024 17:10:51 GMT</pubDate>
-  </item><item>
-    <title>Lab 4.1 S3 Server-side Encryption</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Lab-4.1-S3-Server-side-Encryption</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Lab-4.1-S3-Server-side-Encryption</guid>
-    <description>Lab 4.1: S3 Server-side Encryption Create S3 Bucket: Upload file: Submit screenshot of your S3 bucket with a file stored in it. Create a Customer Managed Key in KMS: On the “Key Administrative” page - you need to add the “vocareum” and “vocstartsoft” roles - which are on the second page of listed roles Again - select “vocareum” and “vocstartsoft” on page 2 Submit screenshot of your KMS key listed in the console: Use native S3 SSE (S3 Master Key) to protect a file in S3 Bucket Click Upload to add a file to your S3 Bucket Expand Properties Select “Specify and encryption key” Override bucket settings Select SSE-S3 (this uses AWS’s managed key) Submit: Screenshot showing properties of a file in your S3 bucket that is encrypted with S3 Master Key: Use native AWS KMS SSE (KMS Master Key) to protect a file in S3 Bucket Using the mostly the same process as above - upload another file to your S3 Bucket , but this time protect it using the AWS KMS Master Key you created in Step 2 Submit: Screenshot showing properties of a file in your S3 bucket that is encrypted with your AWS KMS key .</description>
-    <pubDate>Wed, 10 Apr 2024 17:10:50 GMT</pubDate>
   </item>
     </channel>
   </rss>
