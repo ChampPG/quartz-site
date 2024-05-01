@@ -9,7 +9,7 @@
     <title>Final Part 2</title>
     <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Final-Part-2</link>
     <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Final-Part-2</guid>
-    <description>MOCs.</description>
+    <description>MOCs Adding CloudWatch Monitoring the all 3 instances from Final Part 1 Add Alarms CloudTrail Logs Setup This is a continuation from Final Part 1 Adding CloudWatch Monitoring the all 3 instances from Final Part 1 On jumb, Web and MySQL: Go to the EC2 console Go to Instances Right click on the instance, Monitor and troubleshoot &gt; Manage detailed monitoring Enable and Confirm Add Alarms Search for CloudWatch In the left navigation bar, click All metrics Switch on Alarm recommendations Info I found filtering by name was the easiest way to find the instances I wanted alarms for Click on the metric category EC2 Select the metric CPUUtalization Click Create alarm Give it a name that you will recognize and select Create alarm Repeat with two more alarms CloudTrail Logs Setup Go to the CloudTrail console Click Create trail Name it final-trail Disable SSE-KMS Add a tag Key: Name ...</description>
     <pubDate>Wed, 01 May 2024 00:05:58 GMT</pubDate>
   </item><item>
     <title>Final Part 1</title>
