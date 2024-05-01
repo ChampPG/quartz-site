@@ -6,6 +6,12 @@
       <description>Last 10 notes on Paul&#039;s Resources</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>Final Part 2</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Final-Part-2</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Final-Part-2</guid>
+    <description>MOCs.</description>
+    <pubDate>Wed, 01 May 2024 00:05:58 GMT</pubDate>
+  </item><item>
     <title>Final Part 1</title>
     <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Final-Part-1</link>
     <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Final-Part-1</guid>
@@ -59,12 +65,6 @@
     <guid>https://quartz.paulgleason.dev/everything/References/Nginx</guid>
     <description>MOCs Load Balancing Certbot Nginx Install Certbot Install cloudflare plugin Option 1 User nginx reverse proxy with certbot nginx Make Nginx config Make nginx cert Option 2 User nginx reverse proxy with certbot cloudflare Cloudflare API token used by Certbot Make Nginx config Root-Domain Sub-Domain Now test config and restart nginx Auto renew with cron Extras Http Password Load Balancing This config has 2 servers my.server1.com and my.server2.com and combines them ...</description>
     <pubDate>Sat, 20 Apr 2024 02:14:31 GMT</pubDate>
-  </item><item>
-    <title>NCAE-Web</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Clubs/NCAE/NCAE-Web</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Clubs/NCAE/NCAE-Web</guid>
-    <description>MOCs Tips and Tricks Base nginx config Using Cerbot in Comp Tips and Tricks My personal nginx documentation Nginx Base nginx config Using Cerbot in Comp ...</description>
-    <pubDate>Sat, 20 Apr 2024 02:05:47 GMT</pubDate>
   </item>
     </channel>
   </rss>
