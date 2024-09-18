@@ -10,61 +10,61 @@
     <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Final-Part-2</link>
     <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Final-Part-2</guid>
     <description>MOCs Adding CloudWatch Monitoring the all 3 instances from Final Part 1 Add Alarms CloudTrail Logs Setup This is a continuation from Final Part 1 Adding CloudWatch Monitoring the all 3 instances from Final Part 1 On jumb, Web and MySQL: Go to the EC2 console Go to Instances Right click on the instance, Monitor and troubleshoot &gt; Manage detailed monitoring Enable and Confirm Add Alarms Search for CloudWatch In the left navigation bar, click All metrics Switch on Alarm recommendations Info I found filtering by name was the easiest way to find the instances I wanted alarms for Click on the metric category EC2 Select the metric CPUUtalization Click Create alarm Give it a name that you will recognize and select Create alarm Repeat with two more alarms CloudTrail Logs Setup Go to the CloudTrail console Click Create trail Name it final-trail Disable SSE-KMS Add a tag Key: Name ...</description>
-    <pubDate>Wed, 01 May 2024 00:05:58 GMT</pubDate>
+    <pubDate>Fri, 17 May 2024 05:59:15 GMT</pubDate>
   </item><item>
     <title>Final Part 1</title>
     <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Final-Part-1</link>
     <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Final-Part-1</guid>
     <description>MOCs Network Diagram Configure Networking VPC Subnets Public Subnet Private Subnet Internet Gateway Elastic IP Routing Create Instances NAT Gateway Update Private Route Table To associate the Elastic IPs SSHing MySQL Installation MySQL Setup Install Apache Install Apache Install PHP WordPress Installation WordPress Configuration Network Diagram Configure Networking VPC Open VPC console From the VPC dashboard, click Create VPC Select VPC only In the Name tag field, name the VPC final-paul Specify the 10.10.0.0/16 IPv4 CIDR block Click Create VPC to complete Subnets Public Subnet: In the left navigation bar, click Subnets Click Create Subnet Select the final-paul VPC Name the subnet public-subnet-paul Select AZ us-east-1a Specify the IPv4 block as 10.10.10.0/24 Click Create Subnet to complete Private Subnet: Click Create Subnet Select the final-paul VPC Name the subnet private-subnet-paul Select AZ us-east-1a Specify the IPv4 block as 10.10.15.0/24 Click Create Subnet to complete Internet Gateway Create main internet gateway: ...</description>
-    <pubDate>Tue, 30 Apr 2024 23:15:12 GMT</pubDate>
+    <pubDate>Fri, 17 May 2024 05:59:15 GMT</pubDate>
   </item><item>
-    <title>Docker</title>
-    <link>https://quartz.paulgleason.dev/everything/References/Docker</link>
-    <guid>https://quartz.paulgleason.dev/everything/References/Docker</guid>
-    <description>MOCs .</description>
-    <pubDate>Mon, 29 Apr 2024 13:48:40 GMT</pubDate>
-  </item><item>
-    <title>Wake On LAN Project</title>
-    <link>https://quartz.paulgleason.dev/everything/Personal-Projects/Wake-On-Lan/Wake-On-LAN-Project</link>
-    <guid>https://quartz.paulgleason.dev/everything/Personal-Projects/Wake-On-Lan/Wake-On-LAN-Project</guid>
-    <description>MOCs Overview Repo Overview This project was originally made because I got sick of having to go up to campus to turn on machines for SCCM to be able to deploy applications ...</description>
-    <pubDate>Thu, 25 Apr 2024 15:26:26 GMT</pubDate>
-  </item><item>
-    <title>Markov Discord Bot Project</title>
-    <link>https://quartz.paulgleason.dev/everything/Personal-Projects/Markov-Bot/Markov-Discord-Bot-Project</link>
-    <guid>https://quartz.paulgleason.dev/everything/Personal-Projects/Markov-Bot/Markov-Discord-Bot-Project</guid>
-    <description>MOCs Overview Repo Overview I had made this project because I was interesting in natural language Discord bots but, wanted to start more simple so I used Markov’s Chain as an entry into making my own bot that would talk based on information it could read from Discord Channels ...</description>
-    <pubDate>Thu, 25 Apr 2024 15:22:59 GMT</pubDate>
-  </item><item>
-    <title>GCP Random Project</title>
-    <link>https://quartz.paulgleason.dev/everything/Personal-Projects/GCP-Rand/GCP-Random-Project</link>
-    <guid>https://quartz.paulgleason.dev/everything/Personal-Projects/GCP-Rand/GCP-Random-Project</guid>
-    <description>MOCs Overview Python JS Overview As an overview this project uses the GCP Dot to generate random characters to the length specified by the user. The program is a web application that is easy to get up and running using just a few commands that can be found in the README of the repo’s. This project was create during my SEC-440 class when we were making ransomware. During this project my partner and I had used Golang to write our ransomware. This program worked a little too well and windows defender starting to detect our application and try to delete it. We starting to put a random string of 128 characters at the start of the file in a comment to change the hash of the application. This is where I decided to make project you see here. It started in python but I am was annoyed with how it felt a little sluggish so I redid the project in JS. Making this change made it light and day. Python License: MIT Repo: github.com/ChampPG/Random-GCP-String-Python JS License: MIT Repo: github.com/ChampPG/Random-GCP-String-JS.</description>
-    <pubDate>Wed, 24 Apr 2024 16:26:53 GMT</pubDate>
+    <title>SYS-360 Cloud Admin</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/SYS-360-Cloud-Admin-Dashboard</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/SYS-360-Cloud-Admin-Dashboard</guid>
+    <description>Course Overview Course: SYS-360 Cloud Admin Semester: SP24 Professor: Adam Goldstein Course Description This advanced special topics course would concentrate on commercial Platform as a Service (PAAS) cloud offerings ...</description>
+    <pubDate>Fri, 17 May 2024 05:59:15 GMT</pubDate>
   </item><item>
     <title>090 - Personal Projects</title>
     <link>https://quartz.paulgleason.dev/090---Personal-Projects</link>
     <guid>https://quartz.paulgleason.dev/090---Personal-Projects</guid>
     <description>MOCs Tech Projects Physical Projects Tech Projects Homelab GCP Random Project Markov Discord Bot Project Wake On LAN Project Twitter Bot Project Physical Projects ...</description>
-    <pubDate>Wed, 24 Apr 2024 16:26:53 GMT</pubDate>
+    <pubDate>Mon, 29 Apr 2024 23:22:39 GMT</pubDate>
+  </item><item>
+    <title>100 - References</title>
+    <link>https://quartz.paulgleason.dev/100---References</link>
+    <guid>https://quartz.paulgleason.dev/100---References</guid>
+    <description>MOCs Applications Automation Cloud/Hypervisor Networking Pentesting/Threat Hunting Programming MICS Applications Obsidian Wazuh Automation Ansible Github Cloud/Hypervisor AWS Hyper-V OpenStack vCenter Containerization Docker Networking Cisco IOS PfSense VYOS Wiregaurd Pentesting/Threat Hunting NMAP Linpeas Programming PowerCLI Python Github MICS Vim Neovim Kitty Chrome Remote Desktop ...</description>
+    <pubDate>Mon, 29 Apr 2024 23:22:39 GMT</pubDate>
+  </item><item>
+    <title>Docker</title>
+    <link>https://quartz.paulgleason.dev/everything/References/Docker</link>
+    <guid>https://quartz.paulgleason.dev/everything/References/Docker</guid>
+    <description>MOCs .</description>
+    <pubDate>Mon, 29 Apr 2024 23:22:39 GMT</pubDate>
+  </item><item>
+    <title>index</title>
+    <link>https://quartz.paulgleason.dev/</link>
+    <guid>https://quartz.paulgleason.dev/</guid>
+    <description>...</description>
+    <pubDate>Mon, 29 Apr 2024 23:22:39 GMT</pubDate>
+  </item><item>
+    <title>GCP Random Project</title>
+    <link>https://quartz.paulgleason.dev/everything/Personal-Projects/GCP-Rand/GCP-Random-Project</link>
+    <guid>https://quartz.paulgleason.dev/everything/Personal-Projects/GCP-Rand/GCP-Random-Project</guid>
+    <description>MOCs Overview Python JS Overview As an overview this project uses the GCP Dot to generate random characters to the length specified by the user. The program is a web application that is easy to get up and running using just a few commands that can be found in the README of the repo’s. This project was create during my SEC-440 class when we were making ransomware. During this project my partner and I had used Golang to write our ransomware. This program worked a little too well and windows defender starting to detect our application and try to delete it. We starting to put a random string of 128 characters at the start of the file in a comment to change the hash of the application. This is where I decided to make project you see here. It started in python but I am was annoyed with how it felt a little sluggish so I redid the project in JS. Making this change made it light and day. Python License: MIT Repo: github.com/ChampPG/Random-GCP-String-Python JS License: MIT Repo: github.com/ChampPG/Random-GCP-String-JS.</description>
+    <pubDate>Fri, 26 Apr 2024 03:32:07 GMT</pubDate>
   </item><item>
     <title>Homelab Dashboard</title>
     <link>https://quartz.paulgleason.dev/everything/Personal-Projects/Homelab/Homelab-Dashboard</link>
     <guid>https://quartz.paulgleason.dev/everything/Personal-Projects/Homelab/Homelab-Dashboard</guid>
     <description>MOCs Overview Infrastructure Services Overview Infrastructure Services.</description>
-    <pubDate>Wed, 24 Apr 2024 16:26:53 GMT</pubDate>
+    <pubDate>Fri, 26 Apr 2024 03:32:07 GMT</pubDate>
   </item><item>
-    <title>FOTC Dashboard</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Clubs/FOTC/FOTC-Dashboard</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Clubs/FOTC/FOTC-Dashboard</guid>
-    <description>MOCS Beowulf Cluster .</description>
-    <pubDate>Mon, 22 Apr 2024 13:21:41 GMT</pubDate>
-  </item><item>
-    <title>Nginx</title>
-    <link>https://quartz.paulgleason.dev/everything/References/Nginx</link>
-    <guid>https://quartz.paulgleason.dev/everything/References/Nginx</guid>
-    <description>MOCs Load Balancing Certbot Nginx Install Certbot Install cloudflare plugin Option 1 User nginx reverse proxy with certbot nginx Make Nginx config Make nginx cert Option 2 User nginx reverse proxy with certbot cloudflare Cloudflare API token used by Certbot Make Nginx config Root-Domain Sub-Domain Now test config and restart nginx Auto renew with cron Extras Http Password Load Balancing This config has 2 servers my.server1.com and my.server2.com and combines them ...</description>
-    <pubDate>Sat, 20 Apr 2024 02:14:31 GMT</pubDate>
+    <title>Wake On LAN Project</title>
+    <link>https://quartz.paulgleason.dev/everything/Personal-Projects/Wake-On-Lan/Wake-On-LAN-Project</link>
+    <guid>https://quartz.paulgleason.dev/everything/Personal-Projects/Wake-On-Lan/Wake-On-LAN-Project</guid>
+    <description>MOCs Overview Repo Overview This project was originally made because I got sick of having to go up to campus to turn on machines for SCCM to be able to deploy applications ...</description>
+    <pubDate>Fri, 26 Apr 2024 03:32:07 GMT</pubDate>
   </item>
     </channel>
   </rss>
