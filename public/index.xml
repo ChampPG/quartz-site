@@ -6,65 +6,65 @@
       <description>Last 10 notes on Paul&#039;s Resources</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Final Part 2</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Final-Part-2</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Final-Part-2</guid>
-    <description>MOCs Adding CloudWatch Monitoring the all 3 instances from Final Part 1 Add Alarms CloudTrail Logs Setup This is a continuation from Final Part 1 Adding CloudWatch Monitoring the all 3 instances from Final Part 1 On jumb, Web and MySQL: Go to the EC2 console Go to Instances Right click on the instance, Monitor and troubleshoot &gt; Manage detailed monitoring Enable and Confirm Add Alarms Search for CloudWatch In the left navigation bar, click All metrics Switch on Alarm recommendations Info I found filtering by name was the easiest way to find the instances I wanted alarms for Click on the metric category EC2 Select the metric CPUUtalization Click Create alarm Give it a name that you will recognize and select Create alarm Repeat with two more alarms CloudTrail Logs Setup Go to the CloudTrail console Click Create trail Name it final-trail Disable SSE-KMS Add a tag Key: Name ...</description>
-    <pubDate>Fri, 17 May 2024 05:59:15 GMT</pubDate>
+    <title>CSI-140 Introduction to Programming</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/CSI-140-Introduction-to-Programming/CSI-140-Introduction-to-Programming-Dashboard</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/CSI-140-Introduction-to-Programming/CSI-140-Introduction-to-Programming-Dashboard</guid>
+    <description><![CDATA[ Course Overview Course: CSI-140 Introduction to Programming Semester: FA23 Professor: Alexandre Tolstenko Course Description Students learn the history and basics of computing, as well as the fundamentals of programming. ]]></description>
+    <pubDate>Sun, 25 Jan 2026 06:04:49 GMT</pubDate>
   </item><item>
-    <title>Final Part 1</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Final-Part-1</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Final-Part-1</guid>
-    <description>MOCs Network Diagram Configure Networking VPC Subnets Public Subnet Private Subnet Internet Gateway Elastic IP Routing Create Instances NAT Gateway Update Private Route Table To associate the Elastic IPs SSHing MySQL Installation MySQL Setup Install Apache Install Apache Install PHP WordPress Installation WordPress Configuration Network Diagram Configure Networking VPC Open VPC console From the VPC dashboard, click Create VPC Select VPC only In the Name tag field, name the VPC final-paul Specify the 10.10.0.0/16 IPv4 CIDR block Click Create VPC to complete Subnets Public Subnet: In the left navigation bar, click Subnets Click Create Subnet Select the final-paul VPC Name the subnet public-subnet-paul Select AZ us-east-1a Specify the IPv4 block as 10.10.10.0/24 Click Create Subnet to complete Private Subnet: Click Create Subnet Select the final-paul VPC Name the subnet private-subnet-paul Select AZ us-east-1a Specify the IPv4 block as 10.10.15.0/24 Click Create Subnet to complete Internet Gateway Create main internet gateway: ...</description>
-    <pubDate>Fri, 17 May 2024 05:59:15 GMT</pubDate>
+    <title>Lab 4.1 Console Access Mini-Lab</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-4.1-Console-Access-Mini-Lab</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-4.1-Console-Access-Mini-Lab</guid>
+    <description><![CDATA[ Lab 4.1: Console Access Mini-Lab Summary During this lab we got our hands on real CISCO hardware and were able to tinker with the CLI. ]]></description>
+    <pubDate>Sun, 25 Jan 2026 06:04:48 GMT</pubDate>
   </item><item>
-    <title>SYS-360 Cloud Admin</title>
-    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/SYS-360-Cloud-Admin-Dashboard</link>
-    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/SYS-360-Cloud-Admin-Dashboard</guid>
-    <description>Course Overview Course: SYS-360 Cloud Admin Semester: SP24 Professor: Adam Goldstein Course Description This advanced special topics course would concentrate on commercial Platform as a Service (PAAS) cloud offerings ...</description>
-    <pubDate>Fri, 17 May 2024 05:59:15 GMT</pubDate>
+    <title>Lab 3.2 AWS EC2 with CLI - Lab 2</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Lab-3.2-AWS-EC2-with-CLI---Lab-2</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Lab-3.2-AWS-EC2-with-CLI---Lab-2</guid>
+    <description><![CDATA[ Lab 3.2: AWS EC2 with CLI - Lab 2 Submit Screenshot: Use the describe-instances command to just output the instance-ids of running instances aws ec2 describe-instances --filters &quot;Name=instance-state-name,Values=running&quot; --query &#039;Reservations[*].Instances[*].{InstanceId:InstanceId}&#03... ]]></description>
+    <pubDate>Sun, 25 Jan 2026 06:04:48 GMT</pubDate>
   </item><item>
-    <title>090 - Personal Projects</title>
-    <link>https://quartz.paulgleason.dev/090---Personal-Projects</link>
-    <guid>https://quartz.paulgleason.dev/090---Personal-Projects</guid>
-    <description>MOCs Tech Projects Physical Projects Tech Projects Homelab GCP Random Project Markov Discord Bot Project Wake On LAN Project Twitter Bot Project Physical Projects ...</description>
-    <pubDate>Mon, 29 Apr 2024 23:22:39 GMT</pubDate>
+    <title>Lab 1.0 Firewall and Work Station</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-1.0-Firewall-and-Work-Station</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-1.0-Firewall-and-Work-Station</guid>
+    <description><![CDATA[ Lab 1.0: Firewall and Work Station Summary During this lab I learned how to set up a pfsense firewall and have a working windows 10 computer connect through it. ]]></description>
+    <pubDate>Sun, 25 Jan 2026 06:04:48 GMT</pubDate>
   </item><item>
-    <title>100 - References</title>
-    <link>https://quartz.paulgleason.dev/100---References</link>
-    <guid>https://quartz.paulgleason.dev/100---References</guid>
-    <description>MOCs Applications Automation Cloud/Hypervisor Networking Pentesting/Threat Hunting Programming MICS Applications Obsidian Wazuh Automation Ansible Github Cloud/Hypervisor AWS Hyper-V OpenStack vCenter Containerization Docker Networking Cisco IOS PfSense VYOS Wiregaurd Pentesting/Threat Hunting NMAP Linpeas Programming PowerCLI Python Github MICS Vim Neovim Kitty Chrome Remote Desktop ...</description>
-    <pubDate>Mon, 29 Apr 2024 23:22:39 GMT</pubDate>
+    <title>Lab 2.2 Observing Lan Activity</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-2.2-Observing-Lan-Activity</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-2.2-Observing-Lan-Activity</guid>
+    <description><![CDATA[ Lab 2.2: Observing LAN Activity Summary This lab was about pinging the default gateway and another address to see what we can find in Wireshark. ]]></description>
+    <pubDate>Sun, 25 Jan 2026 06:04:48 GMT</pubDate>
   </item><item>
-    <title>Docker</title>
-    <link>https://quartz.paulgleason.dev/everything/References/Docker</link>
-    <guid>https://quartz.paulgleason.dev/everything/References/Docker</guid>
-    <description>MOCs .</description>
-    <pubDate>Mon, 29 Apr 2024 23:22:39 GMT</pubDate>
+    <title>Lab 3.3 DHCP Server in Packet Tracer</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-3.3-DHCP-Server-in-Packet-Tracer</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-3.3-DHCP-Server-in-Packet-Tracer</guid>
+    <description><![CDATA[ Lab 3.3: DHCP Server in Packet Tracer Summary In this lab we worked on creating a DHCP server that was able to communicated over multiple VLANs and used ip helpers on the core switches. ]]></description>
+    <pubDate>Sun, 25 Jan 2026 06:04:48 GMT</pubDate>
   </item><item>
-    <title>index</title>
-    <link>https://quartz.paulgleason.dev/</link>
-    <guid>https://quartz.paulgleason.dev/</guid>
-    <description>...</description>
-    <pubDate>Mon, 29 Apr 2024 23:22:39 GMT</pubDate>
+    <title>Lab 10.1 Linux - Permission Vulnerabilities</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Labs/Lab-10.1-Linux---Permission-Vulnerabilities</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Labs/Lab-10.1-Linux---Permission-Vulnerabilities</guid>
+    <description><![CDATA[ Lab 10.1: Linux - Permission Vulnerabilities suid Programs #include &lt;stdlib.h&gt; #include &lt;pwd.h&gt; #include &lt;stdio.h&gt; #include &lt;unistd.h&gt; /* SEC335 Illustrate SUID Programs * based on: stackoverflow.com/questions/8953424/how-to-get-the-username-in-c-c-in-linux * Make sure run th... ]]></description>
+    <pubDate>Sun, 25 Jan 2026 06:04:47 GMT</pubDate>
   </item><item>
-    <title>GCP Random Project</title>
-    <link>https://quartz.paulgleason.dev/everything/Personal-Projects/GCP-Rand/GCP-Random-Project</link>
-    <guid>https://quartz.paulgleason.dev/everything/Personal-Projects/GCP-Rand/GCP-Random-Project</guid>
-    <description>MOCs Overview Python JS Overview As an overview this project uses the GCP Dot to generate random characters to the length specified by the user. The program is a web application that is easy to get up and running using just a few commands that can be found in the README of the repo’s. This project was create during my SEC-440 class when we were making ransomware. During this project my partner and I had used Golang to write our ransomware. This program worked a little too well and windows defender starting to detect our application and try to delete it. We starting to put a random string of 128 characters at the start of the file in a comment to change the hash of the application. This is where I decided to make project you see here. It started in python but I am was annoyed with how it felt a little sluggish so I redid the project in JS. Making this change made it light and day. Python License: MIT Repo: github.com/ChampPG/Random-GCP-String-Python JS License: MIT Repo: github.com/ChampPG/Random-GCP-String-JS.</description>
-    <pubDate>Fri, 26 Apr 2024 03:32:07 GMT</pubDate>
+    <title>Milestone 7.1 VMware Review</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-7.1-VMware-Review</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-7.1-VMware-Review</guid>
+    <description><![CDATA[ Milestone 7.1: VMware Review Network Layout: NameNetworkIPWeb01-RockyDMZ10.0.19.100/24Web02-RockyDMZ10.0.19.101/24Backup01-UbuntuMGMT10.0.18.100/24Monitor01-UbuntuMGMT10.0.18.101/24ADLAN10.0.17.4/24vCenterLAN10.0.17.3/24 vCenter Networks: Firewall Rule: (Can’t connect to 80,443 in DMZ) Roles for web... ]]></description>
+    <pubDate>Sun, 25 Jan 2026 06:04:47 GMT</pubDate>
   </item><item>
-    <title>Homelab Dashboard</title>
-    <link>https://quartz.paulgleason.dev/everything/Personal-Projects/Homelab/Homelab-Dashboard</link>
-    <guid>https://quartz.paulgleason.dev/everything/Personal-Projects/Homelab/Homelab-Dashboard</guid>
-    <description>MOCs Overview Infrastructure Services Overview Infrastructure Services.</description>
-    <pubDate>Fri, 26 Apr 2024 03:32:07 GMT</pubDate>
+    <title>Lab 5.0 ADDS Group Policy</title>
+    <link>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-5.0-ADDS-Group-Policy</link>
+    <guid>https://quartz.paulgleason.dev/everything/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-5.0-ADDS-Group-Policy</guid>
+    <description><![CDATA[ Lab 5.0: ADDS Group Policy Summary This lab was very straight forward except I hit a roadblock when it came to the disablelastlogin. ]]></description>
+    <pubDate>Sun, 25 Jan 2026 06:04:47 GMT</pubDate>
   </item><item>
-    <title>Wake On LAN Project</title>
-    <link>https://quartz.paulgleason.dev/everything/Personal-Projects/Wake-On-Lan/Wake-On-LAN-Project</link>
-    <guid>https://quartz.paulgleason.dev/everything/Personal-Projects/Wake-On-Lan/Wake-On-LAN-Project</guid>
-    <description>MOCs Overview Repo Overview This project was originally made because I got sick of having to go up to campus to turn on machines for SCCM to be able to deploy applications ...</description>
-    <pubDate>Fri, 26 Apr 2024 03:32:07 GMT</pubDate>
+    <title>PfSense</title>
+    <link>https://quartz.paulgleason.dev/everything/References/PfSense</link>
+    <guid>https://quartz.paulgleason.dev/everything/References/PfSense</guid>
+    <description><![CDATA[ MOCs Overview Tips and Tricks Installation and Initial Setup Web Interface Basics Configuring Interfaces Setting Up DHCP Configuring NAT Firewall Rules VPN Setup Package Management Traffic Shaping Monitoring and Logs Backup and Restore Overview pfSense is a free, open source firewall and router plat... ]]></description>
+    <pubDate>Sun, 25 Jan 2026 06:04:46 GMT</pubDate>
   </item>
     </channel>
   </rss>
