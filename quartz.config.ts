@@ -13,7 +13,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "en-US",
-    baseUrl: "quartz.paulgleason.dev",
+    baseUrl: "quartz.pg.opworks.org",
     ignorePatterns: ["private", "templates", ".obsidian", "!(Assets)**/!(*.md)", "!(*.md)"],
     defaultDateType: "created",
     theme: {
