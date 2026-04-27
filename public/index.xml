@@ -2,69 +2,69 @@
 <rss version="2.0">
     <channel>
       <title>Paul&#039;s Vault</title>
-      <link>https://quartz.pg.opworks.org</link>
+      <link>https://quartz.paulgleason.dev</link>
       <description>Last 10 notes on Paul&#039;s Vault</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Placeholder</title>
-    <link>https://quartz.pg.opworks.org/everything/References/Nixos</link>
-    <guid>https://quartz.pg.opworks.org/everything/References/Nixos</guid>
-    <description><![CDATA[ MOC Flakes Building Updating Updating individual package in input nix flake update json-to-go --refresh. ]]></description>
-    <pubDate>Sat, 18 Apr 2026 04:26:31 GMT</pubDate>
-  </item><item>
-    <title>USB</title>
-    <link>https://quartz.pg.opworks.org/everything/References/USB</link>
-    <guid>https://quartz.pg.opworks.org/everything/References/USB</guid>
-    <description><![CDATA[ MOC Random Helpful Commands Getting list of USB Devices lsusb Output: Bus 001 Device 011: ID 046d:08e5 Logitech, Inc. ]]></description>
-    <pubDate>Mon, 13 Apr 2026 21:34:33 GMT</pubDate>
-  </item><item>
-    <title>Sway</title>
-    <link>https://quartz.pg.opworks.org/everything/References/Sway</link>
-    <guid>https://quartz.pg.opworks.org/everything/References/Sway</guid>
-    <description><![CDATA[ MOC Useful Commands Get displays swaymsg -t get_outputs. ]]></description>
-    <pubDate>Mon, 13 Apr 2026 21:16:41 GMT</pubDate>
-  </item><item>
-    <title>MoltBook Ollama</title>
-    <link>https://quartz.pg.opworks.org/everything/Personal-Projects/Programming-Projects/MoltBook-Ollama</link>
-    <guid>https://quartz.pg.opworks.org/everything/Personal-Projects/Programming-Projects/MoltBook-Ollama</guid>
-    <description><![CDATA[ MOCs Background As of writing this 1/30/2026 Moltbook a self proclaimed “social network built exclusively for AI agents. ]]></description>
-    <pubDate>Sat, 31 Jan 2026 19:45:27 GMT</pubDate>
-  </item><item>
     <title>CSI-140 Introduction to Programming</title>
-    <link>https://quartz.pg.opworks.org/everything/Archive/School/Undergrad---Champlain/Classes/Senior/CSI-140-Introduction-to-Programming/CSI-140-Introduction-to-Programming-Dashboard</link>
-    <guid>https://quartz.pg.opworks.org/everything/Archive/School/Undergrad---Champlain/Classes/Senior/CSI-140-Introduction-to-Programming/CSI-140-Introduction-to-Programming-Dashboard</guid>
+    <link>https://quartz.paulgleason.dev/everything/Archive/School/Undergrad---Champlain/Classes/Senior/CSI-140-Introduction-to-Programming/CSI-140-Introduction-to-Programming-Dashboard</link>
+    <guid>https://quartz.paulgleason.dev/everything/Archive/School/Undergrad---Champlain/Classes/Senior/CSI-140-Introduction-to-Programming/CSI-140-Introduction-to-Programming-Dashboard</guid>
     <description><![CDATA[ Course Overview Course: CSI-140 Introduction to Programming Semester: FA23 Professor: Alexandre Tolstenko Course Description Students learn the history and basics of computing, as well as the fundamentals of programming. ]]></description>
     <pubDate>Sun, 25 Jan 2026 06:04:49 GMT</pubDate>
   </item><item>
     <title>Lab 4.1 Console Access Mini-Lab</title>
-    <link>https://quartz.pg.opworks.org/everything/Archive/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-4.1-Console-Access-Mini-Lab</link>
-    <guid>https://quartz.pg.opworks.org/everything/Archive/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-4.1-Console-Access-Mini-Lab</guid>
+    <link>https://quartz.paulgleason.dev/everything/Archive/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-4.1-Console-Access-Mini-Lab</link>
+    <guid>https://quartz.paulgleason.dev/everything/Archive/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-4.1-Console-Access-Mini-Lab</guid>
     <description><![CDATA[ Lab 4.1: Console Access Mini-Lab Summary During this lab we got our hands on real CISCO hardware and were able to tinker with the CLI. ]]></description>
     <pubDate>Sun, 25 Jan 2026 06:04:48 GMT</pubDate>
   </item><item>
     <title>Lab 3.2 AWS EC2 with CLI - Lab 2</title>
-    <link>https://quartz.pg.opworks.org/everything/Archive/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Lab-3.2-AWS-EC2-with-CLI---Lab-2</link>
-    <guid>https://quartz.pg.opworks.org/everything/Archive/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Lab-3.2-AWS-EC2-with-CLI---Lab-2</guid>
+    <link>https://quartz.paulgleason.dev/everything/Archive/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Lab-3.2-AWS-EC2-with-CLI---Lab-2</link>
+    <guid>https://quartz.paulgleason.dev/everything/Archive/School/Undergrad---Champlain/Classes/Senior/SYS-360-Cloud-Admin/Labs/Lab-3.2-AWS-EC2-with-CLI---Lab-2</guid>
     <description><![CDATA[ Lab 3.2: AWS EC2 with CLI - Lab 2 Submit Screenshot: Use the describe-instances command to just output the instance-ids of running instances aws ec2 describe-instances --filters &quot;Name=instance-state-name,Values=running&quot; --query &#039;Reservations[*].Instances[*].{InstanceId:InstanceId}&#03... ]]></description>
     <pubDate>Sun, 25 Jan 2026 06:04:48 GMT</pubDate>
   </item><item>
     <title>Lab 1.0 Firewall and Work Station</title>
-    <link>https://quartz.pg.opworks.org/everything/Archive/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-1.0-Firewall-and-Work-Station</link>
-    <guid>https://quartz.pg.opworks.org/everything/Archive/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-1.0-Firewall-and-Work-Station</guid>
+    <link>https://quartz.paulgleason.dev/everything/Archive/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-1.0-Firewall-and-Work-Station</link>
+    <guid>https://quartz.paulgleason.dev/everything/Archive/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-1.0-Firewall-and-Work-Station</guid>
     <description><![CDATA[ Lab 1.0: Firewall and Work Station Summary During this lab I learned how to set up a pfsense firewall and have a working windows 10 computer connect through it. ]]></description>
     <pubDate>Sun, 25 Jan 2026 06:04:48 GMT</pubDate>
   </item><item>
     <title>Lab 2.2 Observing Lan Activity</title>
-    <link>https://quartz.pg.opworks.org/everything/Archive/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-2.2-Observing-Lan-Activity</link>
-    <guid>https://quartz.pg.opworks.org/everything/Archive/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-2.2-Observing-Lan-Activity</guid>
+    <link>https://quartz.paulgleason.dev/everything/Archive/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-2.2-Observing-Lan-Activity</link>
+    <guid>https://quartz.paulgleason.dev/everything/Archive/School/Undergrad---Champlain/Classes/Freshman/NET-150-Network-Funamentals/Labs/Lab-2.2-Observing-Lan-Activity</guid>
     <description><![CDATA[ Lab 2.2: Observing LAN Activity Summary This lab was about pinging the default gateway and another address to see what we can find in Wireshark. ]]></description>
     <pubDate>Sun, 25 Jan 2026 06:04:48 GMT</pubDate>
   </item><item>
     <title>Lab 3.3 DHCP Server in Packet Tracer</title>
-    <link>https://quartz.pg.opworks.org/everything/Archive/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-3.3-DHCP-Server-in-Packet-Tracer</link>
-    <guid>https://quartz.pg.opworks.org/everything/Archive/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-3.3-DHCP-Server-in-Packet-Tracer</guid>
+    <link>https://quartz.paulgleason.dev/everything/Archive/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-3.3-DHCP-Server-in-Packet-Tracer</link>
+    <guid>https://quartz.paulgleason.dev/everything/Archive/School/Undergrad---Champlain/Classes/Junior/NET-330-Network-Design/Labs/Lab-3.3-DHCP-Server-in-Packet-Tracer</guid>
     <description><![CDATA[ Lab 3.3: DHCP Server in Packet Tracer Summary In this lab we worked on creating a DHCP server that was able to communicated over multiple VLANs and used ip helpers on the core switches. ]]></description>
     <pubDate>Sun, 25 Jan 2026 06:04:48 GMT</pubDate>
+  </item><item>
+    <title>Lab 10.1 Linux - Permission Vulnerabilities</title>
+    <link>https://quartz.paulgleason.dev/everything/Archive/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Labs/Lab-10.1-Linux---Permission-Vulnerabilities</link>
+    <guid>https://quartz.paulgleason.dev/everything/Archive/School/Undergrad---Champlain/Classes/Junior/SEC-335-Eth.-Hacking--and--Pen.-Testing/Labs/Lab-10.1-Linux---Permission-Vulnerabilities</guid>
+    <description><![CDATA[ Lab 10.1: Linux - Permission Vulnerabilities suid Programs #include &lt;stdlib.h&gt; #include &lt;pwd.h&gt; #include &lt;stdio.h&gt; #include &lt;unistd.h&gt; /* SEC335 Illustrate SUID Programs * based on: stackoverflow.com/questions/8953424/how-to-get-the-username-in-c-c-in-linux * Make sure run th... ]]></description>
+    <pubDate>Sun, 25 Jan 2026 06:04:47 GMT</pubDate>
+  </item><item>
+    <title>Milestone 7.1 VMware Review</title>
+    <link>https://quartz.paulgleason.dev/everything/Archive/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-7.1-VMware-Review</link>
+    <guid>https://quartz.paulgleason.dev/everything/Archive/School/Undergrad---Champlain/Classes/Senior/SYS-350-Enterprise-Virtualization/Labs/Milestone-7.1-VMware-Review</guid>
+    <description><![CDATA[ Milestone 7.1: VMware Review Network Layout: NameNetworkIPWeb01-RockyDMZ10.0.19.100/24Web02-RockyDMZ10.0.19.101/24Backup01-UbuntuMGMT10.0.18.100/24Monitor01-UbuntuMGMT10.0.18.101/24ADLAN10.0.17.4/24vCenterLAN10.0.17.3/24 vCenter Networks: Firewall Rule: (Can’t connect to 80,443 in DMZ) Roles for web... ]]></description>
+    <pubDate>Sun, 25 Jan 2026 06:04:47 GMT</pubDate>
+  </item><item>
+    <title>Lab 5.0 ADDS Group Policy</title>
+    <link>https://quartz.paulgleason.dev/everything/Archive/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-5.0-ADDS-Group-Policy</link>
+    <guid>https://quartz.paulgleason.dev/everything/Archive/School/Undergrad---Champlain/Classes/Sophomore/SYS-255-System-Admin--and--Network-Services-I/Labs/Lab-5.0-ADDS-Group-Policy</guid>
+    <description><![CDATA[ Lab 5.0: ADDS Group Policy Summary This lab was very straight forward except I hit a roadblock when it came to the disablelastlogin. ]]></description>
+    <pubDate>Sun, 25 Jan 2026 06:04:47 GMT</pubDate>
+  </item><item>
+    <title>PfSense</title>
+    <link>https://quartz.paulgleason.dev/everything/References/PfSense</link>
+    <guid>https://quartz.paulgleason.dev/everything/References/PfSense</guid>
+    <description><![CDATA[ MOCs Overview Tips and Tricks Installation and Initial Setup Web Interface Basics Configuring Interfaces Setting Up DHCP Configuring NAT Firewall Rules VPN Setup Package Management Traffic Shaping Monitoring and Logs Backup and Restore Overview pfSense is a free, open source firewall and router plat... ]]></description>
+    <pubDate>Sun, 25 Jan 2026 06:04:46 GMT</pubDate>
   </item>
     </channel>
   </rss>
